@@ -36,6 +36,13 @@ mögliche Parameter:
 - Bezugsparameter: GridPower? ist das eine zirkuläre Referenz? 
 - ggf. Alternativ: PV-Power - Home-Power
 
+
+### Zusatz-Anforderungen
+- bei nächtlichem Netzladen sollte 3-phasig geladen werden
+- auch in Sonderzuständen, z. B. Nachladen beim Fahrzeugheizen sollte das ganze vernünftig und stabil laufen
+- nice-to-have: Anpassen der Hystereschwellen über die GUI z.B. nach Wetter, Ladebedarf...
+
+
 ## Implementierung
 
 - Als separater Demon außerhalb der evcc-sourcen  
@@ -55,11 +62,41 @@ evcc/site/gridPower -3491.5
 evcc/site/homePower 1166.5
 ```
 
-Timing:
+### Timing:
 - es wird erst `chargePower` ausgegeben
 - nach ca einer Sekunde die anderen power-Werte im Block
 - danach knapp 30 Sekunden Pause
 Können wir daraus ableiten, daß `chargePower` in `evcc` aus den Werten der letzten Periode ermittelt wird?
-Das würde evtl. Probleme mit Zirkelbezügen entschärfen. Schau' mer mal .... 
+Das würde evtl. Probleme mit Zirkelbezügen entschärfen. Schau' mer mal ....
 
+### Anbindung an evcc
 
+vgl. auch https://github.com/evcc-io/evcc/discussions/9014#discussioncomment-6511874 :
+> Ich würde es dort festmachen, wo auch das Problem liegt, an der Ladeleistung.
+> MQTT topic: evcc/loadpoints/1/chargePower
+
+Inspiration: https://github.com/evcc-io/evcc/discussions/9014#discussioncomment-6511533 :  
+`  topic: evcc/loadpoints/1/minCurrent/set" "8"`  
+Das würde implizieren, daß ich in evcc gar nichts an der Konfiguration ändern muß?  
+
+... schau' mer mal .... ansonsten RTFM ;-)
+
+### Entwurf Pseudocode:
+```
+configure mqtt
+mqtt_subscribe to "evcc/loadpoints"
+
+config:
+  upperLimit = 4.5 kW
+  lowerLimit = 4 kW
+
+Handler für topic "evcc/loadpoints/1/chargePower":
+  if evcc/loadpoints/1/chargePower > upperLimit
+    mqtt_send  "topic: evcc/loadpoints/1/minCurrent/set" "8"
+    mqtt_send  "topic: evcc/loadpoints/1/maxCurrent/set" "16"
+
+  if evcc/loadpoints/1/chargePower < lowerLimit
+    mqtt_send  "topic: evcc/loadpoints/1/minCurrent/set" "6"
+    mqtt_send  "topic: evcc/loadpoints/1/maxCurrent/set" "7"
+
+```
