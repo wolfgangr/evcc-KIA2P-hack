@@ -1,0 +1,35 @@
+# perl skript,
+# https://github.com/wolfgangr/evcc-KIA2P-hack
+# Kia and Hyundai electric vehicles switch to 2-phase charging if charge current is set below 8A.
+# This hack is planned to avoid this.
+ 
+# [wr] 2024-10-02
+
+[Unit]
+Description=evcc-KIA2P-hack daemon
+After=network.target
+# Wants= tbd mqtt, mariadb
+# may be needs edit if services run on other machine
+Wants=mosquitto.service
+# WantedBy=evcc.service
+
+[Service]
+Type=simple
+# ExecStart=ecowitt2mqtt --mqtt-broker=192.168.1.101 --mqtt-username=user --mqtt-password=password
+ExecStart=/usr/bin/perl evcc_kia2p_hack.pl
+ExecReload=kill -HUP $MAINPID
+KillMode=process
+Restart=on-failure
+RestartSec=43s
+# see man systemd.service
+# .... looks like not available here .... 
+# RestartSteps=10
+# RestartMaxDelaySec=1800s
+
+# see man systemd.exec
+# [Exec]
+User=daemon
+WorkingDirectory=/home/wrosner/evcc/kia-hack/evcc-KIA2P-hack
+
+[Install]
+WantedBy=multi-user.target

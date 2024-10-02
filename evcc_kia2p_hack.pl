@@ -22,7 +22,7 @@ use Net::MQTT::Simple;
 # use Time::Piece; # from POSIX time as delivered by the station to epocs for calculation
 
 
-my $debug = 4;
+my $debug = 3;
 
 my $mqtt_server = "homeserver.rosner.lokal";
 my $topic_evcc = "evcc";
@@ -90,7 +90,7 @@ sub noop {
 # for debug: we may parse other messages
 sub parse_default  {
             my ($topic, $message) = @_;
-            debug_print (2, "[$topic] $message\n");
+            debug_print (4, "[$topic] $message\n");
         }
 
 
