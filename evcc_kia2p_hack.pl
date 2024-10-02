@@ -15,6 +15,11 @@
 use warnings;
 use strict;
 use Net::MQTT::Simple;
+
+# allow user/pwd login
+# MQTT_SIMPLE_ALLOW_INSECURE_LOGIN=1
+$ENV{"MQTT_SIMPLE_ALLOW_INSECURE_LOGIN"} = 1;
+
 # use JSON;
 # use Data::Dumper;
 # use DBD::mysql;	
@@ -25,6 +30,10 @@ use Net::MQTT::Simple;
 my $debug = 3;
 
 my $mqtt_server = "homeserver.rosner.lokal";
+my $mqtt_user   = "evcc_kia";
+my $mqtt_passwd = `cat pwd.secret`;
+chomp $mqtt_passwd;
+
 my $topic_evcc = "evcc";
 my $topic_loadpoint   = $topic_evcc   . "/loadpoints/1";
 
@@ -40,9 +49,11 @@ my $topic_maxCurrent  =  $topic_loadpoint . "/maxCurrent";
 
 
 my $mqtt = Net::MQTT::Simple->new($mqtt_server);
+$mqtt->login($mqtt_user, $mqtt_passwd);
 
-debug_print(1, sprintf("Listening to MQTT server at <%s>, topic <%s>\n", 
-		$mqtt_server, $topic_loadpoint));
+
+debug_print(1, sprintf("Listening to MQTT server at <%s>, topic <%s> as user <%s> pwd=<%s>\n", 
+		$mqtt_server, $topic_loadpoint, $mqtt_user, $mqtt_passwd));
 
 
 #==============
