@@ -44,19 +44,26 @@ debug_print(1, sprintf("Listening to MQTT server at <%s>, topic <%s>\n",
 
 # __main__ MQTT subscription callback handler 
 $mqtt->run(
-        # $topic_chargePower => \&do_ecowitt,
+        $topic_chargePower => \&do_kia_hack,
         $topic_loadpoint . "/#" => \&parse_default,
         # "#" => \&noop,
 
     );
 
-debug_print(-1, sprintf("OOPS - looks like mqtt listener died - this should not happen \n");
+debug_print(-1, "OOPS - looks like mqtt listener died - this should not happen \n");
 
 
 # noop();
 exit;
 
 #======== subs 
+
+sub do_kia_hack  {
+            my ($topic, $message) = @_;
+            debug_print (2, "doing kia hack with: [$topic] $message\n");
+        }
+
+
 
 sub noop {
 	debug_print (4, "noop\n");
@@ -65,8 +72,11 @@ sub noop {
 # for debug: we may parse other messages
 sub parse_default  {
             my ($topic, $message) = @_;
-            debug_print (2, "default: [$topic] $message\n");
+            debug_print (2, "[$topic] $message\n");
         }
+
+
+
 
 
 # debug_print($level, $content)
