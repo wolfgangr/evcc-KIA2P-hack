@@ -73,7 +73,7 @@ sub do_kia_hack  {
                $mqtt->publish( $topic_minCurrent => "8");
                # $mqtt->retain( $topic => $pubstr);
             } elsif ($message < $lowerLimit) {
-               debug_print (3, "kia hack in 'upper' branch\n");
+               debug_print (3, "kia hack in 'lower' branch\n");
                $mqtt->publish( $topic_minCurrent => "6");
                $mqtt->publish( $topic_maxCurrent => "7");
                # $mqtt->retain( $topic => $pubstr);
