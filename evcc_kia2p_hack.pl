@@ -4,10 +4,11 @@
 # 
 # premature sketch - not even tested
 # expect:
+# - your wallbox going bust
 # - your car exploding
 # - your house set on fire
 # - your local grid destroyed beyond repair
-# - getting sued for using this piece of corrupt code
+# - getting jailed for using this piece of corrupt code
 
 
 
@@ -26,6 +27,10 @@ my $debug = 4;
 my $mqtt_server = "homeserver.rosner.lokal";
 my $topic_evcc = "evcc";
 my $topic_loadpoint   = $topic_evcc   . "/loadpoints/1";
+
+
+my $upperLimit = 4.5 ; # kW - 230 V * 8 A * 3 = 5,5 kW 
+my $lowerLimit = 4 ;   # kW - 230 V * 7 A * 2 = 3,2 kW
 
 #=== end of local config ==
 
@@ -61,6 +66,19 @@ exit;
 sub do_kia_hack  {
             my ($topic, $message) = @_;
             debug_print (2, "doing kia hack with: [$topic] $message\n");
+           
+            if ($message > $upperLimit) {
+               debug_print (3, "kia hack in 'upper' branch\n");
+               $mqtt->publish( $topic_maxCurrent => "16");
+               $mqtt->publish( $topic_minCurrent => "8");
+               # $mqtt->retain( $topic => $pubstr);
+            } elsif ($message < $lowerLimit) {
+               debug_print (3, "kia hack in 'upper' branch\n");
+               $mqtt->publish( $topic_minCurrent => "6");
+               $mqtt->publish( $topic_maxCurrent => "7");
+               # $mqtt->retain( $topic => $pubstr);
+            }
+
         }
 
 
