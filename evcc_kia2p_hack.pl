@@ -22,14 +22,13 @@ use Net::MQTT::Simple;
 # MQTT_SIMPLE_ALLOW_INSECURE_LOGIN=1
 $ENV{"MQTT_SIMPLE_ALLOW_INSECURE_LOGIN"} = 1;
 
-# use JSON;
 use Data::Dumper;
-# use DBD::mysql;	
-# use POSIX qw(strftime);	# time string formatting
-# use Time::Piece; # from POSIX time as delivered by the station to epocs for calculation
+use POSIX qw(strftime);	# time string formatting
 
-
-my $debug = 5;
+# debug levels ~~~~
+# 5 = local testing, 4 = early context testing , 3 = early running tests, 
+#    2 = operation test, 1 = operation running in beta, 0 = stable
+my $debug = 2;
 
 my $mqtt_server = "homeserver.rosner.lokal";
 my $mqtt_user   = "evcc_kia";
@@ -157,10 +156,10 @@ die ("OOPS - looks like mqtt listener died - this should not happen \n");
 #======== subs 
 
 sub doitnow {
-  # debug_print(4, "dummy-do-it grid: [$gPwr] home: [$hPwr] charge: [$cPwr] \n");
-  debug_print(3, sprintf("enter state machine with state [%s] (%s)", 
-		$state{state}, $states_enum{$state{state}} ) );
   debug_print(99, " -\n #dummy-do-it grid with state:\n", Dumper(\%state));
+  my $datetime = strftime("%F - %T", localtime($state{updated}) );
+  debug_print(2, sprintf("%s: enter state machine with state [%s] (%s)", 
+		$datetime, $state{state}, $states_enum{$state{state}} ) );
 
   if ($state{state} eq 'c' or $state{state} eq 'd' or ! $state{state} ) {
     debug_print(0, "not yet implemented entering state maching:\n", Dumper(\%state));
@@ -203,7 +202,7 @@ sub doitnow {
   } 
   # - - - - - - - - - - - - - - - - - - - - - 
 
-  debug_print(3, sprintf(" ===>>> leaving with state [%s] (%s)\n",
+  debug_print(2, sprintf(" ===>>> leaving with state [%s] (%s)\n",
                 $state{state}, $states_enum{$state{state}} ) );
 
   if ($state{state} eq 'c' or $state{state} eq 'd' or ! $state{state} ) {
@@ -222,7 +221,10 @@ sub doitnow {
 
 sub set_current_limits {
   my ($mystate) = @_;
-  debug_print(99, "try to parse \%states_limits:\n", Dumper(\%states_limits));
+
+  # debug_print(99, "try to parse \%states_limits:\n", Dumper(\%states_limits));
+  debug_print(2, sprintf( "   ... set current limits to [ %dA ... %dA ] \n", 
+	$states_limits{$mystate}->[0], $states_limits{$mystate}->[1] ));
   $mqtt->retain( $topic_minCurrent => $states_limits{$mystate}->[0]);
   $mqtt->retain( $topic_maxCurrent => $states_limits{$mystate}->[1]);
 } 
@@ -257,7 +259,7 @@ sub debug_print {
 # extends builtins to 'false' 
 sub my_is_false {
   my $t = shift @_;
-  debug_print (99, "is <$t> false?");
+  # debug_print (99, "is <$t> false?");
   return 1 unless $t;
   return 1 if ($t eq "false");
   return 0;
