@@ -161,6 +161,10 @@ sub doitnow {
 		$state{state}, $states_enum{$state{state}} ) );
   debug_print(4, "dummy-do-it grid with state:\n", Dumper(\%state));
 
+  if ($state{state} eq 'c' or $state{state} eq 'd' or ! $state{state} ) {
+    debug_print(0, "not yet implemented:\n", Dumper(\%state));
+    die("==== unexpected exit ====");
+  }
   
   if ( my_is_false($state{charging})) {
     # debug_print(3, "not charging - ");
