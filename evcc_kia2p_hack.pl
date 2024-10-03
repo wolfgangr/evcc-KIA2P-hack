@@ -180,30 +180,30 @@ sub doitnow {
 
   # - - - - - core state machine  - - - - - - -
   if ($state{state} eq 'f') {
-    if ($state{phAct} == 2) {
+    if ($state{phAct} == 2 or $state{cCur} <= $band_marks{lo_max}) {
       $state{state} = 'l';   
-    } elsif ($state{cCur} >= $band_marks{hi_min}) { 
+    } elsif ($state{phAct} == 3 or $state{cCur} >= $band_marks{hi_min}) { 
       $state{state} = 'h';
     }
 
   } elsif ($state{state} eq 'h') {
-    if ($state{cCur} >= $band_marks{top_m}) {
+    if ($state{phAct} == 3 and $state{cCur} >= $band_marks{top_m}) {
       $state{state} = 'f';
-    } elsif ($state{cCur} < $band_marks{cut_lo}) {
+    } elsif ($state{phAct} == 2 or $state{cCur} < (2/3) * $band_marks{cut_lo}) {
       $state{state} = 'l';
     }
 
 
   } elsif ($state{state} eq 'l') {
-    if ($state{cCur} <= $band_marks{bot_m}) {
+    if ($state{phAct} == 2 and $state{cCur} <= $band_marks{bot_m}) {
       $state{state} = 'f';
-    } elsif ($state{cCur} > $band_marks{cut_hi}) {
+    } elsif ($state{phAct} == 3 or $state{cCur} > (3/2) *  $band_marks{cut_hi}) {
       $state{state} = 'h';
     }
   } 
   # - - - - - - - - - - - - - - - - - - - - - 
 
-  debug_print(3, sprintf(" -> leaving with state [%s] (%s)\n",
+  debug_print(3, sprintf(" ===>>> leaving with state [%s] (%s)\n",
                 $state{state}, $states_enum{$state{state}} ) );
 
   if ($state{state} eq 'c' or $state{state} eq 'd' or ! $state{state} ) {
