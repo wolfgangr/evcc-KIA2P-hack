@@ -138,9 +138,15 @@ sub doitnow {
   }
 
   if ($state{state} eq 'i') {
-    debug_print(3, "idling - reset charge limits \n");
+    if ($state{cCur}) {
+      debug_print(3, "idle -> free" );
+      $state{state} ='f';
+    } else { 
+      debug_print(3, "idling" );
+    }
+    debug_print(3, "- reset charge limits \n");
     set_current_limits('f');
-    return;
+    return;  # ====== return point for free/idle
   }
 }
 
