@@ -92,8 +92,8 @@ $band_marks{cut_hi} = $band_marks{cutoff} + 0.5 * $hyst * $bandgap;
 $band_marks{top_m} = $band_marks{top} - $catchband ;
 $band_marks{bot_m} = $band_marks{bot} + $catchband ;
 
-print Dumper (\%band_marks);
-exit;
+debug_print(4, "\%band_marks:\n" , Dumper (\%band_marks) );
+# exit;
 
 # ==== state variables
 
@@ -149,9 +149,10 @@ $mqtt->run(
   #  parse_statevar ($topic, $message, $varnam) 
 );
 
-debug_print(-1, "OOPS - looks like mqtt listener died - this should not happen \n");
+# debug_print(-1, 
+die ("OOPS - looks like mqtt listener died - this should not happen \n");
 # noop();
-exit;
+# exit;
 
 #======== subs 
 
