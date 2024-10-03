@@ -54,8 +54,8 @@ my $voltage = 230; # for power <=> current, const for now
 # constants:
 my %states_enum = (    # for check and display
   f => 'free',
-  u => 'upper',
-  l => 'lower',
+  h => 'high',
+  l => 'low',
   c => 'climbing',
   d => 'descending',
   i => 'idle' 
@@ -63,14 +63,14 @@ my %states_enum = (    # for check and display
 
 my %states_limits = (    # { lower, upper } current limits
   f => [ 6, 16 ],
-  u => [ 8, 16 ],
+  h => [ 8, 16 ],
   l => [ 6, 7 ]  );
 
 # ===== calculated constants
 my %band_marks = (
   top    => $states_limits{f}->[1],
   # top_m  => '',
-  hi_min => $states_limits{u}->[0],
+  hi_min => $states_limits{h}->[0],
 
   # ctr_up => '',
   # center => '',
@@ -202,7 +202,7 @@ sub doitnow {
   } 
   # - - - - - - - - - - - - - - - - - - - - - 
 
-  debug_print(2, sprintf(" => %s (%s)\n",
+  debug_print(2, sprintf(" => leave: %s (%s)\n",
                 $state{state}, $states_enum{$state{state}} ) );
 
   if ($state{state} eq 'c' or $state{state} eq 'd' or ! $state{state} ) {
@@ -225,8 +225,8 @@ sub set_current_limits {
   # debug_print(99, "try to parse \%states_limits:\n", Dumper(\%states_limits));
   debug_print(2, sprintf( "   ... set current limits to [ %dA ... %dA ] \n", 
 	$states_limits{$mystate}->[0], $states_limits{$mystate}->[1] ));
-  $mqtt->retain( $topic_minCurrent => $states_limits{$mystate}->[0]);
-  $mqtt->retain( $topic_maxCurrent => $states_limits{$mystate}->[1]);
+  $mqtt->retain( $topic_minCurrent . '/set' => $states_limits{$mystate}->[0]);
+  $mqtt->retain( $topic_maxCurrent . '/set' => $states_limits{$mystate}->[1]);
 } 
 
 # dummy callable for mqtt listener
