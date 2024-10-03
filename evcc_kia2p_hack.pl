@@ -48,7 +48,7 @@ my $hyst  =  0.2   ; # hysteresis for trigger rel to cutoff
 my $delay = 120   ; # delay in s 
 my $catchband =  0.8 ; # interval in A that is considered as a hit at the other end of band
 
-my $voltage = 225; # for power <=> current, const for now
+my $voltage = 230; # for power <=> current, const for now
 
 #=== end of local config ==
 
@@ -58,38 +58,32 @@ my %states_enum = (    # for check and display
   u => 'upper',
   l => 'lower',
   c => 'climbing',
-  d => 'descending' 
+  d => 'descending',
+  i => 'idle' 
 	);
 
 my %states_limits = (    # { lower, upper } current limits
-  f => { 6, 16},
-  u => { 8, 16},
-  l => { 6, 7}
+  f => [ 6, 16 ],
+  u => [ 8, 16 ],
+  l => [ 6, 7 ]
         );
 
 # ==== state variables
 
 my %state =(
-  state    => 'f', 
+  state    => 'i', 
   started  =>  0,
   updated  =>  0
 ); 
 
-# my $state = 'f';
-# my $tim_started = 0 ;  # when timer was started
+# keep mqtt messages as state to until complete for processing
+# thou shall not use variable variables in PERL - so lets %hash
+#
+my $topic_updated = $topic_evcc      . "/updated";
+my $topic_cCur    = $topic_loadpoint . "/chargeCurrent";
+my $topic_phAct   = $topic_loadpoint . "/phasesActive";
+my $topic_chrgn   = $topic_loadpoint . "/charging";
 
-# keep mqtt messaes as state to until complete for processing
-# evcc/updated 1727972703
-# my $evcc_updated =0;
-my $topic_updated = $topic_evcc   . "/updated";
-
-# evcc/loadpoints/1/chargeCurrent
-# my $evcc_cCur;
-my $topic_cCur = $topic_loadpoint . "/chargeCurrent";
-
-# evcc/loadpoints/1/phasesActive
-# my $evcc_phAct;
-my $topic_phAct = $topic_loadpoint . "/phasesActive";
 
 my $topic_gridPower = $topic_evcc   . "/site/gridPower";
 my $topic_homePower = $topic_evcc   . "/site/homePower";
@@ -113,54 +107,50 @@ debug_print(1, sprintf("Listening to MQTT server at <%s>, topic <%s> as user <%s
 
 # __main__ MQTT subscription callback handler 
 $mqtt->run(
-  # $topic_chargePower => \&do_kia_hack,
-
   $topic_gridPower   => sub { parse_statevar( @_[0,1], 'gPwr') }, 
   $topic_chargePower => sub { parse_statevar( @_[0,1], 'cPwr') },
   $topic_homePower   => sub { parse_statevar( @_[0,1], 'hPwr') ; doitnow() },
-  $topic_updated     => sub { parse_statevar( @_[0,1], 'updated ') },
+  $topic_updated     => sub { parse_statevar( @_[0,1], 'updated') },
   $topic_cCur        => sub { parse_statevar( @_[0,1], 'cCur') },
   $topic_phAct       => sub { parse_statevar( @_[0,1], 'phAct') },
+  $topic_chrgn       => sub { parse_statevar( @_[0,1], 'charging') },
   $topic_minCurrent  => sub { parse_statevar( @_[0,1], 'minCurrent') },
-  $topic_maxCurrent  => sub { parse_statevar( @_[0,1], 'maxCurrent ') },
+  $topic_maxCurrent  => sub { parse_statevar( @_[0,1], 'maxCurrent') },
 
   $topic_evcc . "/#" => \&parse_default
   # "#" => \&noop,
-
   #  parse_statevar ($topic, $message, $varnam) 
-
 );
 
 debug_print(-1, "OOPS - looks like mqtt listener died - this should not happen \n");
-
-sub doitnow {
-  # debug_print(4, "dummy-do-it grid: [$gPwr] home: [$hPwr] charge: [$cPwr] \n");
-  debug_print(4, "dummy-do-it grid with state:\n", Dumper(\%state));
-}
-
 # noop();
 exit;
 
 #======== subs 
 
-# sub do_kia_hack  {
-#            my ($topic, $message) = @_;
-#            debug_print (2, "doing kia hack with: [$topic] $message\n");
-#           
-#            if ($message > $upperLimit) {
-#               debug_print (3, "kia hack in 'upper' branch\n");
-#               $mqtt->publish( $topic_maxCurrent => "16");
-#               $mqtt->publish( $topic_minCurrent => "8");
-#               # $mqtt->retain( $topic => $pubstr);
-#            } elsif ($message < $lowerLimit) {
-#               debug_print (3, "kia hack in 'lower' branch\n");
-#               $mqtt->publish( $topic_minCurrent => "6");
-#               $mqtt->publish( $topic_maxCurrent => "7");
-#               # $mqtt->retain( $topic => $pubstr);
-#            }
-#
-#        }
+sub doitnow {
+  # debug_print(4, "dummy-do-it grid: [$gPwr] home: [$hPwr] charge: [$cPwr] \n");
+  debug_print(4, "dummy-do-it grid with state:\n", Dumper(\%state));
 
+  if ( my_is_false($state{charging})) {
+    debug_print(3, "not charging - ");
+    $state{state} = 'i';
+  }
+
+  if ($state{state} eq 'i') {
+    debug_print(3, "idling - reset charge limits \n");
+    set_current_limits('f');
+    return;
+  }
+}
+
+
+sub set_current_limits {
+  my ($mystate) = @_;
+  debug_print(99, "try to parse \%states_limits:\n", Dumper(\%states_limits));
+  $mqtt->retain( $topic_minCurrent => $states_limits{$mystate}->[0]);
+  $mqtt->retain( $topic_maxCurrent => $states_limits{$mystate}->[1]);
+} 
 
 
 sub noop {
@@ -189,3 +179,11 @@ sub debug_print {
   print STDERR @_ if ( $level <= $debug) ;
 }
 
+# extends builtins to 'false' 
+sub my_is_false {
+  my $t = shift @_;
+  debug_print (99, "is <$t> false?");
+  return 1 unless $t;
+  return 1 if ($t eq "false");
+  return 0;
+}
