@@ -158,7 +158,7 @@ die ("OOPS - looks like mqtt listener died - this should not happen \n");
 sub doitnow {
   debug_print(99, " -\n #dummy-do-it grid with state:\n", Dumper(\%state));
   my $datetime = strftime("%F - %T", localtime($state{updated}) );
-  debug_print(2, sprintf("%s: enter state machine with state [%s] (%s)", 
+  debug_print(2, sprintf("%s: enter state: %s (%s)", 
 		$datetime, $state{state}, $states_enum{$state{state}} ) );
 
   if ($state{state} eq 'c' or $state{state} eq 'd' or ! $state{state} ) {
@@ -202,7 +202,7 @@ sub doitnow {
   } 
   # - - - - - - - - - - - - - - - - - - - - - 
 
-  debug_print(2, sprintf(" ===>>> leaving with state [%s] (%s)\n",
+  debug_print(2, sprintf(" => %s (%s)\n",
                 $state{state}, $states_enum{$state{state}} ) );
 
   if ($state{state} eq 'c' or $state{state} eq 'd' or ! $state{state} ) {
