@@ -65,8 +65,35 @@ my %states_enum = (    # for check and display
 my %states_limits = (    # { lower, upper } current limits
   f => [ 6, 16 ],
   u => [ 8, 16 ],
-  l => [ 6, 7 ]
-        );
+  l => [ 6, 7 ]  );
+
+# ===== calculated constants
+my %band_marks = (
+  top    => $states_limits{f}->[1],
+  # top_m  => '',
+  hi_min => $states_limits{u}->[0],
+
+  # ctr_up => '',
+  # center => '',
+  # ctr_dn => '',
+
+  lo_max => $states_limits{l}->[1],
+  # bot_m  => '',
+  bot    => $states_limits{f}->[0],
+);
+
+$band_marks{center} = ($band_marks{hi_min} + $band_marks{lo_max}) /2;
+my $bandgap = $band_marks{hi_min} - $band_marks{lo_max} ;
+$band_marks{cutoff} = $band_marks{hi_min} +  $cutoff * $bandgap; 
+# $band_marks{cutoff} = $band_marks{lo_max};
+$band_marks{cut_lo} = $band_marks{cutoff} - 0.5 * $hyst * $bandgap;
+$band_marks{cut_hi} = $band_marks{cutoff} + 0.5 * $hyst * $bandgap;
+
+$band_marks{top_m} = $band_marks{top} - $catchband ;
+$band_marks{bot_m} = $band_marks{bot} + $catchband ;
+
+print Dumper (\%band_marks);
+exit;
 
 # ==== state variables
 
@@ -130,24 +157,55 @@ exit;
 
 sub doitnow {
   # debug_print(4, "dummy-do-it grid: [$gPwr] home: [$hPwr] charge: [$cPwr] \n");
+  debug_print(3, sprintf("enter state machine with state [%s] (%s)", 
+		$state{state}, $states_enum{$state{state}} ) );
   debug_print(4, "dummy-do-it grid with state:\n", Dumper(\%state));
 
+  
   if ( my_is_false($state{charging})) {
-    debug_print(3, "not charging - ");
+    # debug_print(3, "not charging - ");
     $state{state} = 'i';
   }
 
   if ($state{state} eq 'i') {
     if ($state{cCur}) {
-      debug_print(3, "idle -> free" );
       $state{state} ='f';
-    } else { 
-      debug_print(3, "idling" );
-    }
-    debug_print(3, "- reset charge limits \n");
-    set_current_limits('f');
-    return;  # ====== return point for free/idle
+    } 
   }
+
+  if ($state{state} eq 'f') {
+    if ($state{phAct} == 2) {
+      $state{state} = 'l';   
+    } elsif ($state{cCur} >= $band_marks{hi_min}) { 
+      $state{state} = 'h';
+    }
+
+  } elsif ($state{state} eq 'h') {
+    if ($state{cCur} >= $band_marks{top_m}) {
+      $state{state} = 'f';
+    } elsif ($state{cCur} < $band_marks{cut_lo}) {
+      $state{state} = 'l';
+    }
+
+
+  } elsif ($state{state} eq 'l') {
+    if ($state{cCur} <= $band_marks{bot_m}) {
+      $state{state} = 'f';
+    } elsif ($state{cCur} > $band_marks{cut_hi}) {
+      $state{state} = 'h';
+    }
+  }
+
+  debug_print(3, sprintf(" -> state [%s] (%s)\n",
+                $state{state}, $states_enum{$state{state}} ) );
+#==========~~~~~~~~~~~~–-------------------------------------------------
+#  { 
+#      debug_print(3, "idling" );
+#    }
+#    debug_print(3, "- reset charge limits \n");
+#    set_current_limits('f');
+#    return;  # ====== return point for free/idle
+#  }
 }
 
 
