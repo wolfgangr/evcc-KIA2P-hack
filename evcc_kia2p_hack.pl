@@ -91,17 +91,9 @@ my $topic_cCur = $topic_loadpoint . "/chargeCurrent";
 # my $evcc_phAct;
 my $topic_phAct = $topic_loadpoint . "/phasesActive";
 
-# evcc/site/gridPower 3924.7
-# my $gPwr ;
 my $topic_gridPower = $topic_evcc   . "/site/gridPower";
-
-# evcc/site/homePower 4393.7
-# my $hPwr ;
 my $topic_homePower = $topic_evcc   . "/site/homePower";
-
-# my $cPwr ;
 my $topic_chargePower =  $topic_loadpoint . "/chargePower";
-
 
 my $topic_minCurrent  =  $topic_loadpoint . "/minCurrent";
 my $topic_maxCurrent  =  $topic_loadpoint . "/maxCurrent";
@@ -126,9 +118,13 @@ $mqtt->run(
   $topic_gridPower   => sub { parse_statevar( @_[0,1], 'gPwr') }, 
   $topic_chargePower => sub { parse_statevar( @_[0,1], 'cPwr') },
   $topic_homePower   => sub { parse_statevar( @_[0,1], 'hPwr') ; doitnow() },
+  $topic_updated     => sub { parse_statevar( @_[0,1], 'updated ') },
+  $topic_cCur        => sub { parse_statevar( @_[0,1], 'cCur') },
+  $topic_phAct       => sub { parse_statevar( @_[0,1], 'phAct') },
+  $topic_minCurrent  => sub { parse_statevar( @_[0,1], 'minCurrent') },
+  $topic_maxCurrent  => sub { parse_statevar( @_[0,1], 'maxCurrent ') },
 
-
-  $topic_evcc . "/#" => \&parse_default,
+  $topic_evcc . "/#" => \&parse_default
   # "#" => \&noop,
 
   #  parse_statevar ($topic, $message, $varnam) 
