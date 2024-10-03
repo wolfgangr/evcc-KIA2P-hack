@@ -38,8 +38,8 @@ my $topic_evcc = "evcc";
 my $topic_loadpoint   = $topic_evcc   . "/loadpoints/1";
 
 
-my $upperLimit = 4.5 ; # kW - 230 V * 8 A * 3 = 5,5 kW 
-my $lowerLimit = 4 ;   # kW - 230 V * 7 A * 2 = 3,2 kW
+my $upperLimit = 5700; # 4500 ; # kW - 230 V * 8 A * 3 = 5,5 kW 
+my $lowerLimit = 3000; # 4000 ;   # kW - 230 V * 7 A * 2 = 3,2 kW
 
 #=== end of local config ==
 
