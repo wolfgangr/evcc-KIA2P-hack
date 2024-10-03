@@ -160,11 +160,11 @@ sub doitnow {
   # debug_print(4, "dummy-do-it grid: [$gPwr] home: [$hPwr] charge: [$cPwr] \n");
   debug_print(3, sprintf("enter state machine with state [%s] (%s)", 
 		$state{state}, $states_enum{$state{state}} ) );
-  debug_print(4, "dummy-do-it grid with state:\n", Dumper(\%state));
+  debug_print(99, " -\n #dummy-do-it grid with state:\n", Dumper(\%state));
 
   if ($state{state} eq 'c' or $state{state} eq 'd' or ! $state{state} ) {
-    debug_print(0, "not yet implemented:\n", Dumper(\%state));
-    die("==== unexpected exit ====");
+    debug_print(0, "not yet implemented entering state maching:\n", Dumper(\%state));
+    die("==== unexpected exit ===="); # ================ EMERGENCY EXIT ====
   }
   
   if ( my_is_false($state{charging})) {
@@ -178,6 +178,7 @@ sub doitnow {
     } 
   }
 
+  # - - - - - core state machine  - - - - - - -
   if ($state{state} eq 'f') {
     if ($state{phAct} == 2) {
       $state{state} = 'l';   
@@ -199,19 +200,24 @@ sub doitnow {
     } elsif ($state{cCur} > $band_marks{cut_hi}) {
       $state{state} = 'h';
     }
+  } 
+  # - - - - - - - - - - - - - - - - - - - - - 
+
+  debug_print(3, sprintf(" -> leaving with state [%s] (%s)\n",
+                $state{state}, $states_enum{$state{state}} ) );
+
+  if ($state{state} eq 'c' or $state{state} eq 'd' or ! $state{state} ) {
+    debug_print(0, "not yet implemented leaving state maching:\n", Dumper(\%state));
+    die("==== unexpected exit ===="); # ================ EMERGENCY EXIT ====
   }
 
-  debug_print(3, sprintf(" -> state [%s] (%s)\n",
-                $state{state}, $states_enum{$state{state}} ) );
-#==========~~~~~~~~~~~~–-------------------------------------------------
-#  { 
-#      debug_print(3, "idling" );
-#    }
-#    debug_print(3, "- reset charge limits \n");
-#    set_current_limits('f');
-#    return;  # ====== return point for free/idle
-#  }
-}
+
+  if ($state{state} eq 'i') { 
+    set_current_limits('f');
+  } else {
+    set_current_limits($state{state});
+  }
+} # ------------- end of doitnow -------------------------------------------------------------------
 
 
 sub set_current_limits {
@@ -221,7 +227,7 @@ sub set_current_limits {
   $mqtt->retain( $topic_maxCurrent => $states_limits{$mystate}->[1]);
 } 
 
-
+# dummy callable for mqtt listener
 sub noop {
 	debug_print (4, "noop\n");
 }
@@ -235,9 +241,9 @@ sub parse_default  {
 # parse into a variable with given name
 sub parse_statevar {
   my ($topic, $message, $varnam) = @_;
-  debug_print (4, "t=[$topic], m=[$message], v=[$varnam] \n");
+  debug_print (4, "   ... t=[$topic], m=[$message], v=[$varnam] \n");
   $state{$varnam} = $message;
-  debug_print (3, "assigned value [$message] to \$state{$varnam} from topic [$topic] \n");
+  debug_print (3, " - assigned value [$message] to \$state{$varnam} from topic [$topic] \n");
 }
 
 
