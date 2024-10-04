@@ -245,28 +245,31 @@ sub doitnow {
 
 
   # - - - - - core state machine  - - - - - - -
-  if ($state{state} eq 'f') {  # handle state f='free'
-    if ($state{phAct} == 2 or $state{cCur} <= $band_marks{lo_max}) {
+  if ($state{state} eq 'f' or $state{state} eq 'h' or $state{state} eq 'l' ) {  # handle state f='free'
+    # if ($state{phAct} == 2 or $state{cCur} <= $band_marks{lo_max}) {
+    if ( $avgAvail <= $thresholdLO) {
       $state{state} = 'l';   
-    } elsif ($state{phAct} == 3 or $state{cCur} >= $band_marks{hi_min}) { 
+    # } elsif ($state{phAct} == 3 or $state{cCur} >= $band_marks{hi_min}) { 
+    } elsif ( $avgAvail >= $thresholdHI) {
       $state{state} = 'h';
     }
+  }
 
-  } elsif ($state{state} eq 'h') { # handle state h='high'
-    if ($state{phAct} == 3 and $state{cCur} >= $band_marks{top_m}) {
-      $state{state} = 'f';
-    } elsif ($state{phAct} == 2 or $state{cCur} < (2/3) * $band_marks{cut_lo}) {
-      $state{state} = 'l';
-    }
+#   } elsif ($state{state} eq 'h') { # handle state h='high'
+#    if ($state{phAct} == 3 and $state{cCur} >= $band_marks{top_m}) {
+#      $state{state} = 'f';
+#    } elsif ($state{phAct} == 2 or $state{cCur} < (2/3) * $band_marks{cut_lo}) {
+#      $state{state} = 'l';
+#    }
 
 
-  } elsif ($state{state} eq 'l') { # handle state l='low'
-    if ($state{phAct} == 2 and $state{cCur} <= $band_marks{bot_m}) {
-      $state{state} = 'f';
-    } elsif ($state{phAct} == 3 or $state{cCur} > (3/2) *  $band_marks{cut_hi}) {
-      $state{state} = 'h';
-    }
-  } 
+#  } elsif ($state{state} eq 'l') { # handle state l='low'
+#    if ($state{phAct} == 2 and $state{cCur} <= $band_marks{bot_m}) {
+#      $state{state} = 'f';
+#    } elsif ($state{phAct} == 3 or $state{cCur} > (3/2) *  $band_marks{cut_hi}) {
+#      $state{state} = 'h';
+#    }
+#  } 
   # - - - - - - - - - - - - - - - - - - - - - 
 
   debug_print(2, sprintf(" => leave: %s (%s)\n",
