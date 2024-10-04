@@ -58,7 +58,8 @@ my %states_enum = (    # for check and display
   l => 'low',
   c => 'climbing',
   d => 'descending',
-  i => 'idle' 
+  i => 'idle',
+  m => 'not in PV mode'
 	);
 
 my %states_limits = (    # { lower, upper } current limits
@@ -99,13 +100,17 @@ debug_print(4, "\%band_marks:\n" , Dumper (\%band_marks) );
 my %state =(
   state    => 'i', 
   started  =>  0,
-  updated  =>  0
+  updated  =>  0,
+  min_saved => 0,
+  max_saved => 0,
 ); 
 
 # keep mqtt messages as state to until complete for processing
 # thou shall not use variable variables in PERL - so lets %hash
 #
 my $topic_updated = $topic_evcc      . "/updated";
+my $topic_mode    = $topic_loadpoint . "/mode";
+
 my $topic_cCur    = $topic_loadpoint . "/chargeCurrent";
 my $topic_phAct   = $topic_loadpoint . "/phasesActive";
 my $topic_chrgn   = $topic_loadpoint . "/charging";
@@ -137,6 +142,7 @@ $mqtt->run(
   $topic_chargePower => sub { parse_statevar( @_[0,1], 'cPwr') },
   $topic_homePower   => sub { parse_statevar( @_[0,1], 'hPwr') ; doitnow() },
   $topic_updated     => sub { parse_statevar( @_[0,1], 'updated') },
+  $topic_mode        => sub { parse_statevar( @_[0,1], 'mode') },
   $topic_cCur        => sub { parse_statevar( @_[0,1], 'cCur') },
   $topic_phAct       => sub { parse_statevar( @_[0,1], 'phAct') },
   $topic_chrgn       => sub { parse_statevar( @_[0,1], 'charging') },
@@ -177,15 +183,38 @@ sub doitnow {
     } 
   }
 
+  # - - - - - PV mode on/off - - - - -
+  if ( $state{mode} ne 'pv'  ) { 
+    if ($state{state} eq 'n') {
+      debug_print(4,"stay in mode other than PV\n"); 
+      return;
+    } elsif ($state{state} eq 'i') { # transition ....
+      debug_print(2, "i -> n, restoring limits\n");
+      # TODO restore limits
+      $state{state} = 'n';
+      return;
+    } else {  # leave mode over state i
+      debug_print(2, "left PV mode, switch to 'i'\n");
+      $state{state} = 'i';
+    }
+  }
+
+  if ($state{state} eq 'n') {
+    debug_print(2,"n -> entering PV mode, save limits, switch to 'i'\n");
+    # TODO safe limits
+    $state{state} = 'i';
+
+  }
+
   # - - - - - core state machine  - - - - - - -
-  if ($state{state} eq 'f') {
+  if ($state{state} eq 'f') {  # handle state f='free'
     if ($state{phAct} == 2 or $state{cCur} <= $band_marks{lo_max}) {
       $state{state} = 'l';   
     } elsif ($state{phAct} == 3 or $state{cCur} >= $band_marks{hi_min}) { 
       $state{state} = 'h';
     }
 
-  } elsif ($state{state} eq 'h') {
+  } elsif ($state{state} eq 'h') { # handle state h='high'
     if ($state{phAct} == 3 and $state{cCur} >= $band_marks{top_m}) {
       $state{state} = 'f';
     } elsif ($state{phAct} == 2 or $state{cCur} < (2/3) * $band_marks{cut_lo}) {
@@ -193,7 +222,7 @@ sub doitnow {
     }
 
 
-  } elsif ($state{state} eq 'l') {
+  } elsif ($state{state} eq 'l') { # handle state l='low'
     if ($state{phAct} == 2 and $state{cCur} <= $band_marks{bot_m}) {
       $state{state} = 'f';
     } elsif ($state{phAct} == 3 or $state{cCur} > (3/2) *  $band_marks{cut_hi}) {
