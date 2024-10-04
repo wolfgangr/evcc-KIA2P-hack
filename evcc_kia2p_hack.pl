@@ -28,7 +28,7 @@ use POSIX qw(strftime);	# time string formatting
 # debug levels ~~~~
 # 5 = local testing, 4 = early context testing , 3 = early running tests, 
 #    2 = operation test, 1 = operation running in beta, 0 = stable
-my $debug = 4;
+my $debug = 3;
 
 my $mqtt_server = "homeserver.rosner.lokal";
 my $mqtt_user   = "evcc_kia";
@@ -186,11 +186,11 @@ sub doitnow {
  
   # calc moving average of available PV for charging
   my $PVchgPwrAvail = $state{cPwr} - $state{gPwr} - $state{battPwr};
-  debug_print(3, sprintf(" available = %d (cPwr %d - gPwr %d - battPwr %d\n",
+  debug_print(3, sprintf("\n available = %d W (cPwr(= %dW) - gPwr(= %dW) - battPwr(= %dW)",
 	$PVchgPwrAvail, $state{cPwr} , $state{gPwr} , $state{battPwr} ) ); 
 
   $avgAvail =  (1 - $avgAlpha ) * $avgAvail + $avgAlpha * $PVchgPwrAvail;
-  debug_print(3, sprintf("    new moving average: %d\n", $avgAvail ) );
+  debug_print(3, sprintf(" - new moving average: %d W\n", $avgAvail ) );
 
   # - - - - - start state machine - - - - - - -
   if ( my_is_false($state{charging})) {
@@ -315,7 +315,7 @@ sub parse_statevar {
   my ($topic, $message, $varnam) = @_;
   debug_print (5, "   ... t=[$topic], m=[$message], v=[$varnam] \n");
   $state{$varnam} = $message;
-  debug_print (3, " - assigned value [$message] to \$state{$varnam} from topic [$topic] \n");
+  debug_print (4, " - assigned value [$message] to \$state{$varnam} from topic [$topic] \n");
 }
 
 
