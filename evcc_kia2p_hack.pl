@@ -101,8 +101,9 @@ my %state =(
   state    => 'i', 
   started  =>  0,
   updated  =>  0,
-  min_saved => 0,
-  max_saved => 0
+  min_saved => 6,
+  max_saved => 16,
+  mode      => 'undefined',
 ); 
 
 # keep mqtt messages as state to until complete for processing
@@ -177,14 +178,15 @@ sub doitnow {
     $state{state} = 'i';
   }
 
-  if ($state{state} eq 'i') {
-    if ($state{cCur}) {
-      $state{state} ='f';
-    } 
-  }
+#  # TODO -das muß runter
+#  if ($state{state} eq 'i') {
+#    if ($state{cCur}) {
+#      $state{state} ='f';
+#    } 
+#  }
 
   # - - - - - PV mode on/off - - - - -
-  if ( $state{mode} ne 'pv'  ) { 
+  if ( $state{mode} ne 'pv' and $state{mode} ne 'minpv'  ) { 
     if ($state{state} eq 'n') {
       debug_print(4,"stay in mode other than PV\n"); 
       return;
@@ -212,6 +214,15 @@ sub doitnow {
     $state{state} = 'i';
 
   }
+
+  
+  # TODO -das muß runter
+  if ($state{state} eq 'i') {
+    if ($state{cCur}) {
+      $state{state} ='f';
+    }
+  }
+
 
   # - - - - - core state machine  - - - - - - -
   if ($state{state} eq 'f') {  # handle state f='free'
