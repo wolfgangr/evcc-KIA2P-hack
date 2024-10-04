@@ -42,10 +42,16 @@ my $topic_loadpoint   = $topic_evcc   . "/loadpoints/1";
 # my $upperLimit = 5700; # 4500 ; # kW - 230 V * 8 A * 3 = 5,5 kW 
 # my $lowerLimit = 3000; # 4000 ;   # kW - 230 V * 7 A * 2 = 3,2 kW
 
-my $cutoff = 0.5 ; # mid of the limit relative to forbidden band
-my $hyst  =  0.2   ; # hysteresis for trigger rel to cutoff
-my $delay = 120   ; # delay in s 
-my $catchband =  0.8 ; # interval in A that is considered as a hit at the other end of band
+# my $cutoff = 0.5 ; # mid of the limit relative to forbidden band
+# my $hyst  =  0.2   ; # hysteresis for trigger rel to cutoff
+# my $delay = 120   ; # delay in s 
+# my $catchband =  0.8 ; # interval in A that is considered as a hit at the other end of band
+
+my $avgAvailStart = 0 ;    # start value to calc moving average
+my $avgAlpha = 0.1  ; # see https://en.wikipedia.org/wiki/Exponential_smoothing#Time_constant
+	# time contant ~ 5min
+my $thresholdHI = 5000; # W to switch to 3P-Mode above
+my $thresholdHI = 4000; # W to switch to 2P-Mode below
 
 my $voltage = 230; # for power <=> current, const for now
 
@@ -56,8 +62,8 @@ my %states_enum = (    # for check and display
   f => 'free',
   h => 'high',
   l => 'low',
-  c => 'climbing',
-  d => 'descending',
+#  c => 'climbing',
+#  d => 'descending',
   i => 'idle',
   n => 'not in PV mode'
 	);
@@ -119,6 +125,8 @@ my $topic_chrgn   = $topic_loadpoint . "/charging";
 
 my $topic_gridPower = $topic_evcc   . "/site/gridPower";
 my $topic_homePower = $topic_evcc   . "/site/homePower";
+my $topic_battPower = $topic_evcc   . "/site/batteryPower";
+
 my $topic_chargePower =  $topic_loadpoint . "/chargePower";
 
 my $topic_minCurrent  =  $topic_loadpoint . "/minCurrent";
@@ -142,6 +150,7 @@ $mqtt->run(
   $topic_gridPower   => sub { parse_statevar( @_[0,1], 'gPwr') }, 
   $topic_chargePower => sub { parse_statevar( @_[0,1], 'cPwr') },
   $topic_homePower   => sub { parse_statevar( @_[0,1], 'hPwr') ; doitnow() },
+  $topic_battPower   => sub { parse_statevar( @_[0,1], 'battPwr') },
   $topic_updated     => sub { parse_statevar( @_[0,1], 'updated') },
   $topic_mode        => sub { parse_statevar( @_[0,1], 'mode') },
   $topic_cCur        => sub { parse_statevar( @_[0,1], 'cCur') },
@@ -162,6 +171,8 @@ die ("OOPS - looks like mqtt listener died - this should not happen \n");
 
 #======== subs 
 
+my $avgAvail = $avgAvailStart;
+
 sub doitnow {
   debug_print(4, " -\n #dummy-do-it grid with state:\n", Dumper(\%state));
   my $datetime = strftime("%F - %T", localtime($state{updated}) );
@@ -172,7 +183,16 @@ sub doitnow {
     debug_print(0, "not yet implemented entering state maching:\n", Dumper(\%state));
     die("==== unexpected exit ===="); # ================ EMERGENCY EXIT ====
   }
-  
+ 
+  # calc moving average of available PV for charging
+  my $PVchgPwrAvail = $state{cPwr} - $state{gPwr} - $state{battPwr};
+  debug_print(3, sprintf(" available = %d (cPwr %d - gPwr %d - battPwr %d\n",
+	$PVchgPwrAvail, $state{cPwr} , $state{gPwr} , $state{battPwr} ) ); 
+
+  $avgAvail =  (1 - $avgAlpha ) * $avgAvail + $avgAlpha * $PVchgPwrAvail;
+  debug_print(3, sprintf("    new moving average: %d\n", $avgAvail ) );
+
+  # - - - - - start state machine - - - - - - -
   if ( my_is_false($state{charging})) {
     # debug_print(3, "not charging - ");
     $state{state} = 'i';
