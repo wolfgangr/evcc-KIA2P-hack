@@ -51,7 +51,7 @@ my $avgAvailStart = 0 ;    # start value to calc moving average
 my $avgAlpha = 0.1  ; # see https://en.wikipedia.org/wiki/Exponential_smoothing#Time_constant
 	# time contant ~ 5min
 my $thresholdHI = 5000; # W to switch to 3P-Mode above
-my $thresholdHI = 4000; # W to switch to 2P-Mode below
+my $thresholdLO = 4000; # W to switch to 2P-Mode below
 
 my $voltage = 230; # for power <=> current, const for now
 
@@ -74,31 +74,31 @@ my %states_limits = (    # { lower, upper } current limits
   l => [ 6, 7 ]  );
 
 # ===== calculated constants
-my %band_marks = (
-  top    => $states_limits{f}->[1],
-  # top_m  => '',
-  hi_min => $states_limits{h}->[0],
+# my %band_marks = (
+#   top    => $states_limits{f}->[1],
+#   # top_m  => '',
+#   hi_min => $states_limits{h}->[0],
+# 
+#   # ctr_up => '',
+#   # center => '',
+#   # ctr_dn => '',
+# 
+#   lo_max => $states_limits{l}->[1],
+#   # bot_m  => '',
+#   bot    => $states_limits{f}->[0],
+# );
 
-  # ctr_up => '',
-  # center => '',
-  # ctr_dn => '',
+# $band_marks{center} = ($band_marks{hi_min} + $band_marks{lo_max}) /2;
+# my $bandgap = $band_marks{hi_min} - $band_marks{lo_max} ;
+# $band_marks{cutoff} = $band_marks{hi_min} +  $cutoff * $bandgap; 
+# # $band_marks{cutoff} = $band_marks{lo_max};
+# $band_marks{cut_lo} = $band_marks{cutoff} - 0.5 * $hyst * $bandgap;
+# $band_marks{cut_hi} = $band_marks{cutoff} + 0.5 * $hyst * $bandgap;
 
-  lo_max => $states_limits{l}->[1],
-  # bot_m  => '',
-  bot    => $states_limits{f}->[0],
-);
+# $band_marks{top_m} = $band_marks{top} - $catchband ;
+# $band_marks{bot_m} = $band_marks{bot} + $catchband ;
 
-$band_marks{center} = ($band_marks{hi_min} + $band_marks{lo_max}) /2;
-my $bandgap = $band_marks{hi_min} - $band_marks{lo_max} ;
-$band_marks{cutoff} = $band_marks{hi_min} +  $cutoff * $bandgap; 
-# $band_marks{cutoff} = $band_marks{lo_max};
-$band_marks{cut_lo} = $band_marks{cutoff} - 0.5 * $hyst * $bandgap;
-$band_marks{cut_hi} = $band_marks{cutoff} + 0.5 * $hyst * $bandgap;
-
-$band_marks{top_m} = $band_marks{top} - $catchband ;
-$band_marks{bot_m} = $band_marks{bot} + $catchband ;
-
-debug_print(4, "\%band_marks:\n" , Dumper (\%band_marks) );
+# debug_print(4, "\%band_marks:\n" , Dumper (\%band_marks) );
 # exit;
 
 # ==== state variables
