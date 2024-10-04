@@ -28,7 +28,7 @@ use POSIX qw(strftime);	# time string formatting
 # debug levels ~~~~
 # 5 = local testing, 4 = early context testing , 3 = early running tests, 
 #    2 = operation test, 1 = operation running in beta, 0 = stable
-my $debug = 2;
+my $debug = 4;
 
 my $mqtt_server = "homeserver.rosner.lokal";
 my $mqtt_user   = "evcc_kia";
@@ -59,7 +59,7 @@ my %states_enum = (    # for check and display
   c => 'climbing',
   d => 'descending',
   i => 'idle',
-  m => 'not in PV mode'
+  n => 'not in PV mode'
 	);
 
 my %states_limits = (    # { lower, upper } current limits
@@ -102,7 +102,7 @@ my %state =(
   started  =>  0,
   updated  =>  0,
   min_saved => 0,
-  max_saved => 0,
+  max_saved => 0
 ); 
 
 # keep mqtt messages as state to until complete for processing
@@ -162,7 +162,7 @@ die ("OOPS - looks like mqtt listener died - this should not happen \n");
 #======== subs 
 
 sub doitnow {
-  debug_print(99, " -\n #dummy-do-it grid with state:\n", Dumper(\%state));
+  debug_print(4, " -\n #dummy-do-it grid with state:\n", Dumper(\%state));
   my $datetime = strftime("%F - %T", localtime($state{updated}) );
   debug_print(2, sprintf("%s: enter state: %s (%s)", 
 		$datetime, $state{state}, $states_enum{$state{state}} ) );
@@ -190,10 +190,13 @@ sub doitnow {
       return;
     } elsif ($state{state} eq 'i') { # transition ....
       debug_print(2, "i -> n, restoring limits\n");
-      # TODO restore limits
+      # TODO restore limits - OK?
+      # set_current_limits('n');
+      $mqtt->retain( $topic_minCurrent . '/set' => $state{min_saved}  ) ;
+      $mqtt->retain( $topic_maxCurrent . '/set' => $state{max_saved}  ) ;
       $state{state} = 'n';
       return;
-    } else {  # leave mode over state i
+    } else {  # leave mode over state i 
       debug_print(2, "left PV mode, switch to 'i'\n");
       $state{state} = 'i';
     }
@@ -201,7 +204,11 @@ sub doitnow {
 
   if ($state{state} eq 'n') {
     debug_print(2,"n -> entering PV mode, save limits, switch to 'i'\n");
-    # TODO safe limits
+    # TODO safe limits - OK?
+    # $states_limits{n}= [ $state{minCurrent}, $state{maxCurrent}  ];
+    $state{min_saved} = $state{minCurrent};
+    $state{max_saved} = $state{maxCurrent};
+    debug_print(4, "  - saved - \%state:\n", Dumper(\%state));
     $state{state} = 'i';
 
   }
@@ -266,13 +273,13 @@ sub noop {
 # for debug: we may parse other messages
 sub parse_default  {
             my ($topic, $message) = @_;
-            debug_print (4, "[$topic] $message\n");
+            debug_print (5, "[$topic] $message\n");
         }
 
 # parse into a variable with given name
 sub parse_statevar {
   my ($topic, $message, $varnam) = @_;
-  debug_print (4, "   ... t=[$topic], m=[$message], v=[$varnam] \n");
+  debug_print (5, "   ... t=[$topic], m=[$message], v=[$varnam] \n");
   $state{$varnam} = $message;
   debug_print (3, " - assigned value [$message] to \$state{$varnam} from topic [$topic] \n");
 }
