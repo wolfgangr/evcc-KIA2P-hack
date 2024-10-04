@@ -45,7 +45,7 @@ my $avgAlpha = 0.1  ; # see https://en.wikipedia.org/wiki/Exponential_smoothing#
 my $thresholdHI = 5000; # W to switch to 3P-Mode above
 my $thresholdLO = 4000; # W to switch to 2P-Mode below
 
-my $voltage = 230; # for power <=> current, const for now
+# my $voltage = 230; # for power <=> current, const for now
 
 #=== end of local config ==
 
@@ -68,8 +68,8 @@ my %states_limits = (    # { lower, upper } current limits
 
 my %state =(
   state    => 'i', 
-  started  =>  0,
-  updated  =>  0,
+  # started  =>  0,
+  # updated  =>  0,
   min_saved => 6,
   max_saved => 16,
   mode      => 'undefined',
@@ -140,7 +140,8 @@ sub doitnow {
   debug_print(2, sprintf("%s: enter state: %s (%s)", 
 		$datetime, $state{state}, $states_enum{$state{state}} ) );
 
-  if ($state{state} eq 'c' or $state{state} eq 'd' or ! $state{state} ) {
+  # if ($state{state} eq 'c' or $state{state} eq 'd' or ! $state{state} ) {
+  unless (defined $state{state} and $state{state} ) {
     debug_print(0, "not yet implemented entering state maching:\n", Dumper(\%state));
     die("==== unexpected exit ===="); # ================ EMERGENCY EXIT ====
   }
@@ -191,11 +192,11 @@ sub doitnow {
   # do we still need this? - not sure.... 
   # transition i -> f -> h/l
   # idea was to allow charger / car to choose where we start?
-  if ($state{state} eq 'i') {
-    if ($state{cCur}) {
-      $state{state} ='f';
-    }
-  }
+#  if ($state{state} eq 'i') {
+#    if ($state{cCur}) {
+#      $state{state} ='f';
+#    }
+#  }
 
 
   # - - - - - core state machine  - - - - - - -
@@ -207,6 +208,15 @@ sub doitnow {
     }
   }
   # - - - - - - - - - - - - - - - - - - - - - 
+
+  # do we still need this? - not sure.... 
+  # transition i -> f -> h/l
+  # idea was to allow charger / car to choose where we start?
+  if ($state{state} eq 'i') {
+    if ($state{cCur}) {
+      $state{state} ='f';
+    }
+  }
 
   debug_print(2, sprintf(" => leave: %s (%s)\n",
                 $state{state}, $states_enum{$state{state}} ) );
