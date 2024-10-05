@@ -1,0 +1,1473 @@
+Oct 05 11:00:19 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:00:19 ----
+Oct 05 11:00:19 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:00:19 charge power: 3024W
+Oct 05 11:00:19 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:00:19 charge currents: [0.6 6.4 6.2]A
+Oct 05 11:00:20 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:00:20 pv power: 5048W
+Oct 05 11:00:20 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:00:20 battery soc: 0%
+Oct 05 11:00:20 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:00:20 battery power: -1W
+Oct 05 11:00:20 homeserver evcc[3439618]: [script] DEBUG 2024/10/05 11:00:20 /bin/bash -c cat /dev/shm/smaemd/data/em-3006136413-pconsume: 0.0000
+Oct 05 11:00:20 homeserver evcc[3439618]: [script] DEBUG 2024/10/05 11:00:20 /bin/bash -c cat /dev/shm/smaemd/data/em-3006136413-psupply: 382.9000
+Oct 05 11:00:20 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:00:20 grid meter: -383W
+Oct 05 11:00:20 homeserver evcc[3439618]: [script] DEBUG 2024/10/05 11:00:20 /bin/bash -c cat /dev/shm/smaemd/data/em-3006136413-pconsumecounter: 50927.0381
+Oct 05 11:00:20 homeserver evcc[3439618]: [script] DEBUG 2024/10/05 11:00:20 /bin/bash -c cat /dev/shm/smaemd/data/em-3006136413-psupplycounter: 116277.3763
+Oct 05 11:00:20 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:00:20 site power: -284W
+Oct 05 11:00:20 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:00:20 set min current: 6
+Oct 05 11:00:20 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:00:20 set max current: 7
+Oct 05 11:00:20 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:00:20 charge voltages: [227 226 225]V
+Oct 05 11:00:20 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:00:20 detected connected phases: 3p
+Oct 05 11:00:20 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:00:20 detected active phases: 2p
+Oct 05 11:00:20 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:00:20 charge total import: 131.817kWh
+Oct 05 11:00:20 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:00:20 charger status: C
+Oct 05 11:00:21 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:00:21 pv charge current: 7.19A = 6.57A + 0.617A (-284W @ 2p)
+Oct 05 11:00:21 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:00:21 max charge current: 7A
+Oct 05 11:00:49 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:00:49 ----
+Oct 05 11:00:49 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:00:49 charge power: 3200W
+Oct 05 11:00:49 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:00:49 charge currents: [0.6 6.8 6.6]A
+Oct 05 11:00:50 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:00:50 pv power: 5044W
+Oct 05 11:00:50 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:00:50 battery soc: 0%
+Oct 05 11:00:50 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:00:50 battery power: -1W
+Oct 05 11:00:50 homeserver evcc[3439618]: [script] DEBUG 2024/10/05 11:00:50 /bin/bash -c cat /dev/shm/smaemd/data/em-3006136413-pconsume: 1897.1000
+Oct 05 11:00:50 homeserver evcc[3439618]: [script] DEBUG 2024/10/05 11:00:50 /bin/bash -c cat /dev/shm/smaemd/data/em-3006136413-psupply: 0.0000
+Oct 05 11:00:50 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:00:50 grid meter: 1897W
+Oct 05 11:00:50 homeserver evcc[3439618]: [script] DEBUG 2024/10/05 11:00:50 /bin/bash -c cat /dev/shm/smaemd/data/em-3006136413-pconsumecounter: 50927.0411
+Oct 05 11:00:50 homeserver evcc[3439618]: [script] DEBUG 2024/10/05 11:00:50 /bin/bash -c cat /dev/shm/smaemd/data/em-3006136413-psupplycounter: 116277.3763
+Oct 05 11:00:50 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:00:50 site power: 1996W
+Oct 05 11:00:50 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:00:50 set min current: 6
+Oct 05 11:00:50 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:00:50 set max current: 7
+Oct 05 11:00:50 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:00:50 charge voltages: [227 226 224]V
+Oct 05 11:00:50 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:00:50 detected connected phases: 3p
+Oct 05 11:00:50 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:00:50 detected active phases: 2p
+Oct 05 11:00:50 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:00:50 charge total import: 131.842kWh
+Oct 05 11:00:51 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:00:51 charger status: C
+Oct 05 11:00:51 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:00:51 pv charge current: 2.66A = 7A + -4.34A (1996W @ 2p)
+Oct 05 11:00:51 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:00:51 max charge current: 6A
+Oct 05 11:01:19 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:01:19 ----
+Oct 05 11:01:19 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:01:19 charge power: 2793W
+Oct 05 11:01:19 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:01:19 charge currents: [0.6 5.8 5.7]A
+Oct 05 11:01:20 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:01:20 pv power: 5018W
+Oct 05 11:01:20 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:01:20 battery soc: 0%
+Oct 05 11:01:20 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:01:20 battery power: -1W
+Oct 05 11:01:20 homeserver evcc[3439618]: [script] DEBUG 2024/10/05 11:01:20 /bin/bash -c cat /dev/shm/smaemd/data/em-3006136413-pconsume: 1386.2000
+Oct 05 11:01:20 homeserver evcc[3439618]: [script] DEBUG 2024/10/05 11:01:20 /bin/bash -c cat /dev/shm/smaemd/data/em-3006136413-psupply: 0.0000
+Oct 05 11:01:20 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:01:20 grid meter: 1386W
+Oct 05 11:01:20 homeserver evcc[3439618]: [script] DEBUG 2024/10/05 11:01:20 /bin/bash -c cat /dev/shm/smaemd/data/em-3006136413-pconsumecounter: 50927.0540
+Oct 05 11:01:20 homeserver evcc[3439618]: [script] DEBUG 2024/10/05 11:01:20 /bin/bash -c cat /dev/shm/smaemd/data/em-3006136413-psupplycounter: 116277.3763
+Oct 05 11:01:20 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:01:20 site power: 1485W
+Oct 05 11:01:20 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:01:20 set min current: 6
+Oct 05 11:01:20 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:01:20 set max current: 7
+Oct 05 11:01:20 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:01:20 charge voltages: [227 226 225]V
+Oct 05 11:01:20 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:01:20 detected connected phases: 3p
+Oct 05 11:01:20 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:01:20 detected active phases: 2p
+Oct 05 11:01:20 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:01:20 charge total import: 131.867kWh
+Oct 05 11:01:21 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:01:21 charger status: C
+Oct 05 11:01:21 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:01:21 pv charge current: 2.77A = 6A + -3.23A (1485W @ 2p)
+Oct 05 11:01:49 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:01:49 ----
+Oct 05 11:01:49 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:01:49 charge power: 2783W
+Oct 05 11:01:49 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:01:49 charge currents: [0.6 5.9 5.7]A
+Oct 05 11:01:50 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:01:50 pv power: 4970W
+Oct 05 11:01:50 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:01:50 battery soc: 0%
+Oct 05 11:01:50 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:01:50 battery power: -1W
+Oct 05 11:01:50 homeserver evcc[3439618]: [script] DEBUG 2024/10/05 11:01:50 /bin/bash -c cat /dev/shm/smaemd/data/em-3006136413-pconsume: 1740.0000
+Oct 05 11:01:50 homeserver evcc[3439618]: [script] DEBUG 2024/10/05 11:01:50 /bin/bash -c cat /dev/shm/smaemd/data/em-3006136413-psupply: 0.0000
+Oct 05 11:01:50 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:01:50 grid meter: 1740W
+Oct 05 11:01:50 homeserver evcc[3439618]: [script] DEBUG 2024/10/05 11:01:50 /bin/bash -c cat /dev/shm/smaemd/data/em-3006136413-pconsumecounter: 50927.0675
+Oct 05 11:01:50 homeserver evcc[3439618]: [script] DEBUG 2024/10/05 11:01:50 /bin/bash -c cat /dev/shm/smaemd/data/em-3006136413-psupplycounter: 116277.3763
+Oct 05 11:01:50 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:01:50 site power: 1839W
+Oct 05 11:01:50 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:01:50 set min current: 6
+Oct 05 11:01:50 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:01:50 set max current: 7
+Oct 05 11:01:50 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:01:50 charge voltages: [227 226 225]V
+Oct 05 11:01:50 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:01:50 detected connected phases: 3p
+Oct 05 11:01:50 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:01:50 detected active phases: 2p
+Oct 05 11:01:50 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:01:50 charge total import: 131.890kWh
+Oct 05 11:01:51 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:01:51 charger status: C
+Oct 05 11:01:51 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:01:51 pv charge current: 2A = 6A + -4A (1839W @ 2p)
+Oct 05 11:02:19 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:02:19 ----
+Oct 05 11:02:19 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:02:19 charge power: 2796W
+Oct 05 11:02:19 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:02:19 charge currents: [0.6 5.9 5.7]A
+Oct 05 11:02:20 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:02:20 pv power: 4882W
+Oct 05 11:02:20 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:02:20 battery soc: 0%
+Oct 05 11:02:20 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:02:20 battery power: -1W
+Oct 05 11:02:20 homeserver evcc[3439618]: [script] DEBUG 2024/10/05 11:02:20 /bin/bash -c cat /dev/shm/smaemd/data/em-3006136413-pconsume: 1572.4000
+Oct 05 11:02:20 homeserver evcc[3439618]: [script] DEBUG 2024/10/05 11:02:20 /bin/bash -c cat /dev/shm/smaemd/data/em-3006136413-psupply: 0.0000
+Oct 05 11:02:20 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:02:20 grid meter: 1572W
+Oct 05 11:02:20 homeserver evcc[3439618]: [script] DEBUG 2024/10/05 11:02:20 /bin/bash -c cat /dev/shm/smaemd/data/em-3006136413-pconsumecounter: 50927.0817
+Oct 05 11:02:20 homeserver evcc[3439618]: [script] DEBUG 2024/10/05 11:02:20 /bin/bash -c cat /dev/shm/smaemd/data/em-3006136413-psupplycounter: 116277.3763
+Oct 05 11:02:20 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:02:20 site power: 1671W
+Oct 05 11:02:20 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:02:20 set min current: 6
+Oct 05 11:02:20 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:02:20 set max current: 7
+Oct 05 11:02:20 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:02:20 charge voltages: [227 226 225]V
+Oct 05 11:02:20 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:02:20 detected connected phases: 3p
+Oct 05 11:02:20 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:02:20 detected active phases: 2p
+Oct 05 11:02:20 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:02:20 charge total import: 131.913kWh
+Oct 05 11:02:20 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:02:20 charger status: C
+Oct 05 11:02:21 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:02:21 pv charge current: 2.37A = 6A + -3.63A (1671W @ 2p)
+Oct 05 11:02:49 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:02:49 ----
+Oct 05 11:02:49 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:02:49 charge power: 2818W
+Oct 05 11:02:49 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:02:49 charge currents: [0.7 5.9 5.6]A
+Oct 05 11:02:50 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:02:50 pv power: 4754W
+Oct 05 11:02:50 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:02:50 battery soc: 0%
+Oct 05 11:02:50 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:02:50 battery power: -1W
+Oct 05 11:02:50 homeserver evcc[3439618]: [script] DEBUG 2024/10/05 11:02:50 /bin/bash -c cat /dev/shm/smaemd/data/em-3006136413-pconsume: 1462.6000
+Oct 05 11:02:50 homeserver evcc[3439618]: [script] DEBUG 2024/10/05 11:02:50 /bin/bash -c cat /dev/shm/smaemd/data/em-3006136413-psupply: 0.0000
+Oct 05 11:02:50 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:02:50 grid meter: 1463W
+Oct 05 11:02:50 homeserver evcc[3439618]: [script] DEBUG 2024/10/05 11:02:50 /bin/bash -c cat /dev/shm/smaemd/data/em-3006136413-pconsumecounter: 50927.0935
+Oct 05 11:02:50 homeserver evcc[3439618]: [script] DEBUG 2024/10/05 11:02:50 /bin/bash -c cat /dev/shm/smaemd/data/em-3006136413-psupplycounter: 116277.3763
+Oct 05 11:02:50 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:02:50 site power: 1562W
+Oct 05 11:02:50 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:02:50 set min current: 6
+Oct 05 11:02:50 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:02:50 set max current: 7
+Oct 05 11:02:50 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:02:50 charge voltages: [227 226 225]V
+Oct 05 11:02:50 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:02:50 detected connected phases: 3p
+Oct 05 11:02:50 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:02:50 detected active phases: 2p
+Oct 05 11:02:50 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:02:50 charge total import: 131.937kWh
+Oct 05 11:02:50 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:02:50 charger status: C
+Oct 05 11:02:51 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:02:51 pv charge current: 2.61A = 6A + -3.39A (1562W @ 2p)
+Oct 05 11:03:19 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:03:19 ----
+Oct 05 11:03:19 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:03:19 charge power: 2794W
+Oct 05 11:03:19 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:03:19 charge currents: [0.6 6 5.7]A
+Oct 05 11:03:20 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:03:20 pv power: 4668W
+Oct 05 11:03:20 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:03:20 battery soc: 0%
+Oct 05 11:03:20 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:03:20 battery power: -1W
+Oct 05 11:03:20 homeserver evcc[3439618]: [script] DEBUG 2024/10/05 11:03:20 /bin/bash -c cat /dev/shm/smaemd/data/em-3006136413-pconsume: 1579.9000
+Oct 05 11:03:20 homeserver evcc[3439618]: [script] DEBUG 2024/10/05 11:03:20 /bin/bash -c cat /dev/shm/smaemd/data/em-3006136413-psupply: 0.0000
+Oct 05 11:03:20 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:03:20 grid meter: 1580W
+Oct 05 11:03:20 homeserver evcc[3439618]: [script] DEBUG 2024/10/05 11:03:20 /bin/bash -c cat /dev/shm/smaemd/data/em-3006136413-pconsumecounter: 50927.1051
+Oct 05 11:03:20 homeserver evcc[3439618]: [script] DEBUG 2024/10/05 11:03:20 /bin/bash -c cat /dev/shm/smaemd/data/em-3006136413-psupplycounter: 116277.3763
+Oct 05 11:03:20 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:03:20 site power: 1679W
+Oct 05 11:03:20 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:03:20 set min current: 6
+Oct 05 11:03:20 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:03:20 set max current: 7
+Oct 05 11:03:20 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:03:20 charge voltages: [227 226 225]V
+Oct 05 11:03:20 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:03:20 detected connected phases: 3p
+Oct 05 11:03:20 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:03:20 detected active phases: 2p
+Oct 05 11:03:20 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:03:20 charge total import: 131.960kWh
+Oct 05 11:03:20 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:03:20 charger status: C
+Oct 05 11:03:21 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:03:21 pv charge current: 2.35A = 6A + -3.65A (1679W @ 2p)
+Oct 05 11:03:49 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:03:49 ----
+Oct 05 11:03:49 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:03:49 charge power: 2808W
+Oct 05 11:03:49 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:03:49 charge currents: [0.6 6 5.7]A
+Oct 05 11:03:50 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:03:50 pv power: 4621W
+Oct 05 11:03:50 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:03:50 battery soc: 0%
+Oct 05 11:03:50 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:03:50 battery power: -1W
+Oct 05 11:03:50 homeserver evcc[3439618]: [script] DEBUG 2024/10/05 11:03:50 /bin/bash -c cat /dev/shm/smaemd/data/em-3006136413-pconsume: 2667.2000
+Oct 05 11:03:50 homeserver evcc[3439618]: [script] DEBUG 2024/10/05 11:03:50 /bin/bash -c cat /dev/shm/smaemd/data/em-3006136413-psupply: 0.0000
+Oct 05 11:03:50 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:03:50 grid meter: 2667W
+Oct 05 11:03:50 homeserver evcc[3439618]: [script] DEBUG 2024/10/05 11:03:50 /bin/bash -c cat /dev/shm/smaemd/data/em-3006136413-pconsumecounter: 50927.1243
+Oct 05 11:03:50 homeserver evcc[3439618]: [script] DEBUG 2024/10/05 11:03:50 /bin/bash -c cat /dev/shm/smaemd/data/em-3006136413-psupplycounter: 116277.3763
+Oct 05 11:03:50 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:03:50 site power: 2766W
+Oct 05 11:03:50 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:03:50 set min current: 6
+Oct 05 11:03:50 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:03:50 set max current: 7
+Oct 05 11:03:50 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:03:50 charge voltages: [227 226 224]V
+Oct 05 11:03:50 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:03:50 detected connected phases: 3p
+Oct 05 11:03:50 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:03:50 detected active phases: 2p
+Oct 05 11:03:50 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:03:50 charge total import: 131.983kWh
+Oct 05 11:03:50 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:03:50 charger status: C
+Oct 05 11:03:51 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:03:51 pv charge current: 0A = 6A + -6.01A (2766W @ 2p)
+Oct 05 11:03:51 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:03:51 projected site power 2766W >= 2000W disable threshold
+Oct 05 11:03:51 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:03:51 pv disable timer start: 2m0s
+Oct 05 11:03:51 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:03:51 pv disable in 2m0s
+Oct 05 11:04:19 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:04:19 ----
+Oct 05 11:04:19 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:04:19 charge power: 2809W
+Oct 05 11:04:19 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:04:19 charge currents: [0.7 6 5.7]A
+Oct 05 11:04:20 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:04:20 pv power: 4540W
+Oct 05 11:04:20 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:04:20 battery soc: 0%
+Oct 05 11:04:20 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:04:20 battery power: -1W
+Oct 05 11:04:20 homeserver evcc[3439618]: [script] DEBUG 2024/10/05 11:04:20 /bin/bash -c cat /dev/shm/smaemd/data/em-3006136413-pconsume: 1725.7000
+Oct 05 11:04:20 homeserver evcc[3439618]: [script] DEBUG 2024/10/05 11:04:20 /bin/bash -c cat /dev/shm/smaemd/data/em-3006136413-psupply: 0.0000
+Oct 05 11:04:20 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:04:20 grid meter: 1726W
+Oct 05 11:04:20 homeserver evcc[3439618]: [script] DEBUG 2024/10/05 11:04:20 /bin/bash -c cat /dev/shm/smaemd/data/em-3006136413-pconsumecounter: 50927.1397
+Oct 05 11:04:20 homeserver evcc[3439618]: [script] DEBUG 2024/10/05 11:04:20 /bin/bash -c cat /dev/shm/smaemd/data/em-3006136413-psupplycounter: 116277.3763
+Oct 05 11:04:20 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:04:20 site power: 1825W
+Oct 05 11:04:20 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:04:20 set min current: 6
+Oct 05 11:04:20 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:04:20 set max current: 7
+Oct 05 11:04:20 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:04:20 charge voltages: [227 226 224]V
+Oct 05 11:04:20 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:04:20 detected connected phases: 3p
+Oct 05 11:04:20 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:04:20 detected active phases: 2p
+Oct 05 11:04:20 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:04:20 charge total import: 132.007kWh
+Oct 05 11:04:20 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:04:20 charger status: C
+Oct 05 11:04:21 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:04:21 pv charge current: 2.03A = 6A + -3.97A (1825W @ 2p)
+Oct 05 11:04:21 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:04:21 pv disable timer reset
+Oct 05 11:04:21 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:04:21 pv timer inactive
+Oct 05 11:04:49 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:04:49 ----
+Oct 05 11:04:49 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:04:49 charge power: 2787W
+Oct 05 11:04:49 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:04:49 charge currents: [0.6 5.9 5.7]A
+Oct 05 11:04:50 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:04:50 pv power: 4333W
+Oct 05 11:04:50 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:04:50 battery soc: 0%
+Oct 05 11:04:50 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:04:50 battery power: -1W
+Oct 05 11:04:50 homeserver evcc[3439618]: [script] DEBUG 2024/10/05 11:04:50 /bin/bash -c cat /dev/shm/smaemd/data/em-3006136413-pconsume: 1662.5000
+Oct 05 11:04:50 homeserver evcc[3439618]: [script] DEBUG 2024/10/05 11:04:50 /bin/bash -c cat /dev/shm/smaemd/data/em-3006136413-psupply: 0.0000
+Oct 05 11:04:50 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:04:50 grid meter: 1662W
+Oct 05 11:04:50 homeserver evcc[3439618]: [script] DEBUG 2024/10/05 11:04:50 /bin/bash -c cat /dev/shm/smaemd/data/em-3006136413-pconsumecounter: 50927.1545
+Oct 05 11:04:50 homeserver evcc[3439618]: [script] DEBUG 2024/10/05 11:04:50 /bin/bash -c cat /dev/shm/smaemd/data/em-3006136413-psupplycounter: 116277.3763
+Oct 05 11:04:50 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:04:50 site power: 1762W
+Oct 05 11:04:50 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:04:50 set min current: 6
+Oct 05 11:04:50 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:04:50 set max current: 7
+Oct 05 11:04:50 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:04:50 charge voltages: [227 226 224]V
+Oct 05 11:04:50 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:04:50 detected connected phases: 3p
+Oct 05 11:04:50 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:04:50 detected active phases: 2p
+Oct 05 11:04:50 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:04:50 charge total import: 132.030kWh
+Oct 05 11:04:51 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:04:51 charger status: C
+Oct 05 11:04:51 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:04:51 pv charge current: 2.17A = 6A + -3.83A (1762W @ 2p)
+Oct 05 11:05:19 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:05:19 ----
+Oct 05 11:05:19 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:05:19 charge power: 2787W
+Oct 05 11:05:19 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:05:19 charge currents: [0.7 5.9 5.7]A
+Oct 05 11:05:20 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:05:20 pv power: 4070W
+Oct 05 11:05:20 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:05:20 battery soc: 0%
+Oct 05 11:05:20 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:05:20 battery power: -1W
+Oct 05 11:05:20 homeserver evcc[3439618]: [script] DEBUG 2024/10/05 11:05:20 /bin/bash -c cat /dev/shm/smaemd/data/em-3006136413-pconsume: 2013.3000
+Oct 05 11:05:20 homeserver evcc[3439618]: [script] DEBUG 2024/10/05 11:05:20 /bin/bash -c cat /dev/shm/smaemd/data/em-3006136413-psupply: 0.0000
+Oct 05 11:05:20 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:05:20 grid meter: 2013W
+Oct 05 11:05:20 homeserver evcc[3439618]: [script] DEBUG 2024/10/05 11:05:20 /bin/bash -c cat /dev/shm/smaemd/data/em-3006136413-pconsumecounter: 50927.1701
+Oct 05 11:05:20 homeserver evcc[3439618]: [script] DEBUG 2024/10/05 11:05:20 /bin/bash -c cat /dev/shm/smaemd/data/em-3006136413-psupplycounter: 116277.3763
+Oct 05 11:05:20 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:05:20 site power: 2112W
+Oct 05 11:05:20 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:05:20 set min current: 6
+Oct 05 11:05:20 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:05:20 set max current: 7
+Oct 05 11:05:20 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:05:20 charge voltages: [227 226 224]V
+Oct 05 11:05:20 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:05:20 detected connected phases: 3p
+Oct 05 11:05:20 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:05:20 detected active phases: 2p
+Oct 05 11:05:20 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:05:20 charge total import: 132.053kWh
+Oct 05 11:05:20 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:05:20 charger status: C
+Oct 05 11:05:21 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:05:21 pv charge current: 1.41A = 6A + -4.59A (2112W @ 2p)
+Oct 05 11:05:21 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:05:21 projected site power 2112W >= 2000W disable threshold
+Oct 05 11:05:21 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:05:21 pv disable timer start: 2m0s
+Oct 05 11:05:21 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:05:21 pv disable in 2m0s
+Oct 05 11:05:49 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:05:49 ----
+Oct 05 11:05:49 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:05:49 charge power: 2782W
+Oct 05 11:05:49 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:05:49 charge currents: [0.6 6 5.7]A
+Oct 05 11:05:50 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:05:50 pv power: 3878W
+Oct 05 11:05:50 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:05:50 battery soc: 0%
+Oct 05 11:05:50 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:05:50 battery power: -1W
+Oct 05 11:05:50 homeserver evcc[3439618]: [script] DEBUG 2024/10/05 11:05:50 /bin/bash -c cat /dev/shm/smaemd/data/em-3006136413-pconsume: 2138.9000
+Oct 05 11:05:50 homeserver evcc[3439618]: [script] DEBUG 2024/10/05 11:05:50 /bin/bash -c cat /dev/shm/smaemd/data/em-3006136413-psupply: 0.0000
+Oct 05 11:05:50 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:05:50 grid meter: 2139W
+Oct 05 11:05:50 homeserver evcc[3439618]: [script] DEBUG 2024/10/05 11:05:50 /bin/bash -c cat /dev/shm/smaemd/data/em-3006136413-pconsumecounter: 50927.1879
+Oct 05 11:05:50 homeserver evcc[3439618]: [script] DEBUG 2024/10/05 11:05:50 /bin/bash -c cat /dev/shm/smaemd/data/em-3006136413-psupplycounter: 116277.3763
+Oct 05 11:05:50 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:05:50 site power: 2238W
+Oct 05 11:05:50 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:05:50 set min current: 6
+Oct 05 11:05:50 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:05:50 set max current: 7
+Oct 05 11:05:50 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:05:50 charge voltages: [227 226 224]V
+Oct 05 11:05:50 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:05:50 detected connected phases: 3p
+Oct 05 11:05:50 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:05:50 detected active phases: 2p
+Oct 05 11:05:50 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:05:50 charge total import: 132.077kWh
+Oct 05 11:05:51 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:05:51 charger status: C
+Oct 05 11:05:51 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:05:51 pv charge current: 1.13A = 6A + -4.87A (2238W @ 2p)
+Oct 05 11:05:51 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:05:51 projected site power 2238W >= 2000W disable threshold
+Oct 05 11:05:51 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:05:51 pv disable in 1m30s
+Oct 05 11:05:51 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:05:51 pv disable timer remaining: 1m30s
+Oct 05 11:06:19 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:06:19 ----
+Oct 05 11:06:19 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:06:19 charge power: 2793W
+Oct 05 11:06:19 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:06:19 charge currents: [0.6 6 5.6]A
+Oct 05 11:06:20 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:06:20 pv power: 3731W
+Oct 05 11:06:20 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:06:20 battery soc: 0%
+Oct 05 11:06:20 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:06:20 battery power: -1W
+Oct 05 11:06:20 homeserver evcc[3439618]: [script] DEBUG 2024/10/05 11:06:20 /bin/bash -c cat /dev/shm/smaemd/data/em-3006136413-pconsume: 2433.3000
+Oct 05 11:06:20 homeserver evcc[3439618]: [script] DEBUG 2024/10/05 11:06:20 /bin/bash -c cat /dev/shm/smaemd/data/em-3006136413-psupply: 0.0000
+Oct 05 11:06:20 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:06:20 grid meter: 2433W
+Oct 05 11:06:20 homeserver evcc[3439618]: [script] DEBUG 2024/10/05 11:06:20 /bin/bash -c cat /dev/shm/smaemd/data/em-3006136413-pconsumecounter: 50927.2073
+Oct 05 11:06:20 homeserver evcc[3439618]: [script] DEBUG 2024/10/05 11:06:20 /bin/bash -c cat /dev/shm/smaemd/data/em-3006136413-psupplycounter: 116277.3763
+Oct 05 11:06:20 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:06:20 site power: 2532W
+Oct 05 11:06:20 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:06:20 set min current: 6
+Oct 05 11:06:20 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:06:20 set max current: 7
+Oct 05 11:06:20 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:06:20 charge voltages: [227 226 224]V
+Oct 05 11:06:20 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:06:20 detected connected phases: 3p
+Oct 05 11:06:20 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:06:20 detected active phases: 2p
+Oct 05 11:06:20 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:06:20 charge total import: 132.100kWh
+Oct 05 11:06:21 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:06:21 charger status: C
+Oct 05 11:06:21 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:06:21 pv charge current: 0.495A = 6A + -5.51A (2532W @ 2p)
+Oct 05 11:06:21 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:06:21 projected site power 2532W >= 2000W disable threshold
+Oct 05 11:06:21 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:06:21 pv disable in 1m0s
+Oct 05 11:06:21 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:06:21 pv disable timer remaining: 1m0s
+Oct 05 11:06:49 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:06:49 ----
+Oct 05 11:06:49 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:06:49 charge power: 2801W
+Oct 05 11:06:49 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:06:49 charge currents: [0.6 6 5.7]A
+Oct 05 11:06:50 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:06:50 pv power: 3680W
+Oct 05 11:06:50 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:06:50 battery soc: 0%
+Oct 05 11:06:50 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:06:50 battery power: -1W
+Oct 05 11:06:50 homeserver evcc[3439618]: [script] DEBUG 2024/10/05 11:06:50 /bin/bash -c cat /dev/shm/smaemd/data/em-3006136413-pconsume: 2487.6000
+Oct 05 11:06:50 homeserver evcc[3439618]: [script] DEBUG 2024/10/05 11:06:50 /bin/bash -c cat /dev/shm/smaemd/data/em-3006136413-psupply: 0.0000
+Oct 05 11:06:50 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:06:50 grid meter: 2488W
+Oct 05 11:06:50 homeserver evcc[3439618]: [script] DEBUG 2024/10/05 11:06:50 /bin/bash -c cat /dev/shm/smaemd/data/em-3006136413-pconsumecounter: 50927.2271
+Oct 05 11:06:50 homeserver evcc[3439618]: [script] DEBUG 2024/10/05 11:06:50 /bin/bash -c cat /dev/shm/smaemd/data/em-3006136413-psupplycounter: 116277.3763
+Oct 05 11:06:50 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:06:50 site power: 2587W
+Oct 05 11:06:50 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:06:50 set min current: 6
+Oct 05 11:06:50 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:06:50 set max current: 7
+Oct 05 11:06:50 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:06:50 charge voltages: [227 226 224]V
+Oct 05 11:06:50 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:06:50 detected connected phases: 3p
+Oct 05 11:06:50 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:06:50 detected active phases: 2p
+Oct 05 11:06:50 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:06:50 charge total import: 132.123kWh
+Oct 05 11:06:51 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:06:51 charger status: C
+Oct 05 11:06:51 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:06:51 pv charge current: 0.377A = 6A + -5.62A (2587W @ 2p)
+Oct 05 11:06:51 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:06:51 projected site power 2587W >= 2000W disable threshold
+Oct 05 11:06:51 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:06:51 pv disable in 30s
+Oct 05 11:06:51 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:06:51 pv disable timer remaining: 30s
+Oct 05 11:07:19 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:07:19 ----
+Oct 05 11:07:19 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:07:19 charge power: 2796W
+Oct 05 11:07:19 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:07:19 charge currents: [0.6 5.8 5.7]A
+Oct 05 11:07:20 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:07:20 pv power: 3703W
+Oct 05 11:07:20 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:07:20 battery soc: 0%
+Oct 05 11:07:20 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:07:20 battery power: -1W
+Oct 05 11:07:20 homeserver evcc[3439618]: [script] DEBUG 2024/10/05 11:07:20 /bin/bash -c cat /dev/shm/smaemd/data/em-3006136413-pconsume: 2221.9000
+Oct 05 11:07:20 homeserver evcc[3439618]: [script] DEBUG 2024/10/05 11:07:20 /bin/bash -c cat /dev/shm/smaemd/data/em-3006136413-psupply: 0.0000
+Oct 05 11:07:20 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:07:20 grid meter: 2222W
+Oct 05 11:07:20 homeserver evcc[3439618]: [script] DEBUG 2024/10/05 11:07:20 /bin/bash -c cat /dev/shm/smaemd/data/em-3006136413-pconsumecounter: 50927.2463
+Oct 05 11:07:20 homeserver evcc[3439618]: [script] DEBUG 2024/10/05 11:07:20 /bin/bash -c cat /dev/shm/smaemd/data/em-3006136413-psupplycounter: 116277.3763
+Oct 05 11:07:20 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:07:20 site power: 2321W
+Oct 05 11:07:20 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:07:20 set min current: 6
+Oct 05 11:07:20 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:07:20 set max current: 7
+Oct 05 11:07:20 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:07:20 charge voltages: [227 226 225]V
+Oct 05 11:07:20 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:07:20 detected connected phases: 3p
+Oct 05 11:07:20 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:07:20 detected active phases: 2p
+Oct 05 11:07:20 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:07:20 charge total import: 132.147kWh
+Oct 05 11:07:20 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:07:20 charger status: C
+Oct 05 11:07:21 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:07:21 pv charge current: 0.955A = 6A + -5.05A (2321W @ 2p)
+Oct 05 11:07:21 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:07:21 projected site power 2321W >= 2000W disable threshold
+Oct 05 11:07:21 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:07:21 pv disable in 0s
+Oct 05 11:07:21 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:07:21 pv disable timer remaining: 0s
+Oct 05 11:07:49 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:07:49 ----
+Oct 05 11:07:49 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:07:49 charge power: 2788W
+Oct 05 11:07:49 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:07:49 charge currents: [0.6 5.9 5.7]A
+Oct 05 11:07:50 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:07:50 pv power: 3830W
+Oct 05 11:07:50 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:07:50 battery soc: 0%
+Oct 05 11:07:50 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:07:50 battery power: -1W
+Oct 05 11:07:50 homeserver evcc[3439618]: [script] DEBUG 2024/10/05 11:07:50 /bin/bash -c cat /dev/shm/smaemd/data/em-3006136413-pconsume: 2149.4000
+Oct 05 11:07:50 homeserver evcc[3439618]: [script] DEBUG 2024/10/05 11:07:50 /bin/bash -c cat /dev/shm/smaemd/data/em-3006136413-psupply: 0.0000
+Oct 05 11:07:50 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:07:50 grid meter: 2149W
+Oct 05 11:07:50 homeserver evcc[3439618]: [script] DEBUG 2024/10/05 11:07:50 /bin/bash -c cat /dev/shm/smaemd/data/em-3006136413-pconsumecounter: 50927.2645
+Oct 05 11:07:50 homeserver evcc[3439618]: [script] DEBUG 2024/10/05 11:07:50 /bin/bash -c cat /dev/shm/smaemd/data/em-3006136413-psupplycounter: 116277.3763
+Oct 05 11:07:50 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:07:50 site power: 2248W
+Oct 05 11:07:50 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:07:50 set min current: 6
+Oct 05 11:07:50 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:07:50 set max current: 7
+Oct 05 11:07:50 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:07:50 charge voltages: [228 226 225]V
+Oct 05 11:07:50 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:07:50 detected connected phases: 3p
+Oct 05 11:07:50 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:07:50 detected active phases: 2p
+Oct 05 11:07:50 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:07:50 charge total import: 132.169kWh
+Oct 05 11:07:50 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:07:50 charger status: C
+Oct 05 11:07:51 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:07:51 pv charge current: 1.11A = 6A + -4.89A (2248W @ 2p)
+Oct 05 11:07:51 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:07:51 projected site power 2248W >= 2000W disable threshold
+Oct 05 11:07:51 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:07:51 pv disable in 0s
+Oct 05 11:07:51 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:07:51 pv disable timer elapsed
+Oct 05 11:07:51 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:07:51 charger disable
+Oct 05 11:07:51 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:07:51 wake-up timer: stop
+Oct 05 11:08:19 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:08:19 ----
+Oct 05 11:08:19 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:08:19 charge power: 0W
+Oct 05 11:08:19 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:08:19 charge currents: [0 0 0]A
+Oct 05 11:08:20 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:08:20 pv power: 3909W
+Oct 05 11:08:20 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:08:20 battery soc: 0%
+Oct 05 11:08:20 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:08:20 battery power: -1W
+Oct 05 11:08:20 homeserver evcc[3439618]: [script] DEBUG 2024/10/05 11:08:20 /bin/bash -c cat /dev/shm/smaemd/data/em-3006136413-pconsume: 0.0000
+Oct 05 11:08:20 homeserver evcc[3439618]: [script] DEBUG 2024/10/05 11:08:20 /bin/bash -c cat /dev/shm/smaemd/data/em-3006136413-psupply: 546.0000
+Oct 05 11:08:20 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:08:20 grid meter: -546W
+Oct 05 11:08:20 homeserver evcc[3439618]: [script] DEBUG 2024/10/05 11:08:20 /bin/bash -c cat /dev/shm/smaemd/data/em-3006136413-pconsumecounter: 50927.2652
+Oct 05 11:08:20 homeserver evcc[3439618]: [script] DEBUG 2024/10/05 11:08:20 /bin/bash -c cat /dev/shm/smaemd/data/em-3006136413-psupplycounter: 116277.3832
+Oct 05 11:08:20 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:08:20 site power: -447W
+Oct 05 11:08:20 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:08:20 set min current: 6
+Oct 05 11:08:20 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:08:20 set max current: 7
+Oct 05 11:08:20 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:08:20 charge voltages: [227 228 227]V
+Oct 05 11:08:20 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:08:20 detected connected phases: 3p
+Oct 05 11:08:20 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:08:20 charge total import: 132.171kWh
+Oct 05 11:08:20 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:08:20 charger status: B
+Oct 05 11:08:21 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:08:21 charge final energy: 8.512kWh
+Oct 05 11:08:21 homeserver evcc[3439618]: [lp-1  ] INFO 2024/10/05 11:08:21 stop charging <-
+Oct 05 11:08:21 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:08:21 pv timer reset
+Oct 05 11:08:21 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:08:21 pv timer inactive
+Oct 05 11:08:21 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:08:21 charge total import: 132.171kWh
+Oct 05 11:08:21 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:08:21 pv charge current: 0.972A = 0A + 0.972A (-447W @ 2p)
+Oct 05 11:08:49 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:08:49 ----
+Oct 05 11:08:49 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:08:49 charge power: 0W
+Oct 05 11:08:49 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:08:49 charge currents: [0 0 0]A
+Oct 05 11:08:50 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:08:50 pv power: 3977W
+Oct 05 11:08:50 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:08:50 battery soc: 0%
+Oct 05 11:08:50 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:08:50 battery power: -1W
+Oct 05 11:08:50 homeserver evcc[3439618]: [script] DEBUG 2024/10/05 11:08:50 /bin/bash -c cat /dev/shm/smaemd/data/em-3006136413-pconsume: 0.0000
+Oct 05 11:08:50 homeserver evcc[3439618]: [script] DEBUG 2024/10/05 11:08:50 /bin/bash -c cat /dev/shm/smaemd/data/em-3006136413-psupply: 2284.5000
+Oct 05 11:08:50 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:08:50 grid meter: -2284W
+Oct 05 11:08:50 homeserver evcc[3439618]: [script] DEBUG 2024/10/05 11:08:50 /bin/bash -c cat /dev/shm/smaemd/data/em-3006136413-pconsumecounter: 50927.2652
+Oct 05 11:08:50 homeserver evcc[3439618]: [script] DEBUG 2024/10/05 11:08:50 /bin/bash -c cat /dev/shm/smaemd/data/em-3006136413-psupplycounter: 116277.3987
+Oct 05 11:08:50 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:08:50 site power: -2186W
+Oct 05 11:08:50 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:08:50 set min current: 6
+Oct 05 11:08:50 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:08:50 set max current: 16
+Oct 05 11:08:50 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:08:50 charge voltages: [228 228 228]V
+Oct 05 11:08:50 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:08:50 detected connected phases: 3p
+Oct 05 11:08:50 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:08:50 charge total import: 132.171kWh
+Oct 05 11:08:50 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:08:50 charger status: B
+Oct 05 11:08:51 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:08:51 pv charge current: 4.75A = 0A + 4.75A (-2186W @ 2p)
+Oct 05 11:08:51 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:08:51 site power -2186W <= -1800W enable threshold
+Oct 05 11:08:51 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:08:51 pv enable timer start: 2m0s
+Oct 05 11:08:51 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:08:51 pv enable in 2m0s
+Oct 05 11:09:19 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:09:19 ----
+Oct 05 11:09:19 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:09:19 charge power: 0W
+Oct 05 11:09:19 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:09:19 charge currents: [0 0 0]A
+Oct 05 11:09:20 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:09:20 pv power: 4079W
+Oct 05 11:09:20 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:09:20 battery soc: 0%
+Oct 05 11:09:20 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:09:20 battery power: -1W
+Oct 05 11:09:20 homeserver evcc[3439618]: [script] DEBUG 2024/10/05 11:09:20 /bin/bash -c cat /dev/shm/smaemd/data/em-3006136413-pconsume: 0.0000
+Oct 05 11:09:20 homeserver evcc[3439618]: [script] DEBUG 2024/10/05 11:09:20 /bin/bash -c cat /dev/shm/smaemd/data/em-3006136413-psupply: 1218.2000
+Oct 05 11:09:20 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:09:20 grid meter: -1218W
+Oct 05 11:09:20 homeserver evcc[3439618]: [script] DEBUG 2024/10/05 11:09:20 /bin/bash -c cat /dev/shm/smaemd/data/em-3006136413-pconsumecounter: 50927.2652
+Oct 05 11:09:20 homeserver evcc[3439618]: [script] DEBUG 2024/10/05 11:09:20 /bin/bash -c cat /dev/shm/smaemd/data/em-3006136413-psupplycounter: 116277.4157
+Oct 05 11:09:20 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:09:20 site power: -1119W
+Oct 05 11:09:20 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:09:20 set min current: 6
+Oct 05 11:09:20 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:09:20 set max current: 16
+Oct 05 11:09:20 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:09:20 charge voltages: [227 228 228]V
+Oct 05 11:09:20 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:09:20 detected connected phases: 3p
+Oct 05 11:09:20 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:09:20 charge total import: 132.171kWh
+Oct 05 11:09:20 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:09:20 charger status: B
+Oct 05 11:09:20 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:09:20 pv charge current: 2.43A = 0A + 2.43A (-1119W @ 2p)
+Oct 05 11:09:20 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:09:20 pv enable timer reset
+Oct 05 11:09:20 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:09:20 pv timer inactive
+Oct 05 11:09:49 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:09:49 ----
+Oct 05 11:09:49 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:09:49 charge power: 0W
+Oct 05 11:09:49 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:09:49 charge currents: [0 0 0]A
+Oct 05 11:09:50 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:09:50 pv power: 4145W
+Oct 05 11:09:50 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:09:50 battery soc: 0%
+Oct 05 11:09:50 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:09:50 battery power: -1W
+Oct 05 11:09:50 homeserver evcc[3439618]: [script] DEBUG 2024/10/05 11:09:50 /bin/bash -c cat /dev/shm/smaemd/data/em-3006136413-pconsume: 0.0000
+Oct 05 11:09:50 homeserver evcc[3439618]: [script] DEBUG 2024/10/05 11:09:50 /bin/bash -c cat /dev/shm/smaemd/data/em-3006136413-psupply: 1798.4000
+Oct 05 11:09:50 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:09:50 grid meter: -1798W
+Oct 05 11:09:50 homeserver evcc[3439618]: [script] DEBUG 2024/10/05 11:09:50 /bin/bash -c cat /dev/shm/smaemd/data/em-3006136413-pconsumecounter: 50927.2652
+Oct 05 11:09:50 homeserver evcc[3439618]: [script] DEBUG 2024/10/05 11:09:50 /bin/bash -c cat /dev/shm/smaemd/data/em-3006136413-psupplycounter: 116277.4269
+Oct 05 11:09:50 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:09:50 site power: -1699W
+Oct 05 11:09:50 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:09:50 set min current: 6
+Oct 05 11:09:50 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:09:50 set max current: 16
+Oct 05 11:09:50 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:09:50 charge voltages: [228 228 228]V
+Oct 05 11:09:50 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:09:50 detected connected phases: 3p
+Oct 05 11:09:50 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:09:50 charge total import: 132.171kWh
+Oct 05 11:09:50 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:09:50 charger status: B
+Oct 05 11:09:50 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:09:50 pv charge current: 3.69A = 0A + 3.69A (-1699W @ 2p)
+Oct 05 11:10:19 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:10:19 ----
+Oct 05 11:10:19 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:10:19 charge power: 0W
+Oct 05 11:10:19 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:10:19 charge currents: [0 0 0]A
+Oct 05 11:10:20 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:10:20 pv power: 4174W
+Oct 05 11:10:20 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:10:20 battery soc: 0%
+Oct 05 11:10:20 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:10:20 battery power: -1W
+Oct 05 11:10:20 homeserver evcc[3439618]: [script] DEBUG 2024/10/05 11:10:20 /bin/bash -c cat /dev/shm/smaemd/data/em-3006136413-pconsume: 0.0000
+Oct 05 11:10:20 homeserver evcc[3439618]: [script] DEBUG 2024/10/05 11:10:20 /bin/bash -c cat /dev/shm/smaemd/data/em-3006136413-psupply: 2517.8000
+Oct 05 11:10:20 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:10:20 grid meter: -2518W
+Oct 05 11:10:20 homeserver evcc[3439618]: [script] DEBUG 2024/10/05 11:10:20 /bin/bash -c cat /dev/shm/smaemd/data/em-3006136413-pconsumecounter: 50927.2652
+Oct 05 11:10:20 homeserver evcc[3439618]: [script] DEBUG 2024/10/05 11:10:20 /bin/bash -c cat /dev/shm/smaemd/data/em-3006136413-psupplycounter: 116277.4478
+Oct 05 11:10:20 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:10:20 site power: -2419W
+Oct 05 11:10:20 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:10:20 set min current: 6
+Oct 05 11:10:20 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:10:20 set max current: 16
+Oct 05 11:10:20 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:10:20 charge voltages: [228 228 228]V
+Oct 05 11:10:20 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:10:20 detected connected phases: 3p
+Oct 05 11:10:20 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:10:20 charge total import: 132.171kWh
+Oct 05 11:10:20 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:10:20 charger status: B
+Oct 05 11:10:20 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:10:20 pv charge current: 5.26A = 0A + 5.26A (-2419W @ 2p)
+Oct 05 11:10:20 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:10:20 site power -2419W <= -1800W enable threshold
+Oct 05 11:10:20 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:10:20 pv enable timer start: 2m0s
+Oct 05 11:10:20 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:10:20 pv enable in 2m0s
+Oct 05 11:10:49 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:10:49 ----
+Oct 05 11:10:49 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:10:49 charge power: 0W
+Oct 05 11:10:49 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:10:49 charge currents: [0 0 0]A
+Oct 05 11:10:50 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:10:50 pv power: 4184W
+Oct 05 11:10:50 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:10:50 battery soc: 0%
+Oct 05 11:10:50 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:10:50 battery power: -1W
+Oct 05 11:10:50 homeserver evcc[3439618]: [script] DEBUG 2024/10/05 11:10:50 /bin/bash -c cat /dev/shm/smaemd/data/em-3006136413-pconsume: 0.0000
+Oct 05 11:10:50 homeserver evcc[3439618]: [script] DEBUG 2024/10/05 11:10:50 /bin/bash -c cat /dev/shm/smaemd/data/em-3006136413-psupply: 2614.6000
+Oct 05 11:10:50 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:10:50 grid meter: -2615W
+Oct 05 11:10:50 homeserver evcc[3439618]: [script] DEBUG 2024/10/05 11:10:50 /bin/bash -c cat /dev/shm/smaemd/data/em-3006136413-pconsumecounter: 50927.2652
+Oct 05 11:10:50 homeserver evcc[3439618]: [script] DEBUG 2024/10/05 11:10:50 /bin/bash -c cat /dev/shm/smaemd/data/em-3006136413-psupplycounter: 116277.4697
+Oct 05 11:10:50 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:10:50 site power: -2516W
+Oct 05 11:10:50 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:10:50 set min current: 6
+Oct 05 11:10:50 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:10:50 set max current: 16
+Oct 05 11:10:50 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:10:50 charge voltages: [228 228 228]V
+Oct 05 11:10:50 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:10:50 detected connected phases: 3p
+Oct 05 11:10:50 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:10:50 charge total import: 132.171kWh
+Oct 05 11:10:50 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:10:50 charger status: B
+Oct 05 11:10:51 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:10:51 pv charge current: 5.47A = 0A + 5.47A (-2516W @ 2p)
+Oct 05 11:10:51 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:10:51 site power -2516W <= -1800W enable threshold
+Oct 05 11:10:51 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:10:51 pv enable in 1m30s
+Oct 05 11:10:51 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:10:51 pv enable timer remaining: 1m30s
+Oct 05 11:11:19 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:11:19 ----
+Oct 05 11:11:19 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:11:19 charge power: 0W
+Oct 05 11:11:19 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:11:19 charge currents: [0 0 0]A
+Oct 05 11:11:20 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:11:20 pv power: 4131W
+Oct 05 11:11:20 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:11:20 battery soc: 0%
+Oct 05 11:11:20 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:11:20 battery power: -1W
+Oct 05 11:11:20 homeserver evcc[3439618]: [script] DEBUG 2024/10/05 11:11:20 /bin/bash -c cat /dev/shm/smaemd/data/em-3006136413-pconsume: 0.0000
+Oct 05 11:11:20 homeserver evcc[3439618]: [script] DEBUG 2024/10/05 11:11:20 /bin/bash -c cat /dev/shm/smaemd/data/em-3006136413-psupply: 2501.1000
+Oct 05 11:11:20 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:11:20 grid meter: -2501W
+Oct 05 11:11:20 homeserver evcc[3439618]: [script] DEBUG 2024/10/05 11:11:20 /bin/bash -c cat /dev/shm/smaemd/data/em-3006136413-pconsumecounter: 50927.2652
+Oct 05 11:11:20 homeserver evcc[3439618]: [script] DEBUG 2024/10/05 11:11:20 /bin/bash -c cat /dev/shm/smaemd/data/em-3006136413-psupplycounter: 116277.4909
+Oct 05 11:11:20 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:11:20 site power: -2402W
+Oct 05 11:11:20 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:11:20 set min current: 6
+Oct 05 11:11:20 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:11:20 set max current: 16
+Oct 05 11:11:20 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:11:20 charge voltages: [228 228 228]V
+Oct 05 11:11:20 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:11:20 detected connected phases: 3p
+Oct 05 11:11:20 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:11:20 charge total import: 132.171kWh
+Oct 05 11:11:20 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:11:20 charger status: B
+Oct 05 11:11:21 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:11:21 pv charge current: 5.22A = 0A + 5.22A (-2402W @ 2p)
+Oct 05 11:11:21 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:11:21 site power -2402W <= -1800W enable threshold
+Oct 05 11:11:21 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:11:21 pv enable in 1m0s
+Oct 05 11:11:21 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:11:21 pv enable timer remaining: 1m0s
+Oct 05 11:11:49 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:11:49 ----
+Oct 05 11:11:49 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:11:49 charge power: 0W
+Oct 05 11:11:49 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:11:49 charge currents: [0 0 0]A
+Oct 05 11:11:50 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:11:50 pv power: 4043W
+Oct 05 11:11:50 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:11:50 battery soc: 0%
+Oct 05 11:11:50 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:11:50 battery power: -1W
+Oct 05 11:11:50 homeserver evcc[3439618]: [script] DEBUG 2024/10/05 11:11:50 /bin/bash -c cat /dev/shm/smaemd/data/em-3006136413-pconsume: 0.0000
+Oct 05 11:11:50 homeserver evcc[3439618]: [script] DEBUG 2024/10/05 11:11:50 /bin/bash -c cat /dev/shm/smaemd/data/em-3006136413-psupply: 2378.4000
+Oct 05 11:11:50 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:11:50 grid meter: -2378W
+Oct 05 11:11:50 homeserver evcc[3439618]: [script] DEBUG 2024/10/05 11:11:50 /bin/bash -c cat /dev/shm/smaemd/data/em-3006136413-pconsumecounter: 50927.2652
+Oct 05 11:11:50 homeserver evcc[3439618]: [script] DEBUG 2024/10/05 11:11:50 /bin/bash -c cat /dev/shm/smaemd/data/em-3006136413-psupplycounter: 116277.5110
+Oct 05 11:11:50 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:11:50 site power: -2279W
+Oct 05 11:11:50 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:11:50 set min current: 6
+Oct 05 11:11:50 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:11:50 set max current: 16
+Oct 05 11:11:50 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:11:50 charge voltages: [228 228 228]V
+Oct 05 11:11:50 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:11:50 detected connected phases: 3p
+Oct 05 11:11:51 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:11:51 charge total import: 132.171kWh
+Oct 05 11:11:51 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:11:51 charger status: B
+Oct 05 11:11:51 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:11:51 pv charge current: 4.96A = 0A + 4.96A (-2279W @ 2p)
+Oct 05 11:11:51 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:11:51 site power -2279W <= -1800W enable threshold
+Oct 05 11:11:51 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:11:51 pv enable in 29s
+Oct 05 11:11:51 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:11:51 pv enable timer remaining: 29s
+Oct 05 11:12:19 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:12:19 ----
+Oct 05 11:12:19 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:12:19 charge power: 0W
+Oct 05 11:12:19 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:12:19 charge currents: [0 0 0]A
+Oct 05 11:12:20 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:12:20 pv power: 3928W
+Oct 05 11:12:20 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:12:20 battery soc: 0%
+Oct 05 11:12:20 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:12:20 battery power: -1W
+Oct 05 11:12:20 homeserver evcc[3439618]: [script] DEBUG 2024/10/05 11:12:20 /bin/bash -c cat /dev/shm/smaemd/data/em-3006136413-pconsume: 0.0000
+Oct 05 11:12:20 homeserver evcc[3439618]: [script] DEBUG 2024/10/05 11:12:20 /bin/bash -c cat /dev/shm/smaemd/data/em-3006136413-psupply: 2316.3000
+Oct 05 11:12:20 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:12:20 grid meter: -2316W
+Oct 05 11:12:20 homeserver evcc[3439618]: [script] DEBUG 2024/10/05 11:12:20 /bin/bash -c cat /dev/shm/smaemd/data/em-3006136413-pconsumecounter: 50927.2652
+Oct 05 11:12:20 homeserver evcc[3439618]: [script] DEBUG 2024/10/05 11:12:20 /bin/bash -c cat /dev/shm/smaemd/data/em-3006136413-psupplycounter: 116277.5302
+Oct 05 11:12:20 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:12:20 site power: -2217W
+Oct 05 11:12:20 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:12:20 set min current: 6
+Oct 05 11:12:20 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:12:20 set max current: 16
+Oct 05 11:12:20 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:12:20 charge voltages: [228 228 228]V
+Oct 05 11:12:20 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:12:20 detected connected phases: 3p
+Oct 05 11:12:20 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:12:20 charge total import: 132.171kWh
+Oct 05 11:12:20 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:12:20 charger status: B
+Oct 05 11:12:20 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:12:20 pv charge current: 4.82A = 0A + 4.82A (-2217W @ 2p)
+Oct 05 11:12:20 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:12:20 site power -2217W <= -1800W enable threshold
+Oct 05 11:12:20 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:12:20 pv enable in 0s
+Oct 05 11:12:20 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:12:20 pv enable timer remaining: 0s
+Oct 05 11:12:49 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:12:49 ----
+Oct 05 11:12:49 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:12:49 charge power: 0W
+Oct 05 11:12:49 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:12:49 charge currents: [0 0 0]A
+Oct 05 11:12:50 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:12:50 pv power: 3789W
+Oct 05 11:12:50 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:12:50 battery soc: 0%
+Oct 05 11:12:50 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:12:50 battery power: -1W
+Oct 05 11:12:50 homeserver evcc[3439618]: [script] DEBUG 2024/10/05 11:12:50 /bin/bash -c cat /dev/shm/smaemd/data/em-3006136413-pconsume: 0.0000
+Oct 05 11:12:50 homeserver evcc[3439618]: [script] DEBUG 2024/10/05 11:12:50 /bin/bash -c cat /dev/shm/smaemd/data/em-3006136413-psupply: 1421.7000
+Oct 05 11:12:50 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:12:50 grid meter: -1422W
+Oct 05 11:12:50 homeserver evcc[3439618]: [script] DEBUG 2024/10/05 11:12:50 /bin/bash -c cat /dev/shm/smaemd/data/em-3006136413-pconsumecounter: 50927.2652
+Oct 05 11:12:50 homeserver evcc[3439618]: [script] DEBUG 2024/10/05 11:12:50 /bin/bash -c cat /dev/shm/smaemd/data/em-3006136413-psupplycounter: 116277.5474
+Oct 05 11:12:50 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:12:50 site power: -1323W
+Oct 05 11:12:50 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:12:50 set min current: 6
+Oct 05 11:12:50 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:12:50 set max current: 16
+Oct 05 11:12:50 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:12:50 charge voltages: [228 228 227]V
+Oct 05 11:12:50 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:12:50 detected connected phases: 3p
+Oct 05 11:12:50 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:12:50 charge total import: 132.171kWh
+Oct 05 11:12:50 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:12:50 charger status: B
+Oct 05 11:12:50 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:12:50 pv charge current: 2.88A = 0A + 2.88A (-1323W @ 2p)
+Oct 05 11:12:50 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:12:50 pv enable timer reset
+Oct 05 11:12:50 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:12:50 pv timer inactive
+Oct 05 11:13:19 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:13:19 ----
+Oct 05 11:13:19 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:13:19 charge power: 0W
+Oct 05 11:13:19 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:13:19 charge currents: [0 0 0]A
+Oct 05 11:13:20 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:13:20 pv power: 3645W
+Oct 05 11:13:20 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:13:20 battery soc: 0%
+Oct 05 11:13:20 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:13:20 battery power: -1W
+Oct 05 11:13:20 homeserver evcc[3439618]: [script] DEBUG 2024/10/05 11:13:20 /bin/bash -c cat /dev/shm/smaemd/data/em-3006136413-pconsume: 0.0000
+Oct 05 11:13:20 homeserver evcc[3439618]: [script] DEBUG 2024/10/05 11:13:20 /bin/bash -c cat /dev/shm/smaemd/data/em-3006136413-psupply: 851.5000
+Oct 05 11:13:20 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:13:20 grid meter: -852W
+Oct 05 11:13:20 homeserver evcc[3439618]: [script] DEBUG 2024/10/05 11:13:20 /bin/bash -c cat /dev/shm/smaemd/data/em-3006136413-pconsumecounter: 50927.2652
+Oct 05 11:13:20 homeserver evcc[3439618]: [script] DEBUG 2024/10/05 11:13:20 /bin/bash -c cat /dev/shm/smaemd/data/em-3006136413-psupplycounter: 116277.5545
+Oct 05 11:13:20 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:13:20 site power: -752W
+Oct 05 11:13:20 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:13:20 set min current: 6
+Oct 05 11:13:20 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:13:20 set max current: 16
+Oct 05 11:13:20 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:13:20 charge voltages: [227 228 227]V
+Oct 05 11:13:20 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:13:20 detected connected phases: 3p
+Oct 05 11:13:20 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:13:20 charge total import: 132.171kWh
+Oct 05 11:13:20 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:13:20 charger status: B
+Oct 05 11:13:21 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:13:21 pv charge current: 1.64A = 0A + 1.64A (-752W @ 2p)
+Oct 05 11:13:49 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:13:49 ----
+Oct 05 11:13:49 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:13:49 charge power: 0W
+Oct 05 11:13:49 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:13:49 charge currents: [0 0 0]A
+Oct 05 11:13:50 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:13:50 pv power: 3519W
+Oct 05 11:13:50 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:13:50 battery soc: 0%
+Oct 05 11:13:50 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:13:50 battery power: -1W
+Oct 05 11:13:50 homeserver evcc[3439618]: [script] DEBUG 2024/10/05 11:13:50 /bin/bash -c cat /dev/shm/smaemd/data/em-3006136413-pconsume: 0.0000
+Oct 05 11:13:50 homeserver evcc[3439618]: [script] DEBUG 2024/10/05 11:13:50 /bin/bash -c cat /dev/shm/smaemd/data/em-3006136413-psupply: 1901.2000
+Oct 05 11:13:50 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:13:50 grid meter: -1901W
+Oct 05 11:13:50 homeserver evcc[3439618]: [script] DEBUG 2024/10/05 11:13:50 /bin/bash -c cat /dev/shm/smaemd/data/em-3006136413-pconsumecounter: 50927.2652
+Oct 05 11:13:50 homeserver evcc[3439618]: [script] DEBUG 2024/10/05 11:13:50 /bin/bash -c cat /dev/shm/smaemd/data/em-3006136413-psupplycounter: 116277.5679
+Oct 05 11:13:50 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:13:50 site power: -1802W
+Oct 05 11:13:50 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:13:50 set min current: 6
+Oct 05 11:13:50 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:13:50 set max current: 16
+Oct 05 11:13:50 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:13:50 charge voltages: [227 228 227]V
+Oct 05 11:13:50 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:13:50 detected connected phases: 3p
+Oct 05 11:13:50 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:13:50 charge total import: 132.171kWh
+Oct 05 11:13:50 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:13:50 charger status: B
+Oct 05 11:13:50 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:13:50 pv charge current: 3.92A = 0A + 3.92A (-1802W @ 2p)
+Oct 05 11:13:50 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:13:50 site power -1802W <= -1800W enable threshold
+Oct 05 11:13:50 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:13:50 pv enable timer start: 2m0s
+Oct 05 11:13:50 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:13:50 pv enable in 2m0s
+Oct 05 11:14:19 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:14:19 ----
+Oct 05 11:14:19 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:14:19 charge power: 0W
+Oct 05 11:14:19 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:14:19 charge currents: [0 0 0]A
+Oct 05 11:14:20 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:14:20 pv power: 3420W
+Oct 05 11:14:20 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:14:20 battery soc: 0%
+Oct 05 11:14:20 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:14:20 battery power: -1W
+Oct 05 11:14:20 homeserver evcc[3439618]: [script] DEBUG 2024/10/05 11:14:20 /bin/bash -c cat /dev/shm/smaemd/data/em-3006136413-pconsume: 0.0000
+Oct 05 11:14:20 homeserver evcc[3439618]: [script] DEBUG 2024/10/05 11:14:20 /bin/bash -c cat /dev/shm/smaemd/data/em-3006136413-psupply: 1574.0000
+Oct 05 11:14:20 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:14:20 grid meter: -1574W
+Oct 05 11:14:20 homeserver evcc[3439618]: [script] DEBUG 2024/10/05 11:14:20 /bin/bash -c cat /dev/shm/smaemd/data/em-3006136413-pconsumecounter: 50927.2652
+Oct 05 11:14:20 homeserver evcc[3439618]: [script] DEBUG 2024/10/05 11:14:20 /bin/bash -c cat /dev/shm/smaemd/data/em-3006136413-psupplycounter: 116277.5823
+Oct 05 11:14:20 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:14:20 site power: -1475W
+Oct 05 11:14:20 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:14:20 set min current: 6
+Oct 05 11:14:20 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:14:20 set max current: 16
+Oct 05 11:14:20 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:14:20 charge voltages: [228 228 227]V
+Oct 05 11:14:20 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:14:20 detected connected phases: 3p
+Oct 05 11:14:20 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:14:20 charge total import: 132.171kWh
+Oct 05 11:14:20 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:14:20 charger status: B
+Oct 05 11:14:20 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:14:20 pv charge current: 3.21A = 0A + 3.21A (-1475W @ 2p)
+Oct 05 11:14:20 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:14:20 pv enable timer reset
+Oct 05 11:14:20 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:14:20 pv timer inactive
+Oct 05 11:14:49 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:14:49 ----
+Oct 05 11:14:49 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:14:49 charge power: 0W
+Oct 05 11:14:49 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:14:49 charge currents: [0 0 0]A
+Oct 05 11:14:50 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:14:50 pv power: 3407W
+Oct 05 11:14:50 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:14:50 battery soc: 0%
+Oct 05 11:14:50 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:14:50 battery power: -1W
+Oct 05 11:14:50 homeserver evcc[3439618]: [script] DEBUG 2024/10/05 11:14:50 /bin/bash -c cat /dev/shm/smaemd/data/em-3006136413-pconsume: 0.0000
+Oct 05 11:14:50 homeserver evcc[3439618]: [script] DEBUG 2024/10/05 11:14:50 /bin/bash -c cat /dev/shm/smaemd/data/em-3006136413-psupply: 1739.6000
+Oct 05 11:14:50 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:14:50 grid meter: -1740W
+Oct 05 11:14:50 homeserver evcc[3439618]: [script] DEBUG 2024/10/05 11:14:50 /bin/bash -c cat /dev/shm/smaemd/data/em-3006136413-pconsumecounter: 50927.2652
+Oct 05 11:14:50 homeserver evcc[3439618]: [script] DEBUG 2024/10/05 11:14:50 /bin/bash -c cat /dev/shm/smaemd/data/em-3006136413-psupplycounter: 116277.5963
+Oct 05 11:14:50 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:14:50 site power: -1641W
+Oct 05 11:14:50 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:14:50 set min current: 6
+Oct 05 11:14:50 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:14:50 set max current: 16
+Oct 05 11:14:50 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:14:50 charge voltages: [228 228 228]V
+Oct 05 11:14:50 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:14:50 detected connected phases: 3p
+Oct 05 11:14:50 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:14:50 charge total import: 132.171kWh
+Oct 05 11:14:50 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:14:50 charger status: B
+Oct 05 11:14:51 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:14:51 pv charge current: 3.57A = 0A + 3.57A (-1641W @ 2p)
+Oct 05 11:15:19 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:15:19 ----
+Oct 05 11:15:19 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:15:19 charge power: 0W
+Oct 05 11:15:19 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:15:19 charge currents: [0 0 0]A
+Oct 05 11:15:20 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:15:20 pv power: 3470W
+Oct 05 11:15:20 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:15:20 battery soc: 0%
+Oct 05 11:15:20 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:15:20 battery power: -1W
+Oct 05 11:15:20 homeserver evcc[3439618]: [script] DEBUG 2024/10/05 11:15:20 /bin/bash -c cat /dev/shm/smaemd/data/em-3006136413-pconsume: 0.0000
+Oct 05 11:15:20 homeserver evcc[3439618]: [script] DEBUG 2024/10/05 11:15:20 /bin/bash -c cat /dev/shm/smaemd/data/em-3006136413-psupply: 566.0000
+Oct 05 11:15:20 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:15:20 grid meter: -566W
+Oct 05 11:15:20 homeserver evcc[3439618]: [script] DEBUG 2024/10/05 11:15:20 /bin/bash -c cat /dev/shm/smaemd/data/em-3006136413-pconsumecounter: 50927.2652
+Oct 05 11:15:20 homeserver evcc[3439618]: [script] DEBUG 2024/10/05 11:15:20 /bin/bash -c cat /dev/shm/smaemd/data/em-3006136413-psupplycounter: 116277.6111
+Oct 05 11:15:20 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:15:20 site power: -467W
+Oct 05 11:15:20 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:15:20 set min current: 6
+Oct 05 11:15:20 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:15:20 set max current: 16
+Oct 05 11:15:20 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:15:20 charge voltages: [228 228 228]V
+Oct 05 11:15:20 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:15:20 detected connected phases: 3p
+Oct 05 11:15:20 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:15:20 charge total import: 132.171kWh
+Oct 05 11:15:20 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:15:20 charger status: B
+Oct 05 11:15:20 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:15:20 pv charge current: 1.02A = 0A + 1.02A (-467W @ 2p)
+Oct 05 11:15:49 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:15:49 ----
+Oct 05 11:15:49 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:15:49 charge power: 0W
+Oct 05 11:15:49 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:15:49 charge currents: [0 0 0]A
+Oct 05 11:15:50 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:15:50 pv power: 3585W
+Oct 05 11:15:50 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:15:50 battery soc: 0%
+Oct 05 11:15:50 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:15:50 battery power: -1W
+Oct 05 11:15:50 homeserver evcc[3439618]: [script] DEBUG 2024/10/05 11:15:50 /bin/bash -c cat /dev/shm/smaemd/data/em-3006136413-pconsume: 0.0000
+Oct 05 11:15:50 homeserver evcc[3439618]: [script] DEBUG 2024/10/05 11:15:50 /bin/bash -c cat /dev/shm/smaemd/data/em-3006136413-psupply: 2115.5000
+Oct 05 11:15:50 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:15:50 grid meter: -2116W
+Oct 05 11:15:50 homeserver evcc[3439618]: [script] DEBUG 2024/10/05 11:15:50 /bin/bash -c cat /dev/shm/smaemd/data/em-3006136413-pconsumecounter: 50927.2652
+Oct 05 11:15:50 homeserver evcc[3439618]: [script] DEBUG 2024/10/05 11:15:50 /bin/bash -c cat /dev/shm/smaemd/data/em-3006136413-psupplycounter: 116277.6274
+Oct 05 11:15:50 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:15:50 site power: -2016W
+Oct 05 11:15:50 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:15:50 set min current: 6
+Oct 05 11:15:50 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:15:50 set max current: 16
+Oct 05 11:15:50 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:15:50 charge voltages: [228 227 227]V
+Oct 05 11:15:50 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:15:50 detected connected phases: 3p
+Oct 05 11:15:50 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:15:50 charge total import: 132.171kWh
+Oct 05 11:15:50 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:15:50 charger status: B
+Oct 05 11:15:50 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:15:50 pv charge current: 4.38A = 0A + 4.38A (-2016W @ 2p)
+Oct 05 11:15:50 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:15:50 site power -2016W <= -1800W enable threshold
+Oct 05 11:15:50 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:15:50 pv enable timer start: 2m0s
+Oct 05 11:15:50 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:15:50 pv enable in 2m0s
+Oct 05 11:16:19 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:16:19 ----
+Oct 05 11:16:19 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:16:19 charge power: 0W
+Oct 05 11:16:19 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:16:19 charge currents: [0 0 0]A
+Oct 05 11:16:20 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:16:20 pv power: 3662W
+Oct 05 11:16:20 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:16:20 battery soc: 0%
+Oct 05 11:16:20 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:16:20 battery power: -1W
+Oct 05 11:16:20 homeserver evcc[3439618]: [script] DEBUG 2024/10/05 11:16:20 /bin/bash -c cat /dev/shm/smaemd/data/em-3006136413-pconsume: 0.0000
+Oct 05 11:16:20 homeserver evcc[3439618]: [script] DEBUG 2024/10/05 11:16:20 /bin/bash -c cat /dev/shm/smaemd/data/em-3006136413-psupply: 2108.5000
+Oct 05 11:16:20 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:16:20 grid meter: -2108W
+Oct 05 11:16:20 homeserver evcc[3439618]: [script] DEBUG 2024/10/05 11:16:20 /bin/bash -c cat /dev/shm/smaemd/data/em-3006136413-pconsumecounter: 50927.2652
+Oct 05 11:16:20 homeserver evcc[3439618]: [script] DEBUG 2024/10/05 11:16:20 /bin/bash -c cat /dev/shm/smaemd/data/em-3006136413-psupplycounter: 116277.6448
+Oct 05 11:16:20 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:16:20 site power: -2010W
+Oct 05 11:16:20 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:16:20 set min current: 6
+Oct 05 11:16:20 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:16:20 set max current: 16
+Oct 05 11:16:20 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:16:20 charge voltages: [227 227 227]V
+Oct 05 11:16:20 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:16:20 detected connected phases: 3p
+Oct 05 11:16:20 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:16:20 charge total import: 132.171kWh
+Oct 05 11:16:20 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:16:20 charger status: B
+Oct 05 11:16:20 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:16:20 pv charge current: 4.37A = 0A + 4.37A (-2010W @ 2p)
+Oct 05 11:16:20 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:16:20 site power -2010W <= -1800W enable threshold
+Oct 05 11:16:20 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:16:20 pv enable in 1m30s
+Oct 05 11:16:20 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:16:20 pv enable timer remaining: 1m30s
+Oct 05 11:16:49 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:16:49 ----
+Oct 05 11:16:49 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:16:49 charge power: 0W
+Oct 05 11:16:49 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:16:49 charge currents: [0 0 0]A
+Oct 05 11:16:50 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:16:50 pv power: 3661W
+Oct 05 11:16:50 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:16:50 battery soc: 0%
+Oct 05 11:16:50 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:16:50 battery power: -1W
+Oct 05 11:16:50 homeserver evcc[3439618]: [script] DEBUG 2024/10/05 11:16:50 /bin/bash -c cat /dev/shm/smaemd/data/em-3006136413-pconsume: 0.0000
+Oct 05 11:16:50 homeserver evcc[3439618]: [script] DEBUG 2024/10/05 11:16:50 /bin/bash -c cat /dev/shm/smaemd/data/em-3006136413-psupply: 2178.8000
+Oct 05 11:16:50 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:16:50 grid meter: -2179W
+Oct 05 11:16:50 homeserver evcc[3439618]: [script] DEBUG 2024/10/05 11:16:50 /bin/bash -c cat /dev/shm/smaemd/data/em-3006136413-pconsumecounter: 50927.2652
+Oct 05 11:16:50 homeserver evcc[3439618]: [script] DEBUG 2024/10/05 11:16:50 /bin/bash -c cat /dev/shm/smaemd/data/em-3006136413-psupplycounter: 116277.6624
+Oct 05 11:16:50 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:16:50 site power: -2080W
+Oct 05 11:16:50 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:16:50 set min current: 6
+Oct 05 11:16:50 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:16:50 set max current: 16
+Oct 05 11:16:50 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:16:50 charge voltages: [228 228 227]V
+Oct 05 11:16:50 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:16:50 detected connected phases: 3p
+Oct 05 11:16:50 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:16:50 charge total import: 132.171kWh
+Oct 05 11:16:50 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:16:50 charger status: B
+Oct 05 11:16:51 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:16:51 pv charge current: 4.52A = 0A + 4.52A (-2080W @ 2p)
+Oct 05 11:16:51 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:16:51 site power -2080W <= -1800W enable threshold
+Oct 05 11:16:51 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:16:51 pv enable in 1m0s
+Oct 05 11:16:51 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:16:51 pv enable timer remaining: 1m0s
+Oct 05 11:17:19 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:17:19 ----
+Oct 05 11:17:19 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:17:19 charge power: 0W
+Oct 05 11:17:19 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:17:19 charge currents: [0 0 0]A
+Oct 05 11:17:20 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:17:20 pv power: 3639W
+Oct 05 11:17:20 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:17:20 battery soc: 0%
+Oct 05 11:17:20 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:17:20 battery power: -1W
+Oct 05 11:17:20 homeserver evcc[3439618]: [script] DEBUG 2024/10/05 11:17:20 /bin/bash -c cat /dev/shm/smaemd/data/em-3006136413-pconsume: 0.0000
+Oct 05 11:17:20 homeserver evcc[3439618]: [script] DEBUG 2024/10/05 11:17:20 /bin/bash -c cat /dev/shm/smaemd/data/em-3006136413-psupply: 2001.6000
+Oct 05 11:17:20 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:17:20 grid meter: -2002W
+Oct 05 11:17:20 homeserver evcc[3439618]: [script] DEBUG 2024/10/05 11:17:20 /bin/bash -c cat /dev/shm/smaemd/data/em-3006136413-pconsumecounter: 50927.2652
+Oct 05 11:17:20 homeserver evcc[3439618]: [script] DEBUG 2024/10/05 11:17:20 /bin/bash -c cat /dev/shm/smaemd/data/em-3006136413-psupplycounter: 116277.6795
+Oct 05 11:17:20 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:17:20 site power: -1903W
+Oct 05 11:17:20 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:17:20 set min current: 6
+Oct 05 11:17:20 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:17:20 set max current: 16
+Oct 05 11:17:20 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:17:20 charge voltages: [227 227 227]V
+Oct 05 11:17:20 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:17:20 detected connected phases: 3p
+Oct 05 11:17:20 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:17:20 charge total import: 132.171kWh
+Oct 05 11:17:20 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:17:20 charger status: B
+Oct 05 11:17:20 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:17:20 pv charge current: 4.14A = 0A + 4.14A (-1903W @ 2p)
+Oct 05 11:17:20 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:17:20 site power -1903W <= -1800W enable threshold
+Oct 05 11:17:20 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:17:20 pv enable in 30s
+Oct 05 11:17:20 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:17:20 pv enable timer remaining: 30s
+Oct 05 11:17:49 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:17:49 ----
+Oct 05 11:17:49 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:17:49 charge power: 0W
+Oct 05 11:17:49 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:17:49 charge currents: [0 0 0]A
+Oct 05 11:17:50 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:17:50 pv power: 3621W
+Oct 05 11:17:50 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:17:50 battery soc: 0%
+Oct 05 11:17:50 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:17:50 battery power: -1W
+Oct 05 11:17:50 homeserver evcc[3439618]: [script] DEBUG 2024/10/05 11:17:50 /bin/bash -c cat /dev/shm/smaemd/data/em-3006136413-pconsume: 0.0000
+Oct 05 11:17:50 homeserver evcc[3439618]: [script] DEBUG 2024/10/05 11:17:50 /bin/bash -c cat /dev/shm/smaemd/data/em-3006136413-psupply: 1965.1000
+Oct 05 11:17:50 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:17:50 grid meter: -1965W
+Oct 05 11:17:50 homeserver evcc[3439618]: [script] DEBUG 2024/10/05 11:17:50 /bin/bash -c cat /dev/shm/smaemd/data/em-3006136413-pconsumecounter: 50927.2652
+Oct 05 11:17:50 homeserver evcc[3439618]: [script] DEBUG 2024/10/05 11:17:50 /bin/bash -c cat /dev/shm/smaemd/data/em-3006136413-psupplycounter: 116277.6952
+Oct 05 11:17:50 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:17:50 site power: -1866W
+Oct 05 11:17:50 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:17:50 set min current: 6
+Oct 05 11:17:50 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:17:50 set max current: 16
+Oct 05 11:17:50 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:17:50 charge voltages: [228 228 227]V
+Oct 05 11:17:50 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:17:50 detected connected phases: 3p
+Oct 05 11:17:50 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:17:50 charge total import: 132.171kWh
+Oct 05 11:17:50 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:17:50 charger status: B
+Oct 05 11:17:50 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:17:50 pv charge current: 4.06A = 0A + 4.06A (-1866W @ 2p)
+Oct 05 11:17:50 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:17:50 site power -1866W <= -1800W enable threshold
+Oct 05 11:17:50 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:17:50 pv enable in 0s
+Oct 05 11:17:50 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:17:50 pv enable timer elapsed
+Oct 05 11:17:51 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:17:51 max charge current: 6A
+Oct 05 11:17:51 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:17:51 charger enable
+Oct 05 11:17:51 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:17:51 wake-up timer: start
+Oct 05 11:18:19 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:18:19 ----
+Oct 05 11:18:19 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:18:19 charge power: 2815W
+Oct 05 11:18:19 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:18:19 charge currents: [0.6 6 5.7]A
+Oct 05 11:18:20 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:18:20 pv power: 3639W
+Oct 05 11:18:20 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:18:20 battery soc: 0%
+Oct 05 11:18:20 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:18:20 battery power: -1W
+Oct 05 11:18:20 homeserver evcc[3439618]: [script] DEBUG 2024/10/05 11:18:20 /bin/bash -c cat /dev/shm/smaemd/data/em-3006136413-pconsume: 2967.0000
+Oct 05 11:18:20 homeserver evcc[3439618]: [script] DEBUG 2024/10/05 11:18:20 /bin/bash -c cat /dev/shm/smaemd/data/em-3006136413-psupply: 0.0000
+Oct 05 11:18:20 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:18:20 grid meter: 2967W
+Oct 05 11:18:20 homeserver evcc[3439618]: [script] DEBUG 2024/10/05 11:18:20 /bin/bash -c cat /dev/shm/smaemd/data/em-3006136413-pconsumecounter: 50927.2817
+Oct 05 11:18:20 homeserver evcc[3439618]: [script] DEBUG 2024/10/05 11:18:20 /bin/bash -c cat /dev/shm/smaemd/data/em-3006136413-psupplycounter: 116277.6994
+Oct 05 11:18:20 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:18:20 site power: 3066W
+Oct 05 11:18:20 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:18:20 set min current: 6
+Oct 05 11:18:20 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:18:20 set max current: 16
+Oct 05 11:18:20 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:18:20 charge voltages: [227 226 225]V
+Oct 05 11:18:20 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:18:20 detected connected phases: 3p
+Oct 05 11:18:20 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:18:20 charge total import: 132.188kWh
+Oct 05 11:18:20 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:18:20 charger status: C
+Oct 05 11:18:21 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:18:21 charge start energy: 132.188kWh
+Oct 05 11:18:21 homeserver evcc[3439618]: [lp-1  ] INFO 2024/10/05 11:18:21 start charging ->
+Oct 05 11:18:21 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:18:21 wake-up timer: stop
+Oct 05 11:18:21 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:18:21 pv charge current: 0A = 6A + -6.67A (3066W @ 2p)
+Oct 05 11:18:21 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:18:21 projected site power 3066W >= 2000W disable threshold
+Oct 05 11:18:21 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:18:21 pv disable in 0s
+Oct 05 11:18:21 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:18:21 pv disable timer elapsed
+Oct 05 11:18:21 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:18:21 charger disable
+Oct 05 11:18:21 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:18:21 wake-up timer: stop
+Oct 05 11:18:49 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:18:49 ----
+Oct 05 11:18:49 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:18:49 charge power: 0W
+Oct 05 11:18:49 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:18:49 charge currents: [0 0 0]A
+Oct 05 11:18:50 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:18:50 pv power: 3723W
+Oct 05 11:18:50 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:18:50 battery soc: 0%
+Oct 05 11:18:50 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:18:50 battery power: -1W
+Oct 05 11:18:50 homeserver evcc[3439618]: [script] DEBUG 2024/10/05 11:18:50 /bin/bash -c cat /dev/shm/smaemd/data/em-3006136413-pconsume: 0.0000
+Oct 05 11:18:50 homeserver evcc[3439618]: [script] DEBUG 2024/10/05 11:18:50 /bin/bash -c cat /dev/shm/smaemd/data/em-3006136413-psupply: 1286.8000
+Oct 05 11:18:50 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:18:50 grid meter: -1287W
+Oct 05 11:18:50 homeserver evcc[3439618]: [script] DEBUG 2024/10/05 11:18:50 /bin/bash -c cat /dev/shm/smaemd/data/em-3006136413-pconsumecounter: 50927.2842
+Oct 05 11:18:50 homeserver evcc[3439618]: [script] DEBUG 2024/10/05 11:18:50 /bin/bash -c cat /dev/shm/smaemd/data/em-3006136413-psupplycounter: 116277.7018
+Oct 05 11:18:50 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:18:50 site power: -1188W
+Oct 05 11:18:50 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:18:50 set min current: 6
+Oct 05 11:18:50 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:18:50 set max current: 7
+Oct 05 11:18:50 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:18:50 charge voltages: [227 228 227]V
+Oct 05 11:18:50 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:18:50 detected connected phases: 3p
+Oct 05 11:18:50 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:18:50 charge total import: 132.188kWh
+Oct 05 11:18:51 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:18:51 charger status: B
+Oct 05 11:18:51 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:18:51 charge final energy: 8.512kWh
+Oct 05 11:18:51 homeserver evcc[3439618]: [lp-1  ] INFO 2024/10/05 11:18:51 stop charging <-
+Oct 05 11:18:51 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:18:51 pv timer reset
+Oct 05 11:18:51 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:18:51 pv timer inactive
+Oct 05 11:18:51 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:18:51 charge total import: 132.188kWh
+Oct 05 11:18:51 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:18:51 pv charge current: 2.58A = 0A + 2.58A (-1188W @ 2p)
+Oct 05 11:19:19 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:19:19 ----
+Oct 05 11:19:19 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:19:19 charge power: 0W
+Oct 05 11:19:19 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:19:19 charge currents: [0 0 0]A
+Oct 05 11:19:20 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:19:20 pv power: 3875W
+Oct 05 11:19:20 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:19:20 battery soc: 0%
+Oct 05 11:19:20 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:19:20 battery power: -1W
+Oct 05 11:19:20 homeserver evcc[3439618]: [script] DEBUG 2024/10/05 11:19:20 /bin/bash -c cat /dev/shm/smaemd/data/em-3006136413-pconsume: 0.0000
+Oct 05 11:19:20 homeserver evcc[3439618]: [script] DEBUG 2024/10/05 11:19:20 /bin/bash -c cat /dev/shm/smaemd/data/em-3006136413-psupply: 937.8000
+Oct 05 11:19:20 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:19:20 grid meter: -938W
+Oct 05 11:19:20 homeserver evcc[3439618]: [script] DEBUG 2024/10/05 11:19:20 /bin/bash -c cat /dev/shm/smaemd/data/em-3006136413-pconsumecounter: 50927.2842
+Oct 05 11:19:20 homeserver evcc[3439618]: [script] DEBUG 2024/10/05 11:19:20 /bin/bash -c cat /dev/shm/smaemd/data/em-3006136413-psupplycounter: 116277.7097
+Oct 05 11:19:20 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:19:20 site power: -839W
+Oct 05 11:19:20 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:19:20 set min current: 6
+Oct 05 11:19:20 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:19:20 set max current: 16
+Oct 05 11:19:20 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:19:20 charge voltages: [228 228 227]V
+Oct 05 11:19:20 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:19:20 detected connected phases: 3p
+Oct 05 11:19:20 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:19:20 charge total import: 132.188kWh
+Oct 05 11:19:20 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:19:20 charger status: B
+Oct 05 11:19:21 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:19:21 pv charge current: 1.82A = 0A + 1.82A (-839W @ 2p)
+Oct 05 11:19:49 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:19:49 ----
+Oct 05 11:19:49 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:19:49 charge power: 0W
+Oct 05 11:19:49 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:19:49 charge currents: [0 0 0]A
+Oct 05 11:19:50 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:19:50 pv power: 4028W
+Oct 05 11:19:50 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:19:50 battery soc: 0%
+Oct 05 11:19:50 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:19:50 battery power: -1W
+Oct 05 11:19:50 homeserver evcc[3439618]: [script] DEBUG 2024/10/05 11:19:50 /bin/bash -c cat /dev/shm/smaemd/data/em-3006136413-pconsume: 0.0000
+Oct 05 11:19:50 homeserver evcc[3439618]: [script] DEBUG 2024/10/05 11:19:50 /bin/bash -c cat /dev/shm/smaemd/data/em-3006136413-psupply: 1046.6000
+Oct 05 11:19:50 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:19:50 grid meter: -1047W
+Oct 05 11:19:50 homeserver evcc[3439618]: [script] DEBUG 2024/10/05 11:19:50 /bin/bash -c cat /dev/shm/smaemd/data/em-3006136413-pconsumecounter: 50927.2842
+Oct 05 11:19:50 homeserver evcc[3439618]: [script] DEBUG 2024/10/05 11:19:50 /bin/bash -c cat /dev/shm/smaemd/data/em-3006136413-psupplycounter: 116277.7187
+Oct 05 11:19:50 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:19:50 site power: -948W
+Oct 05 11:19:50 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:19:50 set min current: 6
+Oct 05 11:19:50 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:19:50 set max current: 16
+Oct 05 11:19:50 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:19:50 charge voltages: [228 228 227]V
+Oct 05 11:19:50 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:19:50 detected connected phases: 3p
+Oct 05 11:19:50 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:19:50 charge total import: 132.188kWh
+Oct 05 11:19:50 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:19:50 charger status: B
+Oct 05 11:19:51 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:19:51 pv charge current: 2.06A = 0A + 2.06A (-948W @ 2p)
+Oct 05 11:20:19 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:20:19 ----
+Oct 05 11:20:19 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:20:19 charge power: 0W
+Oct 05 11:20:19 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:20:19 charge currents: [0 0 0]A
+Oct 05 11:20:20 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:20:20 pv power: 4162W
+Oct 05 11:20:20 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:20:20 battery soc: 0%
+Oct 05 11:20:20 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:20:20 battery power: -1W
+Oct 05 11:20:20 homeserver evcc[3439618]: [script] DEBUG 2024/10/05 11:20:20 /bin/bash -c cat /dev/shm/smaemd/data/em-3006136413-pconsume: 0.0000
+Oct 05 11:20:20 homeserver evcc[3439618]: [script] DEBUG 2024/10/05 11:20:20 /bin/bash -c cat /dev/shm/smaemd/data/em-3006136413-psupply: 1573.8000
+Oct 05 11:20:20 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:20:20 grid meter: -1574W
+Oct 05 11:20:20 homeserver evcc[3439618]: [script] DEBUG 2024/10/05 11:20:20 /bin/bash -c cat /dev/shm/smaemd/data/em-3006136413-pconsumecounter: 50927.2842
+Oct 05 11:20:20 homeserver evcc[3439618]: [script] DEBUG 2024/10/05 11:20:20 /bin/bash -c cat /dev/shm/smaemd/data/em-3006136413-psupplycounter: 116277.7298
+Oct 05 11:20:20 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:20:20 site power: -1475W
+Oct 05 11:20:20 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:20:20 set min current: 6
+Oct 05 11:20:20 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:20:20 set max current: 16
+Oct 05 11:20:20 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:20:20 charge voltages: [228 228 227]V
+Oct 05 11:20:20 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:20:20 detected connected phases: 3p
+Oct 05 11:20:20 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:20:20 charge total import: 132.188kWh
+Oct 05 11:20:20 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:20:20 charger status: B
+Oct 05 11:20:20 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:20:20 pv charge current: 3.21A = 0A + 3.21A (-1475W @ 2p)
+Oct 05 11:20:49 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:20:49 ----
+Oct 05 11:20:49 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:20:49 charge power: 0W
+Oct 05 11:20:49 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:20:49 charge currents: [0 0 0]A
+Oct 05 11:20:50 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:20:50 pv power: 4223W
+Oct 05 11:20:50 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:20:50 battery soc: 0%
+Oct 05 11:20:50 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:20:50 battery power: -1W
+Oct 05 11:20:50 homeserver evcc[3439618]: [script] DEBUG 2024/10/05 11:20:50 /bin/bash -c cat /dev/shm/smaemd/data/em-3006136413-pconsume: 0.0000
+Oct 05 11:20:50 homeserver evcc[3439618]: [script] DEBUG 2024/10/05 11:20:50 /bin/bash -c cat /dev/shm/smaemd/data/em-3006136413-psupply: 1337.4000
+Oct 05 11:20:50 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:20:50 grid meter: -1337W
+Oct 05 11:20:50 homeserver evcc[3439618]: [script] DEBUG 2024/10/05 11:20:50 /bin/bash -c cat /dev/shm/smaemd/data/em-3006136413-pconsumecounter: 50927.2842
+Oct 05 11:20:50 homeserver evcc[3439618]: [script] DEBUG 2024/10/05 11:20:50 /bin/bash -c cat /dev/shm/smaemd/data/em-3006136413-psupplycounter: 116277.7399
+Oct 05 11:20:50 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:20:50 site power: -1238W
+Oct 05 11:20:50 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:20:50 set min current: 6
+Oct 05 11:20:50 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:20:50 set max current: 16
+Oct 05 11:20:50 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:20:50 charge voltages: [228 228 227]V
+Oct 05 11:20:50 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:20:50 detected connected phases: 3p
+Oct 05 11:20:50 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:20:50 charge total import: 132.188kWh
+Oct 05 11:20:50 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:20:50 charger status: B
+Oct 05 11:20:51 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:20:51 pv charge current: 2.69A = 0A + 2.69A (-1238W @ 2p)
+Oct 05 11:21:19 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:21:19 ----
+Oct 05 11:21:19 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:21:19 charge power: 0W
+Oct 05 11:21:19 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:21:19 charge currents: [0 0 0]A
+Oct 05 11:21:20 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:21:20 pv power: 4207W
+Oct 05 11:21:20 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:21:20 battery soc: 0%
+Oct 05 11:21:20 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:21:20 battery power: -1W
+Oct 05 11:21:20 homeserver evcc[3439618]: [script] DEBUG 2024/10/05 11:21:20 /bin/bash -c cat /dev/shm/smaemd/data/em-3006136413-pconsume: 0.0000
+Oct 05 11:21:20 homeserver evcc[3439618]: [script] DEBUG 2024/10/05 11:21:20 /bin/bash -c cat /dev/shm/smaemd/data/em-3006136413-psupply: 1341.3000
+Oct 05 11:21:20 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:21:20 grid meter: -1341W
+Oct 05 11:21:20 homeserver evcc[3439618]: [script] DEBUG 2024/10/05 11:21:20 /bin/bash -c cat /dev/shm/smaemd/data/em-3006136413-pconsumecounter: 50927.2842
+Oct 05 11:21:20 homeserver evcc[3439618]: [script] DEBUG 2024/10/05 11:21:20 /bin/bash -c cat /dev/shm/smaemd/data/em-3006136413-psupplycounter: 116277.7516
+Oct 05 11:21:20 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:21:20 site power: -1242W
+Oct 05 11:21:20 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:21:20 set min current: 6
+Oct 05 11:21:20 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:21:20 set max current: 16
+Oct 05 11:21:20 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:21:20 charge voltages: [228 228 227]V
+Oct 05 11:21:20 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:21:20 detected connected phases: 3p
+Oct 05 11:21:20 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:21:20 charge total import: 132.188kWh
+Oct 05 11:21:20 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:21:20 charger status: B
+Oct 05 11:21:21 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:21:21 pv charge current: 2.7A = 0A + 2.7A (-1242W @ 2p)
+Oct 05 11:21:49 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:21:49 ----
+Oct 05 11:21:49 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:21:49 charge power: 0W
+Oct 05 11:21:49 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:21:49 charge currents: [0 0 0]A
+Oct 05 11:21:50 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:21:50 pv power: 4113W
+Oct 05 11:21:50 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:21:50 battery soc: 0%
+Oct 05 11:21:50 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:21:50 battery power: -1W
+Oct 05 11:21:50 homeserver evcc[3439618]: [script] DEBUG 2024/10/05 11:21:50 /bin/bash -c cat /dev/shm/smaemd/data/em-3006136413-pconsume: 0.0000
+Oct 05 11:21:50 homeserver evcc[3439618]: [script] DEBUG 2024/10/05 11:21:50 /bin/bash -c cat /dev/shm/smaemd/data/em-3006136413-psupply: 1436.9000
+Oct 05 11:21:50 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:21:50 grid meter: -1437W
+Oct 05 11:21:50 homeserver evcc[3439618]: [script] DEBUG 2024/10/05 11:21:50 /bin/bash -c cat /dev/shm/smaemd/data/em-3006136413-pconsumecounter: 50927.2842
+Oct 05 11:21:50 homeserver evcc[3439618]: [script] DEBUG 2024/10/05 11:21:50 /bin/bash -c cat /dev/shm/smaemd/data/em-3006136413-psupplycounter: 116277.7630
+Oct 05 11:21:50 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:21:50 site power: -1338W
+Oct 05 11:21:50 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:21:50 set min current: 6
+Oct 05 11:21:50 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:21:50 set max current: 16
+Oct 05 11:21:50 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:21:50 charge voltages: [228 228 227]V
+Oct 05 11:21:50 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:21:50 detected connected phases: 3p
+Oct 05 11:21:50 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:21:50 charge total import: 132.188kWh
+Oct 05 11:21:50 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:21:50 charger status: B
+Oct 05 11:21:50 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:21:50 pv charge current: 2.91A = 0A + 2.91A (-1338W @ 2p)
+Oct 05 11:22:19 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:22:19 ----
+Oct 05 11:22:19 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:22:19 charge power: 0W
+Oct 05 11:22:19 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:22:19 charge currents: [0 0 0]A
+Oct 05 11:22:20 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:22:20 pv power: 3976W
+Oct 05 11:22:20 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:22:20 battery soc: 0%
+Oct 05 11:22:20 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:22:20 battery power: -1W
+Oct 05 11:22:20 homeserver evcc[3439618]: [script] DEBUG 2024/10/05 11:22:20 /bin/bash -c cat /dev/shm/smaemd/data/em-3006136413-pconsume: 0.0000
+Oct 05 11:22:20 homeserver evcc[3439618]: [script] DEBUG 2024/10/05 11:22:20 /bin/bash -c cat /dev/shm/smaemd/data/em-3006136413-psupply: 949.1000
+Oct 05 11:22:20 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:22:20 grid meter: -949W
+Oct 05 11:22:20 homeserver evcc[3439618]: [script] DEBUG 2024/10/05 11:22:20 /bin/bash -c cat /dev/shm/smaemd/data/em-3006136413-pconsumecounter: 50927.2842
+Oct 05 11:22:20 homeserver evcc[3439618]: [script] DEBUG 2024/10/05 11:22:20 /bin/bash -c cat /dev/shm/smaemd/data/em-3006136413-psupplycounter: 116277.7728
+Oct 05 11:22:20 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:22:20 site power: -850W
+Oct 05 11:22:20 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:22:20 set min current: 6
+Oct 05 11:22:20 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:22:20 set max current: 16
+Oct 05 11:22:20 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:22:20 charge voltages: [228 228 227]V
+Oct 05 11:22:20 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:22:20 detected connected phases: 3p
+Oct 05 11:22:20 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:22:20 charge total import: 132.188kWh
+Oct 05 11:22:20 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:22:20 charger status: B
+Oct 05 11:22:21 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:22:21 pv charge current: 1.85A = 0A + 1.85A (-850W @ 2p)
+Oct 05 11:22:49 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:22:49 ----
+Oct 05 11:22:49 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:22:49 charge power: 0W
+Oct 05 11:22:49 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:22:49 charge currents: [0 0 0]A
+Oct 05 11:22:50 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:22:50 pv power: 3808W
+Oct 05 11:22:50 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:22:50 battery soc: 0%
+Oct 05 11:22:50 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:22:50 battery power: -1W
+Oct 05 11:22:50 homeserver evcc[3439618]: [script] DEBUG 2024/10/05 11:22:50 /bin/bash -c cat /dev/shm/smaemd/data/em-3006136413-pconsume: 0.0000
+Oct 05 11:22:50 homeserver evcc[3439618]: [script] DEBUG 2024/10/05 11:22:50 /bin/bash -c cat /dev/shm/smaemd/data/em-3006136413-psupply: 957.5000
+Oct 05 11:22:50 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:22:50 grid meter: -958W
+Oct 05 11:22:50 homeserver evcc[3439618]: [script] DEBUG 2024/10/05 11:22:50 /bin/bash -c cat /dev/shm/smaemd/data/em-3006136413-pconsumecounter: 50927.2842
+Oct 05 11:22:50 homeserver evcc[3439618]: [script] DEBUG 2024/10/05 11:22:50 /bin/bash -c cat /dev/shm/smaemd/data/em-3006136413-psupplycounter: 116277.7810
+Oct 05 11:22:50 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:22:50 site power: -858W
+Oct 05 11:22:50 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:22:50 set min current: 6
+Oct 05 11:22:50 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:22:50 set max current: 16
+Oct 05 11:22:50 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:22:50 charge voltages: [228 228 227]V
+Oct 05 11:22:50 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:22:50 detected connected phases: 3p
+Oct 05 11:22:50 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:22:50 charge total import: 132.188kWh
+Oct 05 11:22:50 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:22:50 charger status: B
+Oct 05 11:22:50 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:22:50 pv charge current: 1.87A = 0A + 1.87A (-858W @ 2p)
+Oct 05 11:23:19 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:23:19 ----
+Oct 05 11:23:19 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:23:19 charge power: 0W
+Oct 05 11:23:19 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:23:19 charge currents: [0 0 0]A
+Oct 05 11:23:20 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:23:20 pv power: 3661W
+Oct 05 11:23:20 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:23:20 battery soc: 0%
+Oct 05 11:23:20 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:23:20 battery power: -1W
+Oct 05 11:23:20 homeserver evcc[3439618]: [script] DEBUG 2024/10/05 11:23:20 /bin/bash -c cat /dev/shm/smaemd/data/em-3006136413-pconsume: 0.0000
+Oct 05 11:23:20 homeserver evcc[3439618]: [script] DEBUG 2024/10/05 11:23:20 /bin/bash -c cat /dev/shm/smaemd/data/em-3006136413-psupply: 660.5000
+Oct 05 11:23:20 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:23:20 grid meter: -660W
+Oct 05 11:23:20 homeserver evcc[3439618]: [script] DEBUG 2024/10/05 11:23:20 /bin/bash -c cat /dev/shm/smaemd/data/em-3006136413-pconsumecounter: 50927.2842
+Oct 05 11:23:20 homeserver evcc[3439618]: [script] DEBUG 2024/10/05 11:23:20 /bin/bash -c cat /dev/shm/smaemd/data/em-3006136413-psupplycounter: 116277.7879
+Oct 05 11:23:20 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:23:20 site power: -562W
+Oct 05 11:23:20 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:23:20 set min current: 6
+Oct 05 11:23:20 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:23:20 set max current: 16
+Oct 05 11:23:20 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:23:20 charge voltages: [228 228 227]V
+Oct 05 11:23:20 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:23:20 detected connected phases: 3p
+Oct 05 11:23:20 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:23:20 charge total import: 132.188kWh
+Oct 05 11:23:20 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:23:20 charger status: B
+Oct 05 11:23:21 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:23:21 pv charge current: 1.22A = 0A + 1.22A (-562W @ 2p)
+Oct 05 11:23:49 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:23:49 ----
+Oct 05 11:23:49 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:23:49 charge power: 0W
+Oct 05 11:23:49 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:23:49 charge currents: [0 0 0]A
+Oct 05 11:23:50 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:23:50 pv power: 3592W
+Oct 05 11:23:50 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:23:50 battery soc: 0%
+Oct 05 11:23:50 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:23:50 battery power: -1W
+Oct 05 11:23:50 homeserver evcc[3439618]: [script] DEBUG 2024/10/05 11:23:50 /bin/bash -c cat /dev/shm/smaemd/data/em-3006136413-pconsume: 0.0000
+Oct 05 11:23:50 homeserver evcc[3439618]: [script] DEBUG 2024/10/05 11:23:50 /bin/bash -c cat /dev/shm/smaemd/data/em-3006136413-psupply: 634.0000
+Oct 05 11:23:50 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:23:50 grid meter: -634W
+Oct 05 11:23:50 homeserver evcc[3439618]: [script] DEBUG 2024/10/05 11:23:50 /bin/bash -c cat /dev/shm/smaemd/data/em-3006136413-pconsumecounter: 50927.2842
+Oct 05 11:23:50 homeserver evcc[3439618]: [script] DEBUG 2024/10/05 11:23:50 /bin/bash -c cat /dev/shm/smaemd/data/em-3006136413-psupplycounter: 116277.7940
+Oct 05 11:23:50 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:23:50 site power: -535W
+Oct 05 11:23:50 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:23:50 set min current: 6
+Oct 05 11:23:50 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:23:50 set max current: 16
+Oct 05 11:23:50 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:23:50 charge voltages: [228 228 226]V
+Oct 05 11:23:50 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:23:50 detected connected phases: 3p
+Oct 05 11:23:50 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:23:50 charge total import: 132.188kWh
+Oct 05 11:23:50 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:23:50 charger status: B
+Oct 05 11:23:50 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:23:50 pv charge current: 1.16A = 0A + 1.16A (-535W @ 2p)
+Oct 05 11:24:19 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:24:19 ----
+Oct 05 11:24:19 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:24:19 charge power: 0W
+Oct 05 11:24:19 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:24:19 charge currents: [0 0 0]A
+Oct 05 11:24:20 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:24:20 pv power: 3641W
+Oct 05 11:24:20 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:24:20 battery soc: 0%
+Oct 05 11:24:20 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:24:20 battery power: -1W
+Oct 05 11:24:20 homeserver evcc[3439618]: [script] DEBUG 2024/10/05 11:24:20 /bin/bash -c cat /dev/shm/smaemd/data/em-3006136413-pconsume: 0.0000
+Oct 05 11:24:20 homeserver evcc[3439618]: [script] DEBUG 2024/10/05 11:24:20 /bin/bash -c cat /dev/shm/smaemd/data/em-3006136413-psupply: 862.0000
+Oct 05 11:24:20 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:24:20 grid meter: -862W
+Oct 05 11:24:20 homeserver evcc[3439618]: [script] DEBUG 2024/10/05 11:24:20 /bin/bash -c cat /dev/shm/smaemd/data/em-3006136413-pconsumecounter: 50927.2842
+Oct 05 11:24:20 homeserver evcc[3439618]: [script] DEBUG 2024/10/05 11:24:20 /bin/bash -c cat /dev/shm/smaemd/data/em-3006136413-psupplycounter: 116277.8006
+Oct 05 11:24:20 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:24:20 site power: -763W
+Oct 05 11:24:20 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:24:20 set min current: 6
+Oct 05 11:24:20 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:24:20 set max current: 16
+Oct 05 11:24:20 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:24:20 charge voltages: [228 228 227]V
+Oct 05 11:24:20 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:24:20 detected connected phases: 3p
+Oct 05 11:24:20 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:24:20 charge total import: 132.188kWh
+Oct 05 11:24:20 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:24:20 charger status: B
+Oct 05 11:24:20 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:24:20 pv charge current: 1.66A = 0A + 1.66A (-763W @ 2p)
+Oct 05 11:24:49 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:24:49 ----
+Oct 05 11:24:49 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:24:49 charge power: 0W
+Oct 05 11:24:49 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:24:49 charge currents: [0 0 0]A
+Oct 05 11:24:50 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:24:50 pv power: 3770W
+Oct 05 11:24:50 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:24:50 battery soc: 0%
+Oct 05 11:24:50 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:24:50 battery power: -1W
+Oct 05 11:24:50 homeserver evcc[3439618]: [script] DEBUG 2024/10/05 11:24:50 /bin/bash -c cat /dev/shm/smaemd/data/em-3006136413-pconsume: 0.0000
+Oct 05 11:24:50 homeserver evcc[3439618]: [script] DEBUG 2024/10/05 11:24:50 /bin/bash -c cat /dev/shm/smaemd/data/em-3006136413-psupply: 845.3000
+Oct 05 11:24:50 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:24:50 grid meter: -845W
+Oct 05 11:24:50 homeserver evcc[3439618]: [script] DEBUG 2024/10/05 11:24:50 /bin/bash -c cat /dev/shm/smaemd/data/em-3006136413-pconsumecounter: 50927.2842
+Oct 05 11:24:50 homeserver evcc[3439618]: [script] DEBUG 2024/10/05 11:24:50 /bin/bash -c cat /dev/shm/smaemd/data/em-3006136413-psupplycounter: 116277.8081
+Oct 05 11:24:50 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:24:50 site power: -746W
+Oct 05 11:24:50 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:24:50 set min current: 6
+Oct 05 11:24:50 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:24:50 set max current: 16
+Oct 05 11:24:50 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:24:50 charge voltages: [228 228 227]V
+Oct 05 11:24:50 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:24:50 detected connected phases: 3p
+Oct 05 11:24:50 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:24:50 charge total import: 132.188kWh
+Oct 05 11:24:50 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:24:50 charger status: B
+Oct 05 11:24:50 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:24:50 pv charge current: 1.62A = 0A + 1.62A (-746W @ 2p)
+Oct 05 11:25:19 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:25:19 ----
+Oct 05 11:25:19 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:25:19 charge power: 0W
+Oct 05 11:25:19 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:25:19 charge currents: [0 0 0]A
+Oct 05 11:25:20 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:25:20 pv power: 3910W
+Oct 05 11:25:20 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:25:20 battery soc: 0%
+Oct 05 11:25:20 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:25:20 battery power: -1W
+Oct 05 11:25:20 homeserver evcc[3439618]: [script] DEBUG 2024/10/05 11:25:20 /bin/bash -c cat /dev/shm/smaemd/data/em-3006136413-pconsume: 0.0000
+Oct 05 11:25:20 homeserver evcc[3439618]: [script] DEBUG 2024/10/05 11:25:20 /bin/bash -c cat /dev/shm/smaemd/data/em-3006136413-psupply: 1142.1000
+Oct 05 11:25:20 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:25:20 grid meter: -1142W
+Oct 05 11:25:20 homeserver evcc[3439618]: [script] DEBUG 2024/10/05 11:25:20 /bin/bash -c cat /dev/shm/smaemd/data/em-3006136413-pconsumecounter: 50927.2842
+Oct 05 11:25:20 homeserver evcc[3439618]: [script] DEBUG 2024/10/05 11:25:20 /bin/bash -c cat /dev/shm/smaemd/data/em-3006136413-psupplycounter: 116277.8165
+Oct 05 11:25:20 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:25:20 site power: -1043W
+Oct 05 11:25:20 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:25:20 set min current: 6
+Oct 05 11:25:20 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:25:20 set max current: 16
+Oct 05 11:25:20 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:25:20 charge voltages: [228 228 227]V
+Oct 05 11:25:20 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:25:20 detected connected phases: 3p
+Oct 05 11:25:20 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:25:20 charge total import: 132.188kWh
+Oct 05 11:25:20 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:25:20 charger status: B
+Oct 05 11:25:20 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:25:20 pv charge current: 2.27A = 0A + 2.27A (-1043W @ 2p)
+Oct 05 11:25:49 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:25:49 ----
+Oct 05 11:25:49 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:25:49 charge power: 0W
+Oct 05 11:25:49 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:25:49 charge currents: [0 0 0]A
+Oct 05 11:25:50 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:25:50 pv power: 4009W
+Oct 05 11:25:50 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:25:50 battery soc: 0%
+Oct 05 11:25:50 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:25:50 battery power: -1W
+Oct 05 11:25:50 homeserver evcc[3439618]: [script] DEBUG 2024/10/05 11:25:50 /bin/bash -c cat /dev/shm/smaemd/data/em-3006136413-pconsume: 0.0000
+Oct 05 11:25:50 homeserver evcc[3439618]: [script] DEBUG 2024/10/05 11:25:50 /bin/bash -c cat /dev/shm/smaemd/data/em-3006136413-psupply: 1185.9000
+Oct 05 11:25:50 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:25:50 grid meter: -1186W
+Oct 05 11:25:50 homeserver evcc[3439618]: [script] DEBUG 2024/10/05 11:25:50 /bin/bash -c cat /dev/shm/smaemd/data/em-3006136413-pconsumecounter: 50927.2842
+Oct 05 11:25:50 homeserver evcc[3439618]: [script] DEBUG 2024/10/05 11:25:50 /bin/bash -c cat /dev/shm/smaemd/data/em-3006136413-psupplycounter: 116277.8253
+Oct 05 11:25:50 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:25:50 site power: -1087W
+Oct 05 11:25:50 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:25:50 set min current: 6
+Oct 05 11:25:50 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:25:50 set max current: 16
+Oct 05 11:25:50 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:25:50 charge voltages: [228 228 227]V
+Oct 05 11:25:50 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:25:50 detected connected phases: 3p
+Oct 05 11:25:50 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:25:50 charge total import: 132.188kWh
+Oct 05 11:25:50 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:25:50 charger status: B
+Oct 05 11:25:51 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:25:51 pv charge current: 2.36A = 0A + 2.36A (-1087W @ 2p)
+Oct 05 11:26:19 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:26:19 ----
+Oct 05 11:26:19 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:26:19 charge power: 0W
+Oct 05 11:26:19 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:26:19 charge currents: [0 0 0]A
+Oct 05 11:26:20 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:26:20 pv power: 4087W
+Oct 05 11:26:20 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:26:20 battery soc: 0%
+Oct 05 11:26:20 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:26:20 battery power: -1W
+Oct 05 11:26:20 homeserver evcc[3439618]: [script] DEBUG 2024/10/05 11:26:20 /bin/bash -c cat /dev/shm/smaemd/data/em-3006136413-pconsume: 0.0000
+Oct 05 11:26:20 homeserver evcc[3439618]: [script] DEBUG 2024/10/05 11:26:20 /bin/bash -c cat /dev/shm/smaemd/data/em-3006136413-psupply: 1044.5000
+Oct 05 11:26:20 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:26:20 grid meter: -1044W
+Oct 05 11:26:20 homeserver evcc[3439618]: [script] DEBUG 2024/10/05 11:26:20 /bin/bash -c cat /dev/shm/smaemd/data/em-3006136413-pconsumecounter: 50927.2842
+Oct 05 11:26:20 homeserver evcc[3439618]: [script] DEBUG 2024/10/05 11:26:20 /bin/bash -c cat /dev/shm/smaemd/data/em-3006136413-psupplycounter: 116277.8352
+Oct 05 11:26:20 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:26:20 site power: -946W
+Oct 05 11:26:20 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:26:20 set min current: 6
+Oct 05 11:26:20 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:26:20 set max current: 16
+Oct 05 11:26:20 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:26:20 charge voltages: [228 228 227]V
+Oct 05 11:26:20 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:26:20 detected connected phases: 3p
+Oct 05 11:26:20 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:26:20 charge total import: 132.188kWh
+Oct 05 11:26:20 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:26:20 charger status: B
+Oct 05 11:26:21 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:26:21 pv charge current: 2.06A = 0A + 2.06A (-946W @ 2p)
+Oct 05 11:26:49 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:26:49 ----
+Oct 05 11:26:49 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:26:49 charge power: 0W
+Oct 05 11:26:49 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:26:49 charge currents: [0 0 0]A
+Oct 05 11:26:50 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:26:50 pv power: 4155W
+Oct 05 11:26:50 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:26:50 battery soc: 0%
+Oct 05 11:26:50 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:26:50 battery power: -1W
+Oct 05 11:26:50 homeserver evcc[3439618]: [script] DEBUG 2024/10/05 11:26:50 /bin/bash -c cat /dev/shm/smaemd/data/em-3006136413-pconsume: 0.0000
+Oct 05 11:26:50 homeserver evcc[3439618]: [script] DEBUG 2024/10/05 11:26:50 /bin/bash -c cat /dev/shm/smaemd/data/em-3006136413-psupply: 2071.1000
+Oct 05 11:26:50 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:26:50 grid meter: -2071W
+Oct 05 11:26:50 homeserver evcc[3439618]: [script] DEBUG 2024/10/05 11:26:50 /bin/bash -c cat /dev/shm/smaemd/data/em-3006136413-pconsumecounter: 50927.2842
+Oct 05 11:26:50 homeserver evcc[3439618]: [script] DEBUG 2024/10/05 11:26:50 /bin/bash -c cat /dev/shm/smaemd/data/em-3006136413-psupplycounter: 116277.8489
+Oct 05 11:26:50 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:26:50 site power: -1972W
+Oct 05 11:26:50 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:26:50 set min current: 6
+Oct 05 11:26:50 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:26:50 set max current: 16
+Oct 05 11:26:50 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:26:50 charge voltages: [228 228 228]V
+Oct 05 11:26:50 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:26:50 detected connected phases: 3p
+Oct 05 11:26:50 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:26:50 charge total import: 132.188kWh
+Oct 05 11:26:50 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:26:50 charger status: B
+Oct 05 11:26:50 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:26:50 pv charge current: 4.29A = 0A + 4.29A (-1972W @ 2p)
+Oct 05 11:26:50 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:26:50 site power -1972W <= -1800W enable threshold
+Oct 05 11:26:50 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:26:50 pv enable timer start: 2m0s
+Oct 05 11:26:50 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:26:50 pv enable in 2m0s
+Oct 05 11:27:19 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:27:19 ----
+Oct 05 11:27:19 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:27:19 charge power: 0W
+Oct 05 11:27:19 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:27:19 charge currents: [0 0 0]A
+Oct 05 11:27:20 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:27:20 pv power: 4294W
+Oct 05 11:27:20 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:27:20 battery soc: 0%
+Oct 05 11:27:20 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:27:20 battery power: -1W
+Oct 05 11:27:20 homeserver evcc[3439618]: [script] DEBUG 2024/10/05 11:27:20 /bin/bash -c cat /dev/shm/smaemd/data/em-3006136413-pconsume: 0.0000
+Oct 05 11:27:20 homeserver evcc[3439618]: [script] DEBUG 2024/10/05 11:27:20 /bin/bash -c cat /dev/shm/smaemd/data/em-3006136413-psupply: 2336.9000
+Oct 05 11:27:20 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:27:20 grid meter: -2337W
+Oct 05 11:27:20 homeserver evcc[3439618]: [script] DEBUG 2024/10/05 11:27:20 /bin/bash -c cat /dev/shm/smaemd/data/em-3006136413-pconsumecounter: 50927.2842
+Oct 05 11:27:20 homeserver evcc[3439618]: [script] DEBUG 2024/10/05 11:27:20 /bin/bash -c cat /dev/shm/smaemd/data/em-3006136413-psupplycounter: 116277.8675
+Oct 05 11:27:20 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:27:20 site power: -2238W
+Oct 05 11:27:20 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:27:20 set min current: 6
+Oct 05 11:27:20 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:27:20 set max current: 16
+Oct 05 11:27:20 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:27:20 charge voltages: [228 228 228]V
+Oct 05 11:27:20 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:27:20 detected connected phases: 3p
+Oct 05 11:27:20 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:27:20 charge total import: 132.188kWh
+Oct 05 11:27:20 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:27:20 charger status: B
+Oct 05 11:27:20 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:27:20 pv charge current: 4.87A = 0A + 4.87A (-2238W @ 2p)
+Oct 05 11:27:20 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:27:20 site power -2238W <= -1800W enable threshold
+Oct 05 11:27:20 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:27:20 pv enable in 1m30s
+Oct 05 11:27:20 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:27:20 pv enable timer remaining: 1m30s
+Oct 05 11:27:49 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:27:49 ----
+Oct 05 11:27:49 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:27:49 charge power: 0W
+Oct 05 11:27:49 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:27:49 charge currents: [0 0 0]A
+Oct 05 11:27:50 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:27:50 pv power: 4510W
+Oct 05 11:27:50 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:27:50 battery soc: 0%
+Oct 05 11:27:50 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:27:50 battery power: -1W
+Oct 05 11:27:50 homeserver evcc[3439618]: [script] DEBUG 2024/10/05 11:27:50 /bin/bash -c cat /dev/shm/smaemd/data/em-3006136413-pconsume: 0.0000
+Oct 05 11:27:50 homeserver evcc[3439618]: [script] DEBUG 2024/10/05 11:27:50 /bin/bash -c cat /dev/shm/smaemd/data/em-3006136413-psupply: 2781.3000
+Oct 05 11:27:50 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:27:50 grid meter: -2781W
+Oct 05 11:27:50 homeserver evcc[3439618]: [script] DEBUG 2024/10/05 11:27:50 /bin/bash -c cat /dev/shm/smaemd/data/em-3006136413-pconsumecounter: 50927.2842
+Oct 05 11:27:50 homeserver evcc[3439618]: [script] DEBUG 2024/10/05 11:27:50 /bin/bash -c cat /dev/shm/smaemd/data/em-3006136413-psupplycounter: 116277.8877
+Oct 05 11:27:50 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:27:50 site power: -2682W
+Oct 05 11:27:50 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:27:50 set min current: 6
+Oct 05 11:27:50 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:27:50 set max current: 16
+Oct 05 11:27:50 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:27:50 charge voltages: [228 228 228]V
+Oct 05 11:27:50 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:27:50 detected connected phases: 3p
+Oct 05 11:27:50 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:27:50 charge total import: 132.188kWh
+Oct 05 11:27:50 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:27:50 charger status: B
+Oct 05 11:27:51 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:27:51 pv charge current: 5.83A = 0A + 5.83A (-2682W @ 2p)
+Oct 05 11:27:51 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:27:51 site power -2682W <= -1800W enable threshold
+Oct 05 11:27:51 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:27:51 pv enable in 1m0s
+Oct 05 11:27:51 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:27:51 pv enable timer remaining: 1m0s
+Oct 05 11:28:19 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:28:19 ----
+Oct 05 11:28:19 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:28:19 charge power: 0W
+Oct 05 11:28:19 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:28:19 charge currents: [0 0 0]A
+Oct 05 11:28:20 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:28:20 pv power: 4746W
+Oct 05 11:28:20 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:28:20 battery soc: 0%
+Oct 05 11:28:20 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:28:20 battery power: -1W
+Oct 05 11:28:20 homeserver evcc[3439618]: [script] DEBUG 2024/10/05 11:28:20 /bin/bash -c cat /dev/shm/smaemd/data/em-3006136413-pconsume: 0.0000
+Oct 05 11:28:20 homeserver evcc[3439618]: [script] DEBUG 2024/10/05 11:28:20 /bin/bash -c cat /dev/shm/smaemd/data/em-3006136413-psupply: 2815.4000
+Oct 05 11:28:20 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:28:20 grid meter: -2815W
+Oct 05 11:28:20 homeserver evcc[3439618]: [script] DEBUG 2024/10/05 11:28:20 /bin/bash -c cat /dev/shm/smaemd/data/em-3006136413-pconsumecounter: 50927.2842
+Oct 05 11:28:20 homeserver evcc[3439618]: [script] DEBUG 2024/10/05 11:28:20 /bin/bash -c cat /dev/shm/smaemd/data/em-3006136413-psupplycounter: 116277.9099
+Oct 05 11:28:20 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:28:20 site power: -2716W
+Oct 05 11:28:20 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:28:20 set min current: 6
+Oct 05 11:28:20 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:28:20 set max current: 16
+Oct 05 11:28:20 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:28:20 charge voltages: [228 229 227]V
+Oct 05 11:28:20 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:28:20 detected connected phases: 3p
+Oct 05 11:28:20 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:28:20 charge total import: 132.188kWh
+Oct 05 11:28:20 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:28:20 charger status: B
+Oct 05 11:28:21 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:28:21 pv charge current: 5.91A = 0A + 5.91A (-2716W @ 2p)
+Oct 05 11:28:21 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:28:21 site power -2716W <= -1800W enable threshold
+Oct 05 11:28:21 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:28:21 pv enable in 30s
+Oct 05 11:28:21 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:28:21 pv enable timer remaining: 30s
+Oct 05 11:28:49 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:28:49 ----
+Oct 05 11:28:49 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:28:49 charge power: 0W
+Oct 05 11:28:49 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:28:49 charge currents: [0 0 0]A
+Oct 05 11:28:50 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:28:50 pv power: 5011W
+Oct 05 11:28:50 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:28:50 battery soc: 0%
+Oct 05 11:28:50 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:28:50 battery power: -1W
+Oct 05 11:28:50 homeserver evcc[3439618]: [script] DEBUG 2024/10/05 11:28:50 /bin/bash -c cat /dev/shm/smaemd/data/em-3006136413-pconsume: 0.0000
+Oct 05 11:28:50 homeserver evcc[3439618]: [script] DEBUG 2024/10/05 11:28:50 /bin/bash -c cat /dev/shm/smaemd/data/em-3006136413-psupply: 3155.2000
+Oct 05 11:28:50 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:28:50 grid meter: -3155W
+Oct 05 11:28:50 homeserver evcc[3439618]: [script] DEBUG 2024/10/05 11:28:50 /bin/bash -c cat /dev/shm/smaemd/data/em-3006136413-pconsumecounter: 50927.2842
+Oct 05 11:28:50 homeserver evcc[3439618]: [script] DEBUG 2024/10/05 11:28:50 /bin/bash -c cat /dev/shm/smaemd/data/em-3006136413-psupplycounter: 116277.9350
+Oct 05 11:28:50 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:28:50 site power: -3056W
+Oct 05 11:28:50 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:28:50 set min current: 6
+Oct 05 11:28:50 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:28:50 set max current: 16
+Oct 05 11:28:50 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:28:50 charge voltages: [228 228 228]V
+Oct 05 11:28:50 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:28:50 detected connected phases: 3p
+Oct 05 11:28:50 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:28:50 charge total import: 132.188kWh
+Oct 05 11:28:50 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:28:50 charger status: B
+Oct 05 11:28:50 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:28:50 pv charge current: 6.64A = 0A + 6.64A (-3056W @ 2p)
+Oct 05 11:28:50 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:28:50 site power -3056W <= -1800W enable threshold
+Oct 05 11:28:50 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:28:50 pv enable in 0s
+Oct 05 11:28:50 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:28:50 pv enable timer elapsed
+Oct 05 11:28:51 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:28:51 max charge current: 6A
+Oct 05 11:28:51 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:28:51 charger enable
+Oct 05 11:28:51 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:28:51 wake-up timer: start
+Oct 05 11:28:58 homeserver evcc[3439618]: [heidel] ERROR 2024/10/05 11:28:58 heartbeat: modbus: response slave id '255' does not match request '1'
+Oct 05 11:29:19 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:29:19 ----
+Oct 05 11:29:19 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:29:19 charge power: 2859W
+Oct 05 11:29:19 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:29:19 charge currents: [0.7 6 5.8]A
+Oct 05 11:29:20 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:29:20 pv power: 5221W
+Oct 05 11:29:20 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:29:20 battery soc: 0%
+Oct 05 11:29:20 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:29:20 battery power: -1W
+Oct 05 11:29:20 homeserver evcc[3439618]: [script] DEBUG 2024/10/05 11:29:20 /bin/bash -c cat /dev/shm/smaemd/data/em-3006136413-pconsume: 0.0000
+Oct 05 11:29:20 homeserver evcc[3439618]: [script] DEBUG 2024/10/05 11:29:20 /bin/bash -c cat /dev/shm/smaemd/data/em-3006136413-psupply: 449.2000
+Oct 05 11:29:20 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:29:20 grid meter: -449W
+Oct 05 11:29:20 homeserver evcc[3439618]: [script] DEBUG 2024/10/05 11:29:20 /bin/bash -c cat /dev/shm/smaemd/data/em-3006136413-pconsumecounter: 50927.2842
+Oct 05 11:29:20 homeserver evcc[3439618]: [script] DEBUG 2024/10/05 11:29:20 /bin/bash -c cat /dev/shm/smaemd/data/em-3006136413-psupplycounter: 116277.9467
+Oct 05 11:29:20 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:29:20 site power: -350W
+Oct 05 11:29:20 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:29:20 set min current: 6
+Oct 05 11:29:20 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:29:20 set max current: 16
+Oct 05 11:29:20 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:29:20 charge voltages: [228 226 226]V
+Oct 05 11:29:20 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:29:20 detected connected phases: 3p
+Oct 05 11:29:20 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:29:20 charge total import: 132.205kWh
+Oct 05 11:29:20 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:29:20 charger status: C
+Oct 05 11:29:21 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:29:21 charge start energy: 132.206kWh
+Oct 05 11:29:21 homeserver evcc[3439618]: [lp-1  ] INFO 2024/10/05 11:29:21 start charging ->
+Oct 05 11:29:21 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:29:21 wake-up timer: stop
+Oct 05 11:29:21 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:29:21 pv charge current: 6.76A = 6A + 0.761A (-350W @ 2p)
+Oct 05 11:29:21 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:29:21 pv timer reset
+Oct 05 11:29:21 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:29:21 pv timer inactive
+Oct 05 11:29:21 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:29:21 max charge current: 6.76A
+Oct 05 11:29:49 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:29:49 ----
+Oct 05 11:29:49 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:29:49 charge power: 3106W
+Oct 05 11:29:49 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:29:49 charge currents: [0.7 6.6 6.4]A
+Oct 05 11:29:50 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:29:50 pv power: 5414W
+Oct 05 11:29:50 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:29:50 battery soc: 0%
+Oct 05 11:29:50 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:29:50 battery power: -1W
+Oct 05 11:29:50 homeserver evcc[3439618]: [script] DEBUG 2024/10/05 11:29:50 /bin/bash -c cat /dev/shm/smaemd/data/em-3006136413-pconsume: 0.0000
+Oct 05 11:29:50 homeserver evcc[3439618]: [script] DEBUG 2024/10/05 11:29:50 /bin/bash -c cat /dev/shm/smaemd/data/em-3006136413-psupply: 345.5000
+Oct 05 11:29:50 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:29:50 grid meter: -346W
+Oct 05 11:29:50 homeserver evcc[3439618]: [script] DEBUG 2024/10/05 11:29:50 /bin/bash -c cat /dev/shm/smaemd/data/em-3006136413-pconsumecounter: 50927.2842
+Oct 05 11:29:50 homeserver evcc[3439618]: [script] DEBUG 2024/10/05 11:29:50 /bin/bash -c cat /dev/shm/smaemd/data/em-3006136413-psupplycounter: 116277.9504
+Oct 05 11:29:50 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:29:50 site power: -246W
+Oct 05 11:29:50 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:29:50 set min current: 6
+Oct 05 11:29:50 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:29:50 set max current: 7
+Oct 05 11:29:50 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:29:50 charge voltages: [228 226 226]V
+Oct 05 11:29:50 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:29:50 detected connected phases: 3p
+Oct 05 11:29:50 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:29:50 detected active phases: 2p
+Oct 05 11:29:50 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:29:50 charge total import: 132.232kWh
+Oct 05 11:29:51 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:29:51 charger status: C
+Oct 05 11:29:51 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:29:51 pv charge current: 7.3A = 6.76A + 0.536A (-246W @ 2p)
+Oct 05 11:29:51 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:29:51 max charge current: 7A
+Oct 05 11:30:19 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:30:19 ----
+Oct 05 11:30:19 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:30:19 charge power: 3198W
+Oct 05 11:30:19 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:30:19 charge currents: [0.7 6.7 6.6]A
+Oct 05 11:30:20 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:30:20 pv power: 5572W
+Oct 05 11:30:20 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:30:20 battery soc: 0%
+Oct 05 11:30:20 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:30:20 battery power: -1W
+Oct 05 11:30:20 homeserver evcc[3439618]: [script] DEBUG 2024/10/05 11:30:20 /bin/bash -c cat /dev/shm/smaemd/data/em-3006136413-pconsume: 0.0000
+Oct 05 11:30:20 homeserver evcc[3439618]: [script] DEBUG 2024/10/05 11:30:20 /bin/bash -c cat /dev/shm/smaemd/data/em-3006136413-psupply: 567.4000
+Oct 05 11:30:20 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:30:20 grid meter: -567W
+Oct 05 11:30:20 homeserver evcc[3439618]: [script] DEBUG 2024/10/05 11:30:20 /bin/bash -c cat /dev/shm/smaemd/data/em-3006136413-pconsumecounter: 50927.2842
+Oct 05 11:30:20 homeserver evcc[3439618]: [script] DEBUG 2024/10/05 11:30:20 /bin/bash -c cat /dev/shm/smaemd/data/em-3006136413-psupplycounter: 116277.9547
+Oct 05 11:30:20 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:30:20 site power: -468W
+Oct 05 11:30:20 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:30:20 set min current: 6
+Oct 05 11:30:20 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:30:20 set max current: 7
+Oct 05 11:30:20 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:30:20 charge voltages: [228 226 226]V
+Oct 05 11:30:20 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:30:20 detected connected phases: 3p
+Oct 05 11:30:20 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:30:20 detected active phases: 2p
+Oct 05 11:30:20 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:30:20 charge total import: 132.258kWh
+Oct 05 11:30:21 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:30:21 charger status: C
+Oct 05 11:30:21 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:30:21 pv charge current: 8.02A = 7A + 1.02A (-468W @ 2p)
+Oct 05 11:30:49 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:30:49 ----
+Oct 05 11:30:49 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:30:49 charge power: 3200W
+Oct 05 11:30:49 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:30:49 charge currents: [0.7 6.7 6.6]A
+Oct 05 11:30:50 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:30:50 pv power: 5704W
+Oct 05 11:30:50 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:30:50 battery soc: 0%
+Oct 05 11:30:50 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:30:50 battery power: -1W
+Oct 05 11:30:50 homeserver evcc[3439618]: [script] DEBUG 2024/10/05 11:30:50 /bin/bash -c cat /dev/shm/smaemd/data/em-3006136413-pconsume: 0.0000
+Oct 05 11:30:50 homeserver evcc[3439618]: [script] DEBUG 2024/10/05 11:30:50 /bin/bash -c cat /dev/shm/smaemd/data/em-3006136413-psupply: 461.7000
+Oct 05 11:30:50 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:30:50 grid meter: -462W
+Oct 05 11:30:50 homeserver evcc[3439618]: [script] DEBUG 2024/10/05 11:30:50 /bin/bash -c cat /dev/shm/smaemd/data/em-3006136413-pconsumecounter: 50927.2842
+Oct 05 11:30:50 homeserver evcc[3439618]: [script] DEBUG 2024/10/05 11:30:50 /bin/bash -c cat /dev/shm/smaemd/data/em-3006136413-psupplycounter: 116277.9597
+Oct 05 11:30:50 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:30:50 site power: -363W
+Oct 05 11:30:50 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:30:50 set min current: 6
+Oct 05 11:30:50 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:30:50 set max current: 7
+Oct 05 11:30:50 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:30:50 charge voltages: [228 226 226]V
+Oct 05 11:30:50 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:30:50 detected connected phases: 3p
+Oct 05 11:30:50 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:30:50 detected active phases: 2p
+Oct 05 11:30:50 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:30:50 charge total import: 132.285kWh
+Oct 05 11:30:50 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:30:50 charger status: C
+Oct 05 11:30:51 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:30:51 pv charge current: 7.79A = 7A + 0.788A (-363W @ 2p)
+Oct 05 11:31:19 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:31:19 ----
+Oct 05 11:31:19 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:31:19 charge power: 3194W
+Oct 05 11:31:19 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:31:19 charge currents: [0.7 6.7 6.6]A
+Oct 05 11:31:20 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:31:20 pv power: 5769W
+Oct 05 11:31:20 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:31:20 battery soc: 0%
+Oct 05 11:31:20 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:31:20 battery power: -1W
+Oct 05 11:31:20 homeserver evcc[3439618]: [script] DEBUG 2024/10/05 11:31:20 /bin/bash -c cat /dev/shm/smaemd/data/em-3006136413-pconsume: 0.0000
+Oct 05 11:31:20 homeserver evcc[3439618]: [script] DEBUG 2024/10/05 11:31:20 /bin/bash -c cat /dev/shm/smaemd/data/em-3006136413-psupply: 994.5000
+Oct 05 11:31:20 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:31:20 grid meter: -994W
+Oct 05 11:31:20 homeserver evcc[3439618]: [script] DEBUG 2024/10/05 11:31:20 /bin/bash -c cat /dev/shm/smaemd/data/em-3006136413-pconsumecounter: 50927.2842
+Oct 05 11:31:20 homeserver evcc[3439618]: [script] DEBUG 2024/10/05 11:31:20 /bin/bash -c cat /dev/shm/smaemd/data/em-3006136413-psupplycounter: 116277.9669
+Oct 05 11:31:20 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:31:20 site power: -896W
+Oct 05 11:31:20 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:31:20 set min current: 6
+Oct 05 11:31:20 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:31:20 set max current: 7
+Oct 05 11:31:20 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:31:20 charge voltages: [228 226 226]V
+Oct 05 11:31:20 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:31:20 detected connected phases: 3p
+Oct 05 11:31:20 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:31:20 detected active phases: 2p
+Oct 05 11:31:20 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:31:20 charge total import: 132.311kWh
+Oct 05 11:31:20 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:31:20 charger status: C
+Oct 05 11:31:21 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:31:21 pv charge current: 8.95A = 7A + 1.95A (-896W @ 2p)
+Oct 05 11:31:49 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:31:49 ----
+Oct 05 11:31:49 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:31:49 charge power: 3193W
+Oct 05 11:31:49 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:31:49 charge currents: [0.7 6.7 6.6]A
+Oct 05 11:31:50 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:31:50 pv power: 5834W
+Oct 05 11:31:50 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:31:50 battery soc: 0%
+Oct 05 11:31:50 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:31:50 battery power: -1W
+Oct 05 11:31:50 homeserver evcc[3439618]: [script] DEBUG 2024/10/05 11:31:50 /bin/bash -c cat /dev/shm/smaemd/data/em-3006136413-pconsume: 0.0000
+Oct 05 11:31:50 homeserver evcc[3439618]: [script] DEBUG 2024/10/05 11:31:50 /bin/bash -c cat /dev/shm/smaemd/data/em-3006136413-psupply: 905.0000
+Oct 05 11:31:50 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:31:50 grid meter: -905W
+Oct 05 11:31:50 homeserver evcc[3439618]: [script] DEBUG 2024/10/05 11:31:50 /bin/bash -c cat /dev/shm/smaemd/data/em-3006136413-pconsumecounter: 50927.2842
+Oct 05 11:31:50 homeserver evcc[3439618]: [script] DEBUG 2024/10/05 11:31:50 /bin/bash -c cat /dev/shm/smaemd/data/em-3006136413-psupplycounter: 116277.9752
+Oct 05 11:31:50 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:31:50 site power: -806W
+Oct 05 11:31:50 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:31:50 set min current: 6
+Oct 05 11:31:50 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:31:50 set max current: 7
+Oct 05 11:31:50 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:31:50 charge voltages: [228 226 226]V
+Oct 05 11:31:50 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:31:50 detected connected phases: 3p
+Oct 05 11:31:50 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:31:50 detected active phases: 2p
+Oct 05 11:31:50 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:31:50 charge total import: 132.338kWh
+Oct 05 11:31:50 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:31:50 charger status: C
+Oct 05 11:31:51 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:31:51 pv charge current: 8.75A = 7A + 1.75A (-806W @ 2p)
+Oct 05 11:32:19 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:32:19 ----
+Oct 05 11:32:19 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:32:19 charge power: 3202W
+Oct 05 11:32:19 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:32:19 charge currents: [0.7 6.7 6.6]A
+Oct 05 11:32:20 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:32:20 pv power: 5940W
+Oct 05 11:32:20 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:32:20 battery soc: 0%
+Oct 05 11:32:20 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:32:20 battery power: -1W
+Oct 05 11:32:20 homeserver evcc[3439618]: [script] DEBUG 2024/10/05 11:32:20 /bin/bash -c cat /dev/shm/smaemd/data/em-3006136413-pconsume: 0.0000
+Oct 05 11:32:20 homeserver evcc[3439618]: [script] DEBUG 2024/10/05 11:32:20 /bin/bash -c cat /dev/shm/smaemd/data/em-3006136413-psupply: 1171.3000
+Oct 05 11:32:20 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:32:20 grid meter: -1171W
+Oct 05 11:32:20 homeserver evcc[3439618]: [script] DEBUG 2024/10/05 11:32:20 /bin/bash -c cat /dev/shm/smaemd/data/em-3006136413-pconsumecounter: 50927.2842
+Oct 05 11:32:20 homeserver evcc[3439618]: [script] DEBUG 2024/10/05 11:32:20 /bin/bash -c cat /dev/shm/smaemd/data/em-3006136413-psupplycounter: 116277.9844
+Oct 05 11:32:20 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:32:20 site power: -1072W
+Oct 05 11:32:20 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:32:20 set min current: 6
+Oct 05 11:32:20 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:32:20 set max current: 7
+Oct 05 11:32:20 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:32:20 charge voltages: [228 226 226]V
+Oct 05 11:32:20 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:32:20 detected connected phases: 3p
+Oct 05 11:32:20 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:32:20 detected active phases: 2p
+Oct 05 11:32:20 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:32:20 charge total import: 132.364kWh
+Oct 05 11:32:21 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:32:21 charger status: C
+Oct 05 11:32:21 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:32:21 pv charge current: 9.33A = 7A + 2.33A (-1072W @ 2p)
+Oct 05 11:32:49 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:32:49 ----
+Oct 05 11:32:49 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:32:49 charge power: 3199W
+Oct 05 11:32:49 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:32:49 charge currents: [0.7 6.7 6.6]A
+Oct 05 11:32:50 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:32:50 pv power: 6072W
+Oct 05 11:32:50 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:32:50 battery soc: 0%
+Oct 05 11:32:50 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:32:50 battery power: -1W
+Oct 05 11:32:50 homeserver evcc[3439618]: [script] DEBUG 2024/10/05 11:32:50 /bin/bash -c cat /dev/shm/smaemd/data/em-3006136413-pconsume: 0.0000
+Oct 05 11:32:50 homeserver evcc[3439618]: [script] DEBUG 2024/10/05 11:32:50 /bin/bash -c cat /dev/shm/smaemd/data/em-3006136413-psupply: 1529.0000
+Oct 05 11:32:50 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:32:50 grid meter: -1529W
+Oct 05 11:32:50 homeserver evcc[3439618]: [script] DEBUG 2024/10/05 11:32:50 /bin/bash -c cat /dev/shm/smaemd/data/em-3006136413-pconsumecounter: 50927.2842
+Oct 05 11:32:50 homeserver evcc[3439618]: [script] DEBUG 2024/10/05 11:32:50 /bin/bash -c cat /dev/shm/smaemd/data/em-3006136413-psupplycounter: 116277.9953
+Oct 05 11:32:50 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:32:50 site power: -1430W
+Oct 05 11:32:50 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:32:50 set min current: 6
+Oct 05 11:32:50 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:32:50 set max current: 7
+Oct 05 11:32:50 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:32:50 charge voltages: [228 226 226]V
+Oct 05 11:32:50 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:32:50 detected connected phases: 3p
+Oct 05 11:32:50 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:32:50 detected active phases: 2p
+Oct 05 11:32:50 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:32:50 charge total import: 132.392kWh
+Oct 05 11:32:51 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:32:51 charger status: C
+Oct 05 11:32:51 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:32:51 pv charge current: 10.1A = 7A + 3.11A (-1430W @ 2p)
+Oct 05 11:33:19 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:33:19 ----
+Oct 05 11:33:19 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:33:19 charge power: 3194W
+Oct 05 11:33:19 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:33:19 charge currents: [0.7 6.7 6.6]A
+Oct 05 11:33:20 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:33:20 pv power: 6203W
+Oct 05 11:33:20 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:33:20 battery soc: 0%
+Oct 05 11:33:20 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:33:20 battery power: -1W
+Oct 05 11:33:20 homeserver evcc[3439618]: [script] DEBUG 2024/10/05 11:33:20 /bin/bash -c cat /dev/shm/smaemd/data/em-3006136413-pconsume: 0.0000
+Oct 05 11:33:20 homeserver evcc[3439618]: [script] DEBUG 2024/10/05 11:33:20 /bin/bash -c cat /dev/shm/smaemd/data/em-3006136413-psupply: 1483.8000
+Oct 05 11:33:20 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:33:20 grid meter: -1484W
+Oct 05 11:33:20 homeserver evcc[3439618]: [script] DEBUG 2024/10/05 11:33:20 /bin/bash -c cat /dev/shm/smaemd/data/em-3006136413-pconsumecounter: 50927.2842
+Oct 05 11:33:20 homeserver evcc[3439618]: [script] DEBUG 2024/10/05 11:33:20 /bin/bash -c cat /dev/shm/smaemd/data/em-3006136413-psupplycounter: 116278.0070
+Oct 05 11:33:20 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:33:20 site power: -1385W
+Oct 05 11:33:20 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:33:20 set min current: 6
+Oct 05 11:33:20 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:33:20 set max current: 7
+Oct 05 11:33:20 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:33:20 charge voltages: [228 226 226]V
+Oct 05 11:33:20 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:33:20 detected connected phases: 3p
+Oct 05 11:33:20 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:33:20 detected active phases: 2p
+Oct 05 11:33:20 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:33:20 charge total import: 132.418kWh
+Oct 05 11:33:20 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:33:20 charger status: C
+Oct 05 11:33:21 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:33:21 pv charge current: 10A = 7A + 3.01A (-1385W @ 2p)
+Oct 05 11:33:49 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:33:49 ----
+Oct 05 11:33:49 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:33:49 charge power: 3201W
+Oct 05 11:33:49 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:33:49 charge currents: [0.7 6.7 6.6]A
+Oct 05 11:33:50 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:33:50 pv power: 6355W
+Oct 05 11:33:50 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:33:50 battery soc: 0%
+Oct 05 11:33:50 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:33:50 battery power: -1W
+Oct 05 11:33:50 homeserver evcc[3439618]: [script] DEBUG 2024/10/05 11:33:50 /bin/bash -c cat /dev/shm/smaemd/data/em-3006136413-pconsume: 0.0000
+Oct 05 11:33:50 homeserver evcc[3439618]: [script] DEBUG 2024/10/05 11:33:50 /bin/bash -c cat /dev/shm/smaemd/data/em-3006136413-psupply: 1659.7000
+Oct 05 11:33:50 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:33:50 grid meter: -1660W
+Oct 05 11:33:50 homeserver evcc[3439618]: [script] DEBUG 2024/10/05 11:33:50 /bin/bash -c cat /dev/shm/smaemd/data/em-3006136413-pconsumecounter: 50927.2842
+Oct 05 11:33:50 homeserver evcc[3439618]: [script] DEBUG 2024/10/05 11:33:50 /bin/bash -c cat /dev/shm/smaemd/data/em-3006136413-psupplycounter: 116278.0202
+Oct 05 11:33:50 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:33:50 site power: -1561W
+Oct 05 11:33:50 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:33:50 set min current: 6
+Oct 05 11:33:50 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:33:50 set max current: 7
+Oct 05 11:33:50 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:33:50 charge voltages: [228 227 226]V
+Oct 05 11:33:50 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:33:50 detected connected phases: 3p
+Oct 05 11:33:50 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:33:50 detected active phases: 2p
+Oct 05 11:33:50 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:33:50 charge total import: 132.445kWh
+Oct 05 11:33:51 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:33:51 charger status: C
+Oct 05 11:33:51 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:33:51 pv charge current: 10.4A = 7A + 3.39A (-1561W @ 2p)
+Oct 05 11:34:19 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:34:19 ----
+Oct 05 11:34:19 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:34:19 charge power: 3205W
+Oct 05 11:34:19 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:34:19 charge currents: [0.7 6.7 6.6]A
+Oct 05 11:34:20 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:34:20 pv power: 6474W
+Oct 05 11:34:20 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:34:20 battery soc: 0%
+Oct 05 11:34:20 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:34:20 battery power: -1W
+Oct 05 11:34:20 homeserver evcc[3439618]: [script] DEBUG 2024/10/05 11:34:20 /bin/bash -c cat /dev/shm/smaemd/data/em-3006136413-pconsume: 0.0000
+Oct 05 11:34:20 homeserver evcc[3439618]: [script] DEBUG 2024/10/05 11:34:20 /bin/bash -c cat /dev/shm/smaemd/data/em-3006136413-psupply: 1672.9000
+Oct 05 11:34:20 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:34:20 grid meter: -1673W
+Oct 05 11:34:20 homeserver evcc[3439618]: [script] DEBUG 2024/10/05 11:34:20 /bin/bash -c cat /dev/shm/smaemd/data/em-3006136413-pconsumecounter: 50927.2842
+Oct 05 11:34:20 homeserver evcc[3439618]: [script] DEBUG 2024/10/05 11:34:20 /bin/bash -c cat /dev/shm/smaemd/data/em-3006136413-psupplycounter: 116278.0345
+Oct 05 11:34:20 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:34:20 site power: -1574W
+Oct 05 11:34:20 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:34:20 set min current: 6
+Oct 05 11:34:20 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:34:20 set max current: 7
+Oct 05 11:34:20 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:34:20 charge voltages: [228 227 226]V
+Oct 05 11:34:20 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:34:20 detected connected phases: 3p
+Oct 05 11:34:20 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:34:20 detected active phases: 2p
+Oct 05 11:34:20 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:34:20 charge total import: 132.471kWh
+Oct 05 11:34:21 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:34:21 charger status: C
+Oct 05 11:34:21 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:34:21 pv charge current: 10.4A = 7A + 3.42A (-1574W @ 2p)
+Oct 05 11:34:49 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:34:49 ----
+Oct 05 11:34:49 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:34:49 charge power: 3198W
+Oct 05 11:34:49 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:34:49 charge currents: [0.7 6.7 6.5]A
+Oct 05 11:34:50 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:34:50 pv power: 6611W
+Oct 05 11:34:50 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:34:50 battery soc: 0%
+Oct 05 11:34:50 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:34:50 battery power: -1W
+Oct 05 11:34:50 homeserver evcc[3439618]: [script] DEBUG 2024/10/05 11:34:50 /bin/bash -c cat /dev/shm/smaemd/data/em-3006136413-pconsume: 0.0000
+Oct 05 11:34:50 homeserver evcc[3439618]: [script] DEBUG 2024/10/05 11:34:50 /bin/bash -c cat /dev/shm/smaemd/data/em-3006136413-psupply: 1899.6000
+Oct 05 11:34:50 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:34:50 grid meter: -1900W
+Oct 05 11:34:50 homeserver evcc[3439618]: [script] DEBUG 2024/10/05 11:34:50 /bin/bash -c cat /dev/shm/smaemd/data/em-3006136413-pconsumecounter: 50927.2842
+Oct 05 11:34:50 homeserver evcc[3439618]: [script] DEBUG 2024/10/05 11:34:50 /bin/bash -c cat /dev/shm/smaemd/data/em-3006136413-psupplycounter: 116278.0498
+Oct 05 11:34:50 homeserver evcc[3439618]: [site  ] DEBUG 2024/10/05 11:34:50 site power: -1801W
+Oct 05 11:34:50 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:34:50 set min current: 6
+Oct 05 11:34:50 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:34:50 set max current: 7
+Oct 05 11:34:50 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:34:50 charge voltages: [228 227 226]V
+Oct 05 11:34:50 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:34:50 detected connected phases: 3p
+Oct 05 11:34:50 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:34:50 detected active phases: 2p
+Oct 05 11:34:50 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:34:50 charge total import: 132.498kWh
+Oct 05 11:34:51 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:34:51 charger status: C
+Oct 05 11:34:51 homeserver evcc[3439618]: [lp-1  ] DEBUG 2024/10/05 11:34:51 pv charge current: 10.9A = 7A + 3.91A (-1801W @ 2p)
