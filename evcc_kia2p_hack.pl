@@ -163,17 +163,28 @@ sub doitnow {
   debug_print(3, sprintf(" - new moving average: %d W\n", $avgAvail ) );
 
   # - - - - - start state machine - - - - - - -
+
+  my $rapid = 1;
+  if ($state{mode}        eq       'pv') { $rapid = 0 ; }
+  if ($state{mode}        eq    'minpv') { $rapid = 0 ; }
+  if ($state{planActive}      eq 'true') { $rapid = 1 ; }
+  if ($state{smartCostActive} eq 'true') { $rapid = 1 ; }
+
   if ( my_is_false($state{charging})) {
     # debug_print(3, "not charging - ");
     $state{state} = 'i';
   }
 
   # - - - - - PV mode on/off - - - - -
-  if (  ($state{mode} ne 'pv' and $state{mode} ne 'minpv')  
-          or $state{planActive} eq 'true'
-          or $state{smartCostActive} eq 'true'
-      ) { 
-    if ($state{state} eq 'n') {
+#  if (  ($state{mode} ne 'pv' and $state{mode} ne 'minpv')  
+#          or $state{planActive} eq 'true'
+#          or $state{smartCostActive} eq 'true'
+#      ) { 
+
+
+
+   if($rapid) {
+    # if ($state{state} eq 'n') {
       debug_print(4,"stay in mode other than PV\n"); 
       return; # ==== nothing to do
 
@@ -188,7 +199,7 @@ sub doitnow {
       debug_print(2, "left PV mode, switch to 'i'\n");
       $state{state} = 'i';
     }
-  }
+  #}
 
   if ($state{state} eq 'n') { # and mode is pv or minpv - see above
     debug_print(2,"n -> entering PV mode, save limits, switch to 'i'\n");
