@@ -95,6 +95,12 @@ my $topic_chargePower =  $topic_loadpoint . "/chargePower";
 my $topic_minCurrent  =  $topic_loadpoint . "/minCurrent";
 my $topic_maxCurrent  =  $topic_loadpoint . "/maxCurrent";
 
+my  $topic_planActive  =  $topic_loadpoint . "/planActive";
+my  $topic_sCActive    =  $topic_loadpoint . "/smartCostActive";
+
+
+
+
 
 my $mqtt = Net::MQTT::Simple->new($mqtt_server);
 $mqtt->login($mqtt_user, $mqtt_passwd);
@@ -121,6 +127,8 @@ $mqtt->run(
   $topic_chrgn       => sub { parse_statevar( @_[0,1], 'charging') },
   $topic_minCurrent  => sub { parse_statevar( @_[0,1], 'minCurrent') },
   $topic_maxCurrent  => sub { parse_statevar( @_[0,1], 'maxCurrent') },
+  $topic_planActive  => sub { parse_statevar( @_[0,1], 'planActive') },
+  $topic_sCActive    => sub { parse_statevar( @_[0,1], 'smartCostActive') },
 
   $topic_evcc . "/#" => \&parse_default
   # "#" => \&noop,
@@ -161,7 +169,10 @@ sub doitnow {
   }
 
   # - - - - - PV mode on/off - - - - -
-  if ( $state{mode} ne 'pv' and $state{mode} ne 'minpv'  ) { 
+  if (  ($state{mode} ne 'pv' and $state{mode} ne 'minpv')  
+          or $state{planActive} eq 'true'
+          or $state{smartCostActive} eq 'true'
+      ) { 
     if ($state{state} eq 'n') {
       debug_print(4,"stay in mode other than PV\n"); 
       return; # ==== nothing to do
@@ -188,16 +199,6 @@ sub doitnow {
 
   }
 
-  
-  # do we still need this? - not sure.... 
-  # transition i -> f -> h/l
-  # idea was to allow charger / car to choose where we start?
-#  if ($state{state} eq 'i') {
-#    if ($state{cCur}) {
-#      $state{state} ='f';
-#    }
-#  }
-
 
   # - - - - - core state machine  - - - - - - -
   if ($state{state} eq 'f' or $state{state} eq 'h' or $state{state} eq 'l' ) {  # handle state f='free'
@@ -209,9 +210,9 @@ sub doitnow {
   }
   # - - - - - - - - - - - - - - - - - - - - - 
 
-  # do we still need this? - not sure.... 
   # transition i -> f -> h/l
   # idea was to allow charger / car to choose where we start?
+  # this most times peaks w/ high current/3P
   if ($state{state} eq 'i') {
     if ($state{cCur}) {
       $state{state} ='f';
