@@ -29,7 +29,7 @@ use POSIX qw(strftime);	# time string formatting
 # debug levels ~~~~
 # 5 = local testing, 4 = early context testing , 3 = early running tests, 
 #    2 = operation test, 1 = operation running in beta, 0 = stable
-my $debug = 3;
+my $debug = 2;
 
 my $mqtt_server = "homeserver.rosner.lokal";
 my $mqtt_user   = "evcc_kia";
@@ -61,7 +61,7 @@ my %states_enum = (    # for check and display
 my %states_limits = (    # { lower, upper } current limits
   f => [ 6, 16 ],
   h => [ 8, 16 ],
-  l => [ 6, 7 ]  );
+  l => [ 6, 6 ]  );
 
 
 # ==== state variables
