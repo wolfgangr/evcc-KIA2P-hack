@@ -185,9 +185,10 @@ sub doitnow {
 
    if($rapid) {
     # if ($state{state} eq 'n') {
-      debug_print(4,"... in mode other than PV ..."); 
-      return; # ==== nothing to do
+      # debug_print(4,"... in mode other than PV ..."); 
       debug_print(2,"stay\n");
+      return; # ==== nothing to do
+
     } elsif ($state{state} eq 'i') { # transition ....
       debug_print(2, "i -> n, restoring limits\n");
       $mqtt->retain( $topic_minCurrent . '/set' => $state{min_saved}  ) ;
